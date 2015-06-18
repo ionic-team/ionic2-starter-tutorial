@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="css/ionicons.min.css">
+  <link href="css/ionic.css" rel="stylesheet">
+</head>
+<body>
+
+  <ion-app>
+    Loading...
+  </ion-app>
+
+  <script src="js/lib/Reflect.js" type="text/javascript"></script>
+  <script src="js/lib/traceur.js" type="text/javascript"></script>
+  <script src="js/lib/system.src.js"></script>
+  <script src="js/lib/angular2.js"></script>
+  <script src="js/lib/ionic.bundle.js"></script>
+  <script src="js/lib/zone-microtask.js" type="text/javascript"></script>
+  <script src="js/lib/long-stack-trace-zone.js" type="text/javascript"></script>
+  <script>
+    System.config({
+      "traceurOptions": {
+        "annotations": true,
+        "types": true
+      }
+    });
+    System.import('js/app.es6');
+  </script>
+</body>
+</html>
