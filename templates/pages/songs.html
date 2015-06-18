@@ -2,6 +2,6 @@
 
 <ion-content class="padding">
   <ion-list inset>
-    <ion-item *ng-for="#song of songs">{{song.title}}</ion-item>
+    <ion-item *ng-for="#song of songs" (^click)="openSong(song)">{{song.title}}</ion-item>
   </ion-list>
 </ion-content>

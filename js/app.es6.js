@@ -1,7 +1,5 @@
 import {bootstrap, NgFor, ComponentAnnotation as Component, DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
-import {Aside, Nav, NavController, Navbar, NavbarTemplate, List, Item, Content, Button} from 'ionic/ionic';
-
-console.log(Navbar, NavbarTemplate, Nav);
+import {Aside, NavParams, Nav, NavController, Navbar, NavbarTemplate, List, Item, Content, Button} from 'ionic/ionic';
 
 @Component({ selector: 'ion-view' })
 @View({
@@ -14,27 +12,45 @@ class SongsPage {
 
     this.name = 'Max';
 
-    let words = ['Big', 'Cat', 'Dog', 'Guitars', 'Space', 'Eat', 'Truck', 'Worms',
-    'Pizza', 'Lazers', 'Ice', 'Sound', 'Blast'];
+    let songTitles = [
+      'Two Charges',
+      'Feeling so Electric',
+      'The only Ion I\'ve ever loved',
+      'The last Ionite',
+      'Double Bond',
+      'Redox Redux',
+      'Na Na Na Na'
+    ];
 
-    let randomTitle = () => {
-      var title = [];
-      for(let i = 0; i < 3; i++) {
-        title.push(words[Math.floor(Math.random() * words.length)]);
+    this.songs = songTitles.map((item) => {
+      return {
+        title: item
       }
-      let t = title.join(' ');
-      return t;
-    };
+    });
+  }
 
-    this.songs = [];
-    for(let i = 0; i < 20; i++) {
-      this.songs.push({
-        title: randomTitle()
-      })
-    }
-    console.log(this.songs.length);
+  openSong(song) {
+    this.nav.push(SongDetailPage, {
+      song: song
+    });
   }
 }
+
+@Component({ selector: 'ion-view' })
+@View({
+  directives: [Content, Button, Navbar, NavbarTemplate],
+  templateUrl: 'templates/pages/song_detail.html'
+})
+class SongDetailPage {
+  constructor(nav: NavController, navParams: NavParams) {
+    this.nav = nav;
+
+    this.song = navParams.song;
+
+    console.log('Showing song', this.song);
+  }
+}
+
 
 @Component({ selector: 'ion-app' })
 @View({
