@@ -20,6 +20,18 @@ class IonicApp {
     this.firstPage = SongsPage;
 
   }
+
+  openPage(aside, page) {
+    console.log('Opening page', page);
+
+    aside.close();
+    // TODO(adamdbradley): fix the window.nav dep
+    window.nav.clear().then(() => {
+      window.nav.push(page, {}, {
+        animate: false
+      });
+    })
+  }
 }
 
 bootstrap(IonicApp);

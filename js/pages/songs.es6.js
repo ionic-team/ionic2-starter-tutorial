@@ -13,6 +13,9 @@ export class SongsPage {
   constructor(nav: NavController) {
     this.nav = nav;
 
+    // TODO(adamdbradley): fix the window.nav dep
+    window.nav = nav;
+
     this.name = 'Max';
 
     let songTitles = [
