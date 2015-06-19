@@ -1,6 +1,6 @@
 import {bootstrap, NgFor, ComponentAnnotation as Component,
   DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
-import {NavController, Navbar, NavbarTemplate, Content, Button} from 'ionic/ionic';
+import {NavParams, NavController, Navbar, NavbarTemplate, Content, Button} from 'ionic/ionic';
 
 @Component({ selector: 'ion-view' })
 @View({
@@ -16,4 +16,3 @@ export class SongDetailPage {
     console.log('Showing song', this.song);
   }
 }
-

@@ -2,7 +2,7 @@ import {bootstrap, NgFor, ComponentAnnotation as Component,
   DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
 import {NavController, Navbar, NavbarTemplate, List, Item, Content, Button} from 'ionic/ionic';
 
-import {SongDetailPage} from './song-detail.es6';
+import {SongDetailPage} from './song-detail';
 
 @Component({ selector: 'ion-view' })
 @View({
