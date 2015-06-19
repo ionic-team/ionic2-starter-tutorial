@@ -1965,6 +1965,8 @@ ion-view {
     min-height: 4.4rem;
     min-width: 0;
     background: transparent; }
+  .nav-ios .navbar-container .button-icon {
+    font-size: 2.5rem; }
   .nav-ios .navbar-container .back-button-icon {
     padding-right: 6px; }
 

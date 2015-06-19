@@ -34,6 +34,9 @@ class SongsPage {
       song: song
     });
   }
+
+  openMenu() {
+  }
 }
 
 @Component({ selector: 'ion-view' })
