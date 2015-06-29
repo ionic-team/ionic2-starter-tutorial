@@ -34,4 +34,6 @@ class IonicApp {
   }
 }
 
-bootstrap(IonicApp);
+export function main(ionicBootstrap){
+  ionicBootstrap(IonicApp);
+}
