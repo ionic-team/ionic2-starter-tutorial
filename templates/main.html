@@ -4,11 +4,11 @@
   </ion-toolbar>
   <ion-content>
     <ion-list inset>
-      <ion-item *ng-for="#c of components" (^click)="openPage(aside, c)">
-        {{c.title}}
+      <ion-item *ng-for="#p of pages" (^click)="openPage(aside, p)">
+        {{p.title}}
       </ion-item>
     </ion-list>
   </ion-content>
 </ion-aside>
 
-<ion-nav #content [initial]="firstPage"></ion-nav>
+<ion-nav #content [root]="firstPage" [register]="content" register-id="nav"></ion-nav>

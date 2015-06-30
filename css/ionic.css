@@ -23,7 +23,7 @@ a {
 b, strong {
   font-weight: bold; }
 
-ion-app img, ionic img {
+ion-app img, .ion-app img {
   border: 0; }
 
 svg:not(:root) {
@@ -116,7 +116,7 @@ td, th {
 .key-input :focus {
   outline-offset: -1px;
   outline: thin dotted; }
-.key-input .button:focus {
+.key-input button:focus, .key-input [button]:focus {
   outline-offset: -2px;
   outline: 2px solid red; }
 
@@ -176,7 +176,7 @@ body {
   -ms-user-select: none;
   user-select: none; }
 
-ion-app, ionic {
+ion-app, .ion-app {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -192,6 +192,39 @@ ion-app, ionic {
   max-height: 100%;
   margin: 0;
   padding: 0; }
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(359deg); } }
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg); } }
+
+ion-loading-icon {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+  margin: auto;
+  font-family: 'Ionicons';
+  font-size: 128px;
+  color: #666666;
+  animation: rotation 45s infinite linear;
+  -webkit-animation: rotation 45s infinite linear; }
+  ion-loading-icon:before {
+    content: "\f44e"; }
 
 ion-nav {
   height: 100%; }
@@ -268,42 +301,42 @@ ion-content {
 html {
   font-size: 62.5%; }
 
-ion-app, ionic {
+ion-app, .ion-app {
   font-size: 1.4rem;
   font-family: "Helvetica Neue", "Roboto", sans-serif; }
-  ion-app h1, ion-app h2, ion-app h3, ion-app h4, ion-app h5, ion-app h6, ionic h1, ionic h2, ionic h3, ionic h4, ionic h5, ionic h6 {
+  ion-app h1, ion-app h2, ion-app h3, ion-app h4, ion-app h5, ion-app h6, .ion-app h1, .ion-app h2, .ion-app h3, .ion-app h4, .ion-app h5, .ion-app h6 {
     font-weight: 500;
     line-height: 1.2;
     margin-top: 1.6rem;
     margin-bottom: 1rem; }
-    ion-app h1:first-child, ion-app h2:first-child, ion-app h3:first-child, ion-app h4:first-child, ion-app h5:first-child, ion-app h6:first-child, ionic h1:first-child, ionic h2:first-child, ionic h3:first-child, ionic h4:first-child, ionic h5:first-child, ionic h6:first-child {
+    ion-app h1:first-child, ion-app h2:first-child, ion-app h3:first-child, ion-app h4:first-child, ion-app h5:first-child, ion-app h6:first-child, .ion-app h1:first-child, .ion-app h2:first-child, .ion-app h3:first-child, .ion-app h4:first-child, .ion-app h5:first-child, .ion-app h6:first-child {
       margin-top: -0.4rem; }
-  ion-app h1 + h2, ion-app h1 + h3, ion-app h2 + h3, ionic h1 + h2, ionic h1 + h3, ionic h2 + h3 {
+  ion-app h1 + h2, ion-app h1 + h3, ion-app h2 + h3, .ion-app h1 + h2, .ion-app h1 + h3, .ion-app h2 + h3 {
     margin-top: -0.4rem; }
-  ion-app h1, ionic h1 {
+  ion-app h1, .ion-app h1 {
     font-size: 3.6rem;
     margin-top: 2rem; }
-  ion-app h2, ionic h2 {
+  ion-app h2, .ion-app h2 {
     font-size: 3rem;
     margin-top: 1.8rem; }
-  ion-app h3, ionic h3 {
+  ion-app h3, .ion-app h3 {
     font-size: 2.4rem; }
-  ion-app h4, ionic h4 {
+  ion-app h4, .ion-app h4 {
     font-size: 2rem; }
-  ion-app h5, ionic h5 {
+  ion-app h5, .ion-app h5 {
     font-size: 1.6rem; }
-  ion-app h6, ionic h6 {
+  ion-app h6, .ion-app h6 {
     font-size: 1.4rem; }
-  ion-app small, ionic small {
+  ion-app small, .ion-app small {
     font-size: 75%; }
-  ion-app sub, ion-app sup, ionic sub, ionic sup {
+  ion-app sub, ion-app sup, .ion-app sub, .ion-app sup {
     font-size: 75%;
     line-height: 0;
     position: relative;
     vertical-align: baseline; }
-  ion-app sup, ionic sup {
+  ion-app sup, .ion-app sup {
     top: -0.5em; }
-  ion-app sub, ionic sub {
+  ion-app sub, .ion-app sub {
     bottom: -0.25em; }
 
 .overlay-backdrop {
@@ -332,7 +365,7 @@ ion-app, ionic {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 120; }
+  z-index: 1000; }
 
 .action-menu-backdrop {
   position: absolute;
@@ -359,9 +392,8 @@ ion-app, ionic {
   margin-left: 8px;
   margin-right: 8px;
   width: auto;
-  z-index: 120;
   overflow: hidden; }
-  .action-menu-container .button {
+  .action-menu-container button, .action-menu-container [button] {
     display: block;
     padding: 1px;
     width: 100%;
@@ -370,13 +402,13 @@ ion-app, ionic {
     background-color: transparent;
     color: #007aff;
     font-size: 21px; }
-    .action-menu-container .button:hover {
+    .action-menu-container button:hover, .action-menu-container [button]:hover {
       color: #007aff; }
-    .action-menu-container .button.destructive {
+    .action-menu-container button.destructive, .action-menu-container [button].destructive {
       color: #ff3b30; }
-      .action-menu-container .button.destructive:hover {
+      .action-menu-container button.destructive:hover, .action-menu-container [button].destructive:hover {
         color: #ff3b30; }
-  .action-menu-container .button.active, .action-menu-container .button.activated {
+  .action-menu-container button.activated, .action-menu-container [button].activated {
     box-shadow: none;
     border-color: #d1d3d6;
     color: #007aff;
@@ -397,15 +429,15 @@ ion-app, ionic {
   border-radius: 4px;
   background-color: #fff;
   overflow: hidden; }
-  .action-menu-group .button {
+  .action-menu-group button, .action-menu-group [button] {
     border-width: 1px 0px 0px 0px; }
-  .action-menu-group .button:first-child:last-child {
+  .action-menu-group button:first-child:last-child, .action-menu-group [button]:first-child:last-child {
     border-width: 0; }
 
 .action-menu-options {
   background: #f1f2f3; }
 
-.action-menu-cancel .button {
+.action-menu-cancel button, .action-menu-cancel [button] {
   font-weight: 500; }
 
 .action-menu-open {
@@ -430,7 +462,6 @@ ion-app, ionic {
   align-items: center; }
 
 .alert-container {
-  z-index: 110;
   display: block;
   width: 40%;
   min-width: 270px;
@@ -542,7 +573,7 @@ ion-app, ionic {
   .badge:empty {
     display: none; }
 
-.button {
+button, [button] {
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -577,72 +608,70 @@ ion-app, ionic {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
-
-.button {
+  user-select: none;
   border: 1px solid #ccc;
   padding: 0 1.4rem;
   min-height: 4.2rem;
-  background: #fff;
+  background: transparent;
   text-align: center;
   font-size: 1.4rem;
   border: transparent;
   border-radius: 4px; }
-  .button.button-icon {
+  button[icon], [button][icon] {
     font-size: 2.5rem;
     background: none;
     border: none; }
-  .button.button-large {
+  button[large], [button][large] {
     padding: 0 1.4rem;
     min-width: 5.6rem;
     min-height: 5.4rem;
     font-size: 2rem; }
-    .button.button-large.button-icon {
+    button[large][icon], [button][large][icon] {
       font-size: 3.6rem; }
-  .button.button-small {
+  button[small], [button][small] {
     padding: 0 1.1rem;
     min-width: 3.3rem;
     min-height: 2.8rem;
     font-size: 1.3rem; }
-    .button.button-small.button-icon {
+    button[small][icon], [button][small][icon] {
       font-size: 2.1rem; }
+  button[clear], [button][clear] {
+    border-color: transparent;
+    background: none; }
+    button[clear].activated, [button][clear].activated {
+      opacity: 0.3; }
+  button[outline], [button][outline] {
+    background: none; }
+  button[block], [button][block] {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    clear: both;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%; }
+    button[block]:after, [button][block]:after {
+      clear: both; }
+  button.disabled, button[disabled], [button].disabled, [button][disabled] {
+    opacity: .4;
+    cursor: default !important;
+    pointer-events: none; }
 
-.button-clear {
-  border-color: transparent;
-  background: none; }
-  .button-clear.activated {
-    opacity: 0.3; }
-
-.button-outline {
-  background: none; }
-
-.button-block {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  clear: both;
-  margin-right: 0;
-  margin-left: 0; }
-  .button-block:after {
-    clear: both; }
-
-.button-full, .button-full > .button {
+[full], [full] > button, [full] > [button] {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-right: 0;
   margin-left: 0;
+  width: 100%;
   border-radius: 0; }
-  .button-full.button-outline.button-outline, .button-full > .button.button-outline.button-outline {
+  [full][outline][outline], [full] > button[outline][outline], [full] > [button][outline][outline] {
     border-right-width: 0;
     border-left-width: 0; }
 
-button.button-block, button.button-full, .button-full > button.button, input.button.button-block {
-  width: 100%; }
-
-.padding > .button.button-block:first-child {
+.padding > button[block]:first-child, .padding > [button][block]:first-child {
   margin-top: 0; }
 
 .icon-left:before {
@@ -659,142 +688,138 @@ button.button-block, button.button-full, .button-full > button.button, input.but
   margin-top: -0.1em;
   margin-left: 0.25em; }
 
-a.button {
+a[button] {
+  color: inherit;
   text-decoration: none; }
 
-.button.disabled, .button[disabled] {
-  opacity: .4;
-  cursor: default !important;
-  pointer-events: none; }
-
-.button-primary {
+button[primary], [button][primary] {
   background-color: #387ef5;
   color: #fff; }
-  .button-primary:hover, .button-primary.hover {
+  button[primary]:hover, button[primary].hover, [button][primary]:hover, [button][primary].hover {
     opacity: 0.88;
     color: #fff;
     text-decoration: none; }
-  .button-primary:active, .button-primary.activated {
+  button[primary]:active, button[primary].activated, [button][primary]:active, [button][primary].activated {
     opacity: 1;
     background-color: #0b5ce4; }
-  .button-primary.button-clear {
+  button[primary][clear], [button][primary][clear] {
     background: none;
     color: #387ef5; }
-  .button-primary.button-outline {
+  button[primary][outline], [button][primary][outline] {
     border: 1px solid #387ef5;
     background: transparent;
     color: #387ef5; }
-    .button-primary.button-outline.activated {
+    button[primary][outline].activated, [button][primary][outline].activated {
       background-color: rgba(56, 126, 245, 0.15); }
 
-.button-secondary {
+button[secondary], [button][secondary] {
   background-color: #33d066;
   color: #fff; }
-  .button-secondary:hover, .button-secondary.hover {
+  button[secondary]:hover, button[secondary].hover, [button][secondary]:hover, [button][secondary].hover {
     opacity: 0.88;
     color: #fff;
     text-decoration: none; }
-  .button-secondary:active, .button-secondary.activated {
+  button[secondary]:active, button[secondary].activated, [button][secondary]:active, [button][secondary].activated {
     opacity: 1;
     background-color: #25a14d; }
-  .button-secondary.button-clear {
+  button[secondary][clear], [button][secondary][clear] {
     background: none;
     color: #33d066; }
-  .button-secondary.button-outline {
+  button[secondary][outline], [button][secondary][outline] {
     border: 1px solid #33d066;
     background: transparent;
     color: #33d066; }
-    .button-secondary.button-outline.activated {
+    button[secondary][outline].activated, [button][secondary][outline].activated {
       background-color: rgba(51, 208, 102, 0.15); }
 
-.button-danger {
+button[danger], [button][danger] {
   background-color: #ec3d3d;
   color: #fff; }
-  .button-danger:hover, .button-danger.hover {
+  button[danger]:hover, button[danger].hover, [button][danger]:hover, [button][danger].hover {
     opacity: 0.88;
     color: #fff;
     text-decoration: none; }
-  .button-danger:active, .button-danger.activated {
+  button[danger]:active, button[danger].activated, [button][danger]:active, [button][danger].activated {
     opacity: 1;
     background-color: #d71515; }
-  .button-danger.button-clear {
+  button[danger][clear], [button][danger][clear] {
     background: none;
     color: #ec3d3d; }
-  .button-danger.button-outline {
+  button[danger][outline], [button][danger][outline] {
     border: 1px solid #ec3d3d;
     background: transparent;
     color: #ec3d3d; }
-    .button-danger.button-outline.activated {
+    button[danger][outline].activated, [button][danger][outline].activated {
       background-color: rgba(236, 61, 61, 0.15); }
 
-.button-light {
+button[light], [button][light] {
   background-color: #fff;
   color: #444; }
-  .button-light:hover, .button-light.hover {
+  button[light]:hover, button[light].hover, [button][light]:hover, [button][light].hover {
     opacity: 0.88;
     color: #444;
     text-decoration: none; }
-  .button-light:active, .button-light.activated {
+  button[light]:active, button[light].activated, [button][light]:active, [button][light].activated {
     opacity: 1;
     background-color: #e0e0e0; }
-  .button-light.button-clear {
+  button[light][clear], [button][light][clear] {
     background: none;
     color: #fff; }
-  .button-light.button-outline {
+  button[light][outline], [button][light][outline] {
     border: 1px solid #fff;
     background: transparent;
     color: #fff; }
-    .button-light.button-outline.activated {
+    button[light][outline].activated, [button][light][outline].activated {
       background-color: rgba(255, 255, 255, 0.15); }
 
-.button-stable {
+button[stable], [button][stable] {
   background-color: #f4f4f4;
   color: #444; }
-  .button-stable:hover, .button-stable.hover {
+  button[stable]:hover, button[stable].hover, [button][stable]:hover, [button][stable].hover {
     opacity: 0.88;
     color: #444;
     text-decoration: none; }
-  .button-stable:active, .button-stable.activated {
+  button[stable]:active, button[stable].activated, [button][stable]:active, [button][stable].activated {
     opacity: 1;
     background-color: #d5d5d5; }
-  .button-stable.button-clear {
+  button[stable][clear], [button][stable][clear] {
     background: none;
     color: #f4f4f4; }
-  .button-stable.button-outline {
+  button[stable][outline], [button][stable][outline] {
     border: 1px solid #f4f4f4;
     background: transparent;
     color: #f4f4f4; }
-    .button-stable.button-outline.activated {
+    button[stable][outline].activated, [button][stable][outline].activated {
       background-color: rgba(244, 244, 244, 0.15); }
 
-.button-dark {
+button[dark], [button][dark] {
   background-color: #444;
   color: #fff; }
-  .button-dark:hover, .button-dark.hover {
+  button[dark]:hover, button[dark].hover, [button][dark]:hover, [button][dark].hover {
     opacity: 0.88;
     color: #fff;
     text-decoration: none; }
-  .button-dark:active, .button-dark.activated {
+  button[dark]:active, button[dark].activated, [button][dark]:active, [button][dark].activated {
     opacity: 1;
     background-color: #252525; }
-  .button-dark.button-clear {
+  button[dark][clear], [button][dark][clear] {
     background: none;
     color: #444; }
-  .button-dark.button-outline {
+  button[dark][outline], [button][dark][outline] {
     border: 1px solid #444;
     background: transparent;
     color: #444; }
-    .button-dark.button-outline.activated {
+    button[dark][outline].activated, [button][dark][outline].activated {
       background-color: rgba(68, 68, 68, 0.15); }
 
 .card {
   position: relative;
   margin: 10px; }
 
-.card .card-content {
-  padding: 20px; }
+.card .card-header, .card .card-footer, .card .card-content {
+  padding: 15px; }
 .card img {
-  max-width: 100%; }
+  width: 100%; }
 
 .card .item-label {
   white-space: normal; }
@@ -1272,7 +1297,7 @@ div {
   margin: 35px 0;
   padding: 0;
   list-style-type: none; }
-  .list.list-inset {
+  .list.list-inset .list[inset] {
     margin-top: 0;
     margin-left: -10px;
     margin-right: -10px; }
@@ -1283,21 +1308,19 @@ div {
 .list-header + .list {
   margin-top: 0; }
 
-/**
- * Modals
- * --------------------------------------------------
- * Modals are independent windows that slide in from off-screen.
- */
 ion-modal {
   position: absolute;
   top: 0;
-  z-index: 100;
+  z-index: 1000;
   overflow: hidden;
   min-height: 100%;
   width: 100%;
   background-color: #fff;
   -webkit-transform: translate3d(0px, 100%, 0px);
   transform: translate3d(0px, 100%, 0px); }
+  ion-modal.show-overlay {
+    -webkit-transform: translate3d(0px, 0px, 0px);
+    transform: translate3d(0px, 0px, 0px); }
 
 /*@media (min-width: $modal-inset-mode-break-point) {
   // inset mode is when the modal doesn't fill the entire
@@ -1462,7 +1485,7 @@ ion-title {
   -ms-flex-order: 40;
   order: 40; }
 
-.navbar .button {
+.navbar button, .navbar [button] {
   background: transparent;
   border: none; }
 
@@ -1585,7 +1608,7 @@ ion-segment {
   -ms-flex: 1;
   flex: 1;
   width: 100%; }
-  .ion-segment > .button {
+  .ion-segment > button, .ion-segment > [button] {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -1600,9 +1623,9 @@ ion-segment {
     text-overflow: ellipsis;
     white-space: nowrap;
     background: none; }
-    .ion-segment > .button:first-of-type {
+    .ion-segment > button:first-of-type, .ion-segment > [button]:first-of-type {
       border-radius: 4px 0px 0px 4px; }
-    .ion-segment > .button:last-of-type {
+    .ion-segment > button:last-of-type, .ion-segment > [button]:last-of-type {
       border-right-width: 1px;
       border-radius: 0px 4px 4px 0px; }
 
@@ -1708,6 +1731,7 @@ ion-tab {
     display: flex; }
 
 .tab-bar-container {
+  position: relative;
   -webkit-box-ordinal-group: 31;
   -webkit-order: 30;
   -ms-flex-order: 30;
@@ -1731,7 +1755,7 @@ ion-tab {
   overflow: hidden;
   background: #f7f7f8; }
 
-.tab-button {
+button.tab-button {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1756,6 +1780,7 @@ ion-tab {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0;
   padding: 10px;
   min-width: 80px;
   max-width: 160px;
@@ -1766,31 +1791,32 @@ ion-tab {
   -ms-user-select: none;
   user-select: none;
   border: 0;
+  border-radius: 0;
   background: none; }
 
-[tab-bar-icons="bottom"] > .tab-bar-container .tab-button .tab-button-icon {
+[tab-bar-icons="bottom"] > .tab-bar-container button.tab-button .tab-button-icon {
   -webkit-box-ordinal-group: 11;
   -webkit-order: 10;
   -ms-flex-order: 10;
   order: 10; }
 
-[tab-bar-icons="left"] > .tab-bar-container .tab-button {
+[tab-bar-icons="left"] > .tab-bar-container button.tab-button {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
-  [tab-bar-icons="left"] > .tab-bar-container .tab-button .tab-button-icon {
+  [tab-bar-icons="left"] > .tab-bar-container button.tab-button .tab-button-icon {
     text-align: right;
     padding-right: 5px; }
 
-[tab-bar-icons="right"] > .tab-bar-container .tab-button {
+[tab-bar-icons="right"] > .tab-bar-container button.tab-button {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row; }
-  [tab-bar-icons="right"] > .tab-bar-container .tab-button .tab-button-icon {
+  [tab-bar-icons="right"] > .tab-bar-container button.tab-button .tab-button-icon {
     -webkit-box-ordinal-group: 11;
     -webkit-order: 10;
     -ms-flex-order: 10;
@@ -1811,10 +1837,10 @@ ion-tab {
 .tab-bar-icon-only .tab-button-text, .tab-bar-text-only .tab-button-icon {
   display: none; }
 
-.tab-button:hover {
+button.tab-button:hover {
   opacity: 0.6; }
 
-.tab-button[aria-selected="true"] {
+button.tab-button[aria-selected="true"] {
   color: red; }
 
 ion-toolbar {
@@ -1881,7 +1907,7 @@ ion-toolbar ion-title {
   white-space: nowrap;
   text-overflow: ellipsis; }
 
-.toolbar .button {
+.toolbar button, .toolbar [button] {
   background: transparent;
   border: none; }
 
@@ -1956,7 +1982,7 @@ ion-view {
     -ms-flex-order: 10;
     order: 10;
     overflow: inherit; }
-  .nav-ios .navbar-container .button {
+  .nav-ios .navbar-container button, .nav-ios .navbar-container [button] {
     font-size: 1.7rem;
     color: #007aff;
     border: none;
@@ -1965,7 +1991,7 @@ ion-view {
     min-height: 4.4rem;
     min-width: 0;
     background: transparent; }
-  .nav-ios .navbar-container .button-icon {
+  .nav-ios .navbar-container [icon] {
     font-size: 2.5rem; }
   .nav-ios .navbar-container .back-button-icon {
     padding-right: 6px; }
@@ -2067,7 +2093,7 @@ ion-view {
     content: ''; }
 .alert-ios .alert-actions {
   min-height: 44px; }
-  .alert-ios .alert-actions .button {
+  .alert-ios .alert-actions button, .alert-ios .alert-actions [button] {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
     -ms-flex: 1;
@@ -2104,7 +2130,7 @@ ion-view {
 .nav-ios.show-pane ion-content {
   background-color: #efeff4; }
 
-.platform-ios .item:first-of-type:before {
+.list.list-ios .item:first-of-type:before {
   position: absolute;
   top: 0;
   right: auto;
@@ -2118,7 +2144,7 @@ ion-view {
   transform-origin: 50% 0%;
   background-color: #c8c7cc;
   content: ''; }
-.platform-ios .item:last-of-type:after {
+.list.list-ios .item:last-of-type:after {
   position: absolute;
   top: auto;
   right: auto;
@@ -2132,7 +2158,7 @@ ion-view {
   transform-origin: 50% 0%;
   background-color: #c8c7cc;
   content: ''; }
-.platform-ios .list-header {
+.list.list-ios .list-header {
   position: relative;
   margin: 35px 15px 10px 15px;
   font-size: 1.4rem;
@@ -2141,46 +2167,46 @@ ion-view {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis; }
-.platform-ios .list-footer {
+.list.list-ios .list-footer {
   padding: 0 15px;
   font-size: 1.4rem;
   color: #8f8f94; }
 
-.platform-ios .item {
+.item.item-ios {
   background: #fff;
   min-height: 44px;
   padding-left: 15px; }
-.platform-ios .item-media + .item-content {
-  margin-left: 15px; }
-.platform-ios .item-content {
-  min-height: 44px;
-  padding: 0; }
-  .platform-ios .item-content:after {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: 0;
-    left: 0;
-    z-index: 50;
-    display: block;
+  .item.item-ios .item-media + .item-content {
+    margin-left: 15px; }
+  .item.item-ios .item-content {
+    min-height: 44px;
+    padding: 0; }
+    .item.item-ios .item-content:after {
+      position: absolute;
+      top: auto;
+      right: auto;
+      bottom: 0;
+      left: 0;
+      z-index: 50;
+      display: block;
+      width: 100%;
+      height: 1px;
+      -webkit-transform-origin: 50% 0%;
+      transform-origin: 50% 0%;
+      background-color: #c8c7cc;
+      content: ''; }
+  .item.item-ios .item:last-of-type .item-content:after {
+    background: none; }
+  .item.item-ios .item-accessory {
+    color: #8e8e93; }
+  .item.item-ios .item-subtitle {
     width: 100%;
-    height: 1px;
-    -webkit-transform-origin: 50% 0%;
-    transform-origin: 50% 0%;
-    background-color: #c8c7cc;
-    content: ''; }
-.platform-ios .item:last-of-type .item-content:after {
-  background: none; }
-.platform-ios .item-accessory {
-  color: #8e8e93; }
-.platform-ios .item-subtitle {
-  width: 100%;
-  color: #808080; }
-.platform-ios .item-full {
-  padding-left: 0; }
-  .platform-ios .item-full button {
-    width: 100%;
-    font-size: 1.3em; }
+    color: #808080; }
+  .item.item-ios .item-full {
+    padding-left: 0; }
+    .item.item-ios .item-full button {
+      width: 100%;
+      font-size: 1.3em; }
 
 .radio-group-ios .media-radio {
   color: #007aff; }
@@ -2224,16 +2250,13 @@ ion-view {
     background-repeat: no-repeat;
     background-position: 8px center;
     padding-left: calc(50% - 28px); }
-  .search-bar-ios .search-bar-input, .search-bar-ios .search-bar-icon {
-    -webkit-transition: all .2s ease;
-    transition: all .2s ease; }
   .search-bar-ios .search-bar-input-container.left-align .search-bar-icon {
     transform: translateX(0);
     -webkit-transform: translateX(0); }
   .search-bar-ios .search-bar-input-container.left-align .search-bar-input {
     padding-left: 28px; }
 
-.platform-ios .ion-segment > .button {
+.segment-ios .ion-segment > button, .segment-ios .ion-segment > [button] {
   border-width: 1px;
   -webkit-transition: 100ms all linear;
   transition: 100ms all linear;
@@ -2242,12 +2265,12 @@ ion-view {
   line-height: 3.3rem;
   border-style: solid;
   border-color: #387ef5; }
-  .platform-ios .ion-segment > .button.active {
+  .segment-ios .ion-segment > button.active, .segment-ios .ion-segment > [button].active {
     background-color: #387ef5;
     color: white; }
-  .platform-ios .ion-segment > .button:first-of-type {
+  .segment-ios .ion-segment > button:first-of-type, .segment-ios .ion-segment > [button]:first-of-type {
     border-right-width: 0px; }
-  .platform-ios .ion-segment > .button:last-of-type {
+  .segment-ios .ion-segment > button:last-of-type, .segment-ios .ion-segment > [button]:last-of-type {
     border-left-width: 0px; }
 
 .switch-ios .switch-toggle {
@@ -2265,12 +2288,18 @@ ion-view {
   -webkit-transform: scale(0);
   transform: scale(0); }
 
-.tabs-ios .tab-bar-item {
-  padding: 3px 10px; }
-.tabs-ios .tab-bar-item-text {
-  font-size: 1.1rem; }
-.tabs-ios .tab-bar-item-icon {
-  font-size: 2.8rem; }
+.tabs-ios .tab-bar {
+  max-height: 49px;
+  height: 49px; }
+.tabs-ios .tab-button {
+  padding: 0px 10px; }
+.tabs-ios .tab-button-text {
+  font-size: 10px; }
+.tabs-ios .tab-button-icon {
+  font-size: 30px;
+  height: 30px; }
+  .tabs-ios .tab-button-icon:before {
+    vertical-align: top; }
 .tabs-ios[tab-bar-placement="bottom"] > .tab-bar-container:before {
   position: absolute;
   top: 0;
@@ -2345,7 +2374,7 @@ ion-view {
     text-align: center;
     font-size: 1.7rem;
     font-weight: 500; }
-  .platform-ios ion-toolbar .button {
+  .platform-ios ion-toolbar button, .platform-ios ion-toolbar [button] {
     font-size: 1.7rem;
     color: #007aff;
     border: none;
@@ -2371,7 +2400,7 @@ ion-view {
   min-height: 44px;
   background: #fff;
   margin: 24px; }
-  .alert-md .alert-actions .button {
+  .alert-md .alert-actions button, .alert-md .alert-actions [button] {
     border: 0; }
 
 .button.button-md {

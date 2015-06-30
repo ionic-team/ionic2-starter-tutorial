@@ -1,4 +1,4 @@
-System.register('ionic/components', ['ionic/components/app/app', 'ionic/components/action-menu/action-menu', 'ionic/components/aside/aside', 'ionic/components/checkbox/checkbox', 'ionic/components/content/content', 'ionic/components/icon/icon', 'ionic/components/item/item', 'ionic/components/form/form', 'ionic/components/form/input/input', 'ionic/components/form/label/label', 'ionic/components/list/list', 'ionic/components/modal/modal', 'ionic/components/nav/nav', 'ionic/components/nav/nav-controller', 'ionic/components/nav/nav-params', 'ionic/components/nav/nav-push', 'ionic/components/nav-bar/nav-bar', 'ionic/components/slides/slides', 'ionic/components/radio/radio', 'ionic/components/scroll/pull-to-refresh', 'ionic/components/search-bar/search-bar', 'ionic/components/segment/segment', 'ionic/components/switch/switch', 'ionic/components/view/view', 'ionic/components/tabs/tabs', 'ionic/components/tabs/tab'], function (_export) {
+System.register('ionic/components', ['ionic/components/app/app', 'ionic/components/action-menu/action-menu', 'ionic/components/aside/aside', 'ionic/components/checkbox/checkbox', 'ionic/components/content/content', 'ionic/components/icon/icon', 'ionic/components/item/item', 'ionic/components/form/form', 'ionic/components/form/input/input', 'ionic/components/form/label/label', 'ionic/components/list/list', 'ionic/components/modal/modal', 'ionic/components/nav/nav', 'ionic/components/nav/nav-controller', 'ionic/components/nav/nav-push', 'ionic/components/nav-bar/nav-bar', 'ionic/components/slides/slides', 'ionic/components/radio/radio', 'ionic/components/scroll/pull-to-refresh', 'ionic/components/search-bar/search-bar', 'ionic/components/segment/segment', 'ionic/components/switch/switch', 'ionic/components/view/view', 'ionic/components/tabs/tabs', 'ionic/components/tabs/tab'], function (_export) {
   'use strict';
 
   return {
@@ -58,53 +58,49 @@ System.register('ionic/components', ['ionic/components/app/app', 'ionic/componen
       for (var _key14 in _ionicComponentsNavNavController) {
         _export(_key14, _ionicComponentsNavNavController[_key14]);
       }
-    }, function (_ionicComponentsNavNavParams) {
-      for (var _key15 in _ionicComponentsNavNavParams) {
-        _export(_key15, _ionicComponentsNavNavParams[_key15]);
-      }
     }, function (_ionicComponentsNavNavPush) {
-      for (var _key16 in _ionicComponentsNavNavPush) {
-        _export(_key16, _ionicComponentsNavNavPush[_key16]);
+      for (var _key15 in _ionicComponentsNavNavPush) {
+        _export(_key15, _ionicComponentsNavNavPush[_key15]);
       }
     }, function (_ionicComponentsNavBarNavBar) {
-      for (var _key17 in _ionicComponentsNavBarNavBar) {
-        _export(_key17, _ionicComponentsNavBarNavBar[_key17]);
+      for (var _key16 in _ionicComponentsNavBarNavBar) {
+        _export(_key16, _ionicComponentsNavBarNavBar[_key16]);
       }
     }, function (_ionicComponentsSlidesSlides) {
-      for (var _key18 in _ionicComponentsSlidesSlides) {
-        _export(_key18, _ionicComponentsSlidesSlides[_key18]);
+      for (var _key17 in _ionicComponentsSlidesSlides) {
+        _export(_key17, _ionicComponentsSlidesSlides[_key17]);
       }
     }, function (_ionicComponentsRadioRadio) {
-      for (var _key19 in _ionicComponentsRadioRadio) {
-        _export(_key19, _ionicComponentsRadioRadio[_key19]);
+      for (var _key18 in _ionicComponentsRadioRadio) {
+        _export(_key18, _ionicComponentsRadioRadio[_key18]);
       }
     }, function (_ionicComponentsScrollPullToRefresh) {
-      for (var _key20 in _ionicComponentsScrollPullToRefresh) {
-        _export(_key20, _ionicComponentsScrollPullToRefresh[_key20]);
+      for (var _key19 in _ionicComponentsScrollPullToRefresh) {
+        _export(_key19, _ionicComponentsScrollPullToRefresh[_key19]);
       }
     }, function (_ionicComponentsSearchBarSearchBar) {
-      for (var _key21 in _ionicComponentsSearchBarSearchBar) {
-        _export(_key21, _ionicComponentsSearchBarSearchBar[_key21]);
+      for (var _key20 in _ionicComponentsSearchBarSearchBar) {
+        _export(_key20, _ionicComponentsSearchBarSearchBar[_key20]);
       }
     }, function (_ionicComponentsSegmentSegment) {
-      for (var _key22 in _ionicComponentsSegmentSegment) {
-        _export(_key22, _ionicComponentsSegmentSegment[_key22]);
+      for (var _key21 in _ionicComponentsSegmentSegment) {
+        _export(_key21, _ionicComponentsSegmentSegment[_key21]);
       }
     }, function (_ionicComponentsSwitchSwitch) {
-      for (var _key23 in _ionicComponentsSwitchSwitch) {
-        _export(_key23, _ionicComponentsSwitchSwitch[_key23]);
+      for (var _key22 in _ionicComponentsSwitchSwitch) {
+        _export(_key22, _ionicComponentsSwitchSwitch[_key22]);
       }
     }, function (_ionicComponentsViewView) {
-      for (var _key24 in _ionicComponentsViewView) {
-        _export(_key24, _ionicComponentsViewView[_key24]);
+      for (var _key23 in _ionicComponentsViewView) {
+        _export(_key23, _ionicComponentsViewView[_key23]);
       }
     }, function (_ionicComponentsTabsTabs) {
-      for (var _key25 in _ionicComponentsTabsTabs) {
-        _export(_key25, _ionicComponentsTabsTabs[_key25]);
+      for (var _key24 in _ionicComponentsTabsTabs) {
+        _export(_key24, _ionicComponentsTabsTabs[_key24]);
       }
     }, function (_ionicComponentsTabsTab) {
-      for (var _key26 in _ionicComponentsTabsTab) {
-        _export(_key26, _ionicComponentsTabsTab[_key26]);
+      for (var _key25 in _ionicComponentsTabsTab) {
+        _export(_key25, _ionicComponentsTabsTab[_key25]);
       }
     }],
     execute: function () {}
@@ -121,7 +117,7 @@ System.register("ionic/index", [], function (_export) {
 /*
  * export everything here
  */
-System.register('ionic/ionic', ['ionic/config/config', 'ionic/config/component', 'ionic/config/ionic-view', 'ionic/registry', 'ionic/components', 'ionic/platform/platform', 'ionic/platform/registry', 'ionic/routing/router', 'ionic/util/click-block', 'ionic/util/focus', 'ionic/util/tap', 'ionic/animations/animation', 'ionic/animations/builtins', 'ionic/transitions/transition', 'ionic/transitions/ios-transition'], function (_export) {
+System.register('ionic/ionic', ['ionic/config/config', 'ionic/config/annotations', 'ionic/net/http', 'ionic/registry', 'ionic/components', 'ionic/platform/platform', 'ionic/platform/registry', 'ionic/routing/router', 'ionic/util/click-block', 'ionic/util/focus', 'ionic/util/tap', 'ionic/animations/animation', 'ionic/animations/builtins', 'ionic/transitions/transition', 'ionic/transitions/ios-transition'], function (_export) {
   'use strict';
 
   return {
@@ -129,13 +125,13 @@ System.register('ionic/ionic', ['ionic/config/config', 'ionic/config/component',
       for (var _key in _ionicConfigConfig) {
         _export(_key, _ionicConfigConfig[_key]);
       }
-    }, function (_ionicConfigComponent) {
-      for (var _key2 in _ionicConfigComponent) {
-        _export(_key2, _ionicConfigComponent[_key2]);
+    }, function (_ionicConfigAnnotations) {
+      for (var _key2 in _ionicConfigAnnotations) {
+        _export(_key2, _ionicConfigAnnotations[_key2]);
       }
-    }, function (_ionicConfigIonicView) {
-      for (var _key3 in _ionicConfigIonicView) {
-        _export(_key3, _ionicConfigIonicView[_key3]);
+    }, function (_ionicNetHttp) {
+      for (var _key3 in _ionicNetHttp) {
+        _export(_key3, _ionicNetHttp[_key3]);
       }
     }, function (_ionicRegistry) {
       for (var _key4 in _ionicRegistry) {
@@ -251,7 +247,7 @@ System.register('ionic/registry', ['angular2/angular2', 'angular2/src/core/annot
           return [new Directive({
             selector: '[register]',
             properties: ['register', 'registerId: register-id'],
-            host: { '[register-id]': 'registerId' },
+            host: { 'this.register-id': 'registerId' },
             lifecycle: [onInit]
           })];
         } });
@@ -386,7 +382,7 @@ System.register('ionic/animations/animation', ['../util/dom'], function (_export
       AnimationRegistry = {};
 
       Animation = (function () {
-        function Animation(el) {
+        function Animation(ele) {
           _classCallCheck(this, Animation);
 
           this._el = [];
@@ -399,25 +395,37 @@ System.register('ionic/animations/animation', ['../util/dom'], function (_export
           this._readys = [];
           this._plays = [];
           this._finishes = [];
-          this.elements(el);
+          this.elements(ele);
         }
 
         _createClass(Animation, [{
           key: 'elements',
-          value: function elements(el) {
-            if (el) {
-              if (typeof el === 'string') {
-                el = document.querySelectorAll(el);
+          value: function elements(ele) {
+            if (ele) {
+              if (typeof ele === 'string') {
+                ele = document.querySelectorAll(ele);
               }
-              if (el.length) {
-                for (var i = 0; i < el.length; i++) {
-                  this._el.push(el[i]);
+              if (ele.length) {
+                for (var i = 0; i < ele.length; i++) {
+                  this.addElement(ele[i]);
                 }
-              } else if (el.nodeType) {
-                this._el.push(el);
+              } else {
+                this.addElement(ele);
               }
             }
             return this;
+          }
+        }, {
+          key: 'addElement',
+          value: function addElement(ele) {
+            if (ele) {
+              if (ele.nativeElement) {
+                ele = ele.nativeElement;
+              }
+              if (ele.nodeType === 1) {
+                this._el.push(ele);
+              }
+            }
           }
         }, {
           key: 'parent',
@@ -530,7 +538,7 @@ System.register('ionic/animations/animation', ['../util/dom'], function (_export
             }
             if (!self._parent) {
               var _ret = (function () {
-                var kickoff = function kickoff() {
+                var kickoff = function () {
                   self._onPlay();
                   beginPlay().then(function () {
                     self._onFinish();
@@ -698,7 +706,7 @@ System.register('ionic/animations/animation', ['../util/dom'], function (_export
           }
         }, {
           key: 'before',
-          get: function get() {
+          get: function () {
             var _this2 = this;
 
             return {
@@ -714,7 +722,7 @@ System.register('ionic/animations/animation', ['../util/dom'], function (_export
           }
         }, {
           key: 'after',
-          get: function get() {
+          get: function () {
             var _this3 = this;
 
             return {
@@ -937,7 +945,7 @@ System.register('ionic/animations/builtins', ['./animation'], function (_export)
 
   var Animation, SlideIn, SlideOut, FadeIn, FadeOut;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -1010,12 +1018,206 @@ System.register('ionic/animations/builtins', ['./animation'], function (_export)
     }
   };
 });
+System.register("ionic/components/ion", [], function (_export) {
+  "use strict";
+
+  var Ion;
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+  return {
+    setters: [],
+    execute: function () {
+      Ion = (function () {
+        function Ion(elementRef) {
+          _classCallCheck(this, Ion);
+
+          console.log("ION INIT", elementRef);
+          this.elementRef = elementRef;
+        }
+
+        _createClass(Ion, [{
+          key: "getNativeElement",
+          value: function getNativeElement() {
+            return this.elementRef.nativeElement;
+          }
+        }]);
+
+        return Ion;
+      })();
+
+      _export("Ion", Ion);
+
+      Object.defineProperty(Ion, "parameters", { get: function get() {
+          return [[ElementRef]];
+        } });
+    }
+  };
+});
+System.register('ionic/config/annotations', ['angular2/angular2', 'angular2/src/core/annotations_impl/view', 'ionic/util', './config', 'ionic/ionic'], function (_export) {
+  'use strict';
+
+  var coreDirectives, Component, Directive, View, util, IonicConfig, Aside, Content, Refresher, Slides, Slide, SlidePager, Tabs, Tab, List, Item, Icon, Checkbox, Switch, Label, Input, Segment, SegmentButton, SegmentControlValueAccessor, RadioGroup, RadioButton, SearchBar, Nav, NavbarTemplate, Navbar, NavPush, NavPop, IonicView, IonicDirective, IonicComponent, platformMode;
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
+  function _slicedToArray(arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
+
+  function appendModeConfig(ComponentType) {
+    if (!ComponentType) {
+      return {};
+    }
+    if (typeof ComponentType === 'object') {
+      return ComponentType;
+    }
+    var config = ComponentType.config;
+    config.host = config.host || {};
+    var defaultProperties = config.defaultProperties;
+    config.properties = config.properties || [];
+    for (var prop in defaultProperties) {
+      config.properties.push(prop);
+      config.host['[attr.' + util.pascalCaseToDashCase(prop) + ']'] = prop;
+    }
+    ComponentType.applyConfig = function (instance) {
+      for (var prop in defaultProperties) {
+        if (instance[prop]) {
+          continue;
+        }
+        var configVal = IonicConfig.global.setting(prop);
+        if (configVal) {
+          instance[prop] = configVal;
+          continue;
+        }
+        instance[prop] = defaultProperties[prop];
+      }
+    };
+    if (config.delegates) {
+      ComponentType.getDelegate = function (instance, delegateName) {
+        var cases = config.delegates[delegateName] || [];
+        for (var i = 0; i < cases.length; i++) {
+          var delegateCase = cases[i];
+          if (util.isArray(delegateCase)) {
+            var _delegateCase = _slicedToArray(delegateCase, 2);
+
+            var check = _delegateCase[0];
+            var DelegateConstructor = _delegateCase[1];
+
+            if (check(instance)) {
+              return new DelegateConstructor(instance);
+            }
+          } else {
+            return new delegateCase(instance);
+          }
+        }
+      };
+    }
+    if (!platformMode) {
+      platformMode = IonicConfig.global.setting('mode');
+    }
+    var id = config.classId || config.selector && config.selector.replace('ion-', '');
+    config.host['class'] = id + ' ' + id + '-' + platformMode;
+    return config;
+  }
+  return {
+    setters: [function (_angular2Angular2) {
+      coreDirectives = _angular2Angular2.coreDirectives;
+      Component = _angular2Angular2.Component;
+      Directive = _angular2Angular2.Directive;
+    }, function (_angular2SrcCoreAnnotations_implView) {
+      View = _angular2SrcCoreAnnotations_implView.View;
+    }, function (_ionicUtil) {
+      util = _ionicUtil;
+    }, function (_config) {
+      IonicConfig = _config.IonicConfig;
+    }, function (_ionicIonic) {
+      Aside = _ionicIonic.Aside;
+      Content = _ionicIonic.Content;
+      Refresher = _ionicIonic.Refresher;
+      Slides = _ionicIonic.Slides;
+      Slide = _ionicIonic.Slide;
+      SlidePager = _ionicIonic.SlidePager;
+      Tabs = _ionicIonic.Tabs;
+      Tab = _ionicIonic.Tab;
+      List = _ionicIonic.List;
+      Item = _ionicIonic.Item;
+      Icon = _ionicIonic.Icon;
+      Checkbox = _ionicIonic.Checkbox;
+      Switch = _ionicIonic.Switch;
+      Label = _ionicIonic.Label;
+      Input = _ionicIonic.Input;
+      Segment = _ionicIonic.Segment;
+      SegmentButton = _ionicIonic.SegmentButton;
+      SegmentControlValueAccessor = _ionicIonic.SegmentControlValueAccessor;
+      RadioGroup = _ionicIonic.RadioGroup;
+      RadioButton = _ionicIonic.RadioButton;
+      SearchBar = _ionicIonic.SearchBar;
+      Nav = _ionicIonic.Nav;
+      NavbarTemplate = _ionicIonic.NavbarTemplate;
+      Navbar = _ionicIonic.Navbar;
+      NavPush = _ionicIonic.NavPush;
+      NavPop = _ionicIonic.NavPop;
+    }],
+    execute: function () {
+      IonicView = (function (_View) {
+        function IonicView(config) {
+          _classCallCheck(this, IonicView);
+
+          var directives = [coreDirectives, Aside, Content, Refresher, List, Item, Slides, Slide, SlidePager, Tabs, Tab, Icon, Segment, SegmentButton, SegmentControlValueAccessor, Nav, NavbarTemplate, Navbar, NavPush, NavPop];
+          config.directives = (config.directives || []).concat(directives);
+          _get(Object.getPrototypeOf(IonicView.prototype), 'constructor', this).call(this, config);
+        }
+
+        _inherits(IonicView, _View);
+
+        return IonicView;
+      })(View);
+
+      _export('IonicView', IonicView);
+
+      IonicDirective = (function (_Directive) {
+        function IonicDirective(ComponentType) {
+          _classCallCheck(this, IonicDirective);
+
+          _get(Object.getPrototypeOf(IonicDirective.prototype), 'constructor', this).call(this, appendModeConfig(ComponentType));
+        }
+
+        _inherits(IonicDirective, _Directive);
+
+        return IonicDirective;
+      })(Directive);
+
+      _export('IonicDirective', IonicDirective);
+
+      IonicComponent = (function (_Component) {
+        function IonicComponent(ComponentType) {
+          _classCallCheck(this, IonicComponent);
+
+          _get(Object.getPrototypeOf(IonicComponent.prototype), 'constructor', this).call(this, appendModeConfig(ComponentType));
+        }
+
+        _inherits(IonicComponent, _Component);
+
+        return IonicComponent;
+      })(Component);
+
+      _export('IonicComponent', IonicComponent);
+
+      platformMode = null;
+    }
+  };
+});
 System.register('ionic/config/component', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/render/api', 'ionic/util', 'ionic/platform/platform', '../components/app/app'], function (_export) {
   'use strict';
 
   var Component, Directive, DirectiveMetadata, util, Platform, GlobalIonicConfig, IonicDirective, IonicComponent, platformMode;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _slicedToArray(arr, i) { if (Array.isArray(arr)) { return arr; } else if (Symbol.iterator in Object(arr)) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i['return']) _i['return'](); } finally { if (_d) throw _e; } } return _arr; } else { throw new TypeError('Invalid attempt to destructure non-iterable instance'); } }
 
@@ -1121,7 +1323,7 @@ System.register('ionic/config/component', ['angular2/src/core/annotations_impl/a
 System.register('ionic/config/config', ['../util/util'], function (_export) {
   'use strict';
 
-  var isString, isObject, isDefined, extend, IonicConfig;
+  var isObject, isDefined, isFunction, extend, IonicConfig, globalConfig;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -1129,9 +1331,9 @@ System.register('ionic/config/config', ['../util/util'], function (_export) {
 
   return {
     setters: [function (_utilUtil) {
-      isString = _utilUtil.isString;
       isObject = _utilUtil.isObject;
       isDefined = _utilUtil.isDefined;
+      isFunction = _utilUtil.isFunction;
       extend = _utilUtil.extend;
     }],
     execute: function () {
@@ -1139,7 +1341,10 @@ System.register('ionic/config/config', ['../util/util'], function (_export) {
         function IonicConfig(settings) {
           _classCallCheck(this, IonicConfig);
 
-          this.setting(settings || {});
+          this._settings = { platform: 'ios' };
+          if (settings) {
+            extend(this._settings, settings);
+          }
         }
 
         _createClass(IonicConfig, [{
@@ -1175,6 +1380,9 @@ System.register('ionic/config/config', ['../util/util'], function (_export) {
                     }
                   }
                 }
+                if (isFunction(s[arg0])) {
+                  return s[arg0]();
+                }
                 return s[arg0];
               case 2:
                 if (isObject(arg1)) {
@@ -1197,12 +1405,22 @@ System.register('ionic/config/config', ['../util/util'], function (_export) {
             this._platforms = platform.platforms();
             this._settings.platforms = extend(platform.settings(), this._settings.platforms || {});
           }
+        }], [{
+          key: 'global',
+          set: function (config) {
+            globalConfig = config;
+          },
+          get: function () {
+            return globalConfig;
+          }
         }]);
 
         return IonicConfig;
       })();
 
       _export('IonicConfig', IonicConfig);
+
+      globalConfig = null;
     }
   };
 });
@@ -1211,7 +1429,7 @@ System.register('ionic/config/ionic-view', ['angular2/angular2', 'angular2/src/c
 
   var coreDirectives, View, Aside, Content, Refresher, Slides, Slide, SlidePager, Tabs, Tab, List, Item, Icon, Checkbox, Switch, Label, Input, Segment, SegmentButton, SegmentControlValueAccessor, RadioGroup, RadioButton, SearchBar, Nav, NavbarTemplate, Navbar, NavPush, NavPop, IonicView;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -1269,6 +1487,114 @@ System.register('ionic/config/ionic-view', ['angular2/angular2', 'angular2/src/c
     }
   };
 });
+System.register('ionic/engine/engine', ['ionic/util'], function (_export) {
+  'use strict';
+
+  var util, registry, defaultEngine, activeEngine, EngineController, Engine;
+
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  return {
+    setters: [function (_ionicUtil) {
+      util = _ionicUtil;
+    }],
+    execute: function () {
+      registry = {};
+      defaultEngine = undefined;
+      activeEngine = undefined;
+
+      EngineController = (function () {
+        function EngineController() {
+          var _this = this;
+
+          _classCallCheck(this, EngineController);
+
+          var self = this;
+          var proxyMethods = 'ready fullScreen showStatusBar exitApp'.split(' ');
+
+          var _loop = function (x) {
+            _this[proxyMethods[x]] = function () {
+              return self.proxy(proxyMethods[x], arguments);
+            };
+          };
+
+          for (var x = 0; x < proxyMethods.length; x++) {
+            _loop(x);
+          }
+        }
+
+        _createClass(EngineController, [{
+          key: 'proxy',
+          value: function proxy(target, args) {
+            var eng = this.get();
+            if (eng && eng[target]) {
+              return eng[target].apply(this, args);
+            }
+            return new Promise(function (resolve) {}, function (reject) {
+              reject();
+            });
+          }
+        }, {
+          key: 'is',
+          value: function is(name) {
+            return this.name === name;
+          }
+        }, {
+          key: 'getName',
+          value: function getName() {
+            return this.get().name;
+          }
+        }, {
+          key: 'get',
+          value: function get() {
+            if (util.isUndefined(activeEngine)) {
+              this.set(this.detect());
+            }
+            return activeEngine || defaultEngine;
+          }
+        }, {
+          key: 'set',
+          value: function set(engine) {
+            activeEngine = engine;
+          }
+        }, {
+          key: 'setDefault',
+          value: function setDefault(engine) {
+            defaultEngine = engine;
+          }
+        }, {
+          key: 'register',
+          value: function register(engine) {
+            registry[engine.name] = engine;
+          }
+        }, {
+          key: 'detect',
+          value: function detect() {
+            for (var _name in registry) {
+              if (registry[_name].isMatch()) {
+                return registry[_name];
+              }
+            }
+            return null;
+          }
+        }]);
+
+        return EngineController;
+      })();
+
+      Engine = new EngineController();
+
+      _export('Engine', Engine);
+
+      Engine.setDefault({
+        name: 'default',
+        ready: util.dom.windowLoad
+      });
+    }
+  };
+});
 System.register('ionic/gestures/drag-gesture', ['ionic/gestures/gesture', 'ionic/util'], function (_export) {
   'use strict';
 
@@ -1276,7 +1602,7 @@ System.register('ionic/gestures/drag-gesture', ['ionic/gestures/gesture', 'ionic
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -2787,7 +3113,7 @@ System.register('ionic/gestures/slide-edge-gesture', ['ionic/gestures/slide-gest
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -2871,7 +3197,7 @@ System.register('ionic/gestures/slide-gesture', ['ionic/gestures/drag-gesture', 
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -2975,10 +3301,10 @@ System.register('ionic/gestures/slide-gesture', ['ionic/gestures/drag-gesture', 
     }
   };
 });
-System.register('ionic/engine/engine', ['ionic/util'], function (_export) {
+System.register('ionic/net/http', ['ionic/util'], function (_export) {
   'use strict';
 
-  var util, registry, defaultEngine, activeEngine, EngineController, Engine;
+  var util, Http;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -2989,124 +3315,258 @@ System.register('ionic/engine/engine', ['ionic/util'], function (_export) {
       util = _ionicUtil;
     }],
     execute: function () {
-      registry = {};
-      defaultEngine = undefined;
-      activeEngine = undefined;
-
-      EngineController = (function () {
-        function EngineController() {
-          var _this = this;
-
-          _classCallCheck(this, EngineController);
-
-          var self = this;
-          var proxyMethods = 'ready fullScreen showStatusBar exitApp'.split(' ');
-
-          var _loop = function (x) {
-            _this[proxyMethods[x]] = function () {
-              return self.proxy(proxyMethods[x], arguments);
-            };
-          };
-
-          for (var x = 0; x < proxyMethods.length; x++) {
-            _loop(x);
-          }
+      Http = (function () {
+        function Http() {
+          _classCallCheck(this, Http);
         }
 
-        _createClass(EngineController, [{
-          key: 'proxy',
-          value: function proxy(target, args) {
-            var eng = this.get();
-            if (eng && eng[target]) {
-              return eng[target].apply(this, args);
+        _createClass(Http, null, [{
+          key: 'fetch',
+          value: (function (_fetch) {
+            function fetch(_x, _x2) {
+              return _fetch.apply(this, arguments);
             }
-            return new Promise(function (resolve) {}, function (reject) {
-              reject();
+
+            fetch.toString = function () {
+              return _fetch.toString();
+            };
+
+            return fetch;
+          })(function (url, options) {
+            return fetch(url, options).then(function (response) {
+              if (response.status === 200 || response.status === 0) {
+                if (response.headers.get('Content-Type') === 'application/json') {
+                  return response.json();
+                }
+                return response.text();
+              } else {
+                return Promise.reject(response, new Error(response.statusText));
+              }
+            })['catch'](function (err) {
+              return Promise.reject(err);
             });
-          }
+          })
         }, {
-          key: 'is',
-          value: function is(name) {
-            return this.name === name;
-          }
-        }, {
-          key: 'getName',
-          value: function getName() {
-            return this.get().name;
+          key: '_method',
+          value: function _method(method, url, data, options, sendsJson) {
+            options = util.defaults(options, {
+              method: method,
+              headers: { 'Accept': 'application/json,text/plain,*/*' },
+              body: typeof data === 'string' ? data : JSON.stringify(data)
+            });
+            if (sendsJson) {
+              options.headers['Content-Type'] = 'application/json';
+            }
+            return Http.fetch(url, options);
           }
         }, {
           key: 'get',
-          value: function get() {
-            if (util.isUndefined(activeEngine)) {
-              this.set(this.detect());
-            }
-            return activeEngine || defaultEngine;
+          value: function get(url) {
+            var options = arguments[1] === undefined ? {} : arguments[1];
+
+            return Http._method('get', url, {}, options);
           }
         }, {
-          key: 'set',
-          value: function set(engine) {
-            activeEngine = engine;
+          key: 'post',
+          value: function post(url) {
+            var data = arguments[1] === undefined ? {} : arguments[1];
+            var options = arguments[2] === undefined ? {} : arguments[2];
+
+            return Http._method('post', url, data, options, true);
           }
         }, {
-          key: 'setDefault',
-          value: function setDefault(engine) {
-            defaultEngine = engine;
+          key: 'put',
+          value: function put(url) {
+            var data = arguments[1] === undefined ? {} : arguments[1];
+            var options = arguments[2] === undefined ? {} : arguments[2];
+
+            return Http._method('put', url, data, options, true);
           }
         }, {
-          key: 'register',
-          value: function register(engine) {
-            registry[engine.name] = engine;
+          key: 'delete',
+          value: function _delete(url) {
+            var data = arguments[1] === undefined ? {} : arguments[1];
+            var options = arguments[2] === undefined ? {} : arguments[2];
+
+            return Http._method('delete', url, data, options, true);
           }
         }, {
-          key: 'detect',
-          value: function detect() {
-            for (var _name in registry) {
-              if (registry[_name].isMatch()) {
-                return registry[_name];
-              }
-            }
-            return null;
+          key: 'patch',
+          value: function patch(url) {
+            var data = arguments[1] === undefined ? {} : arguments[1];
+            var options = arguments[2] === undefined ? {} : arguments[2];
+
+            return Http._method('patch', url, data, options, true);
           }
         }]);
 
-        return EngineController;
+        return Http;
       })();
 
-      Engine = new EngineController();
-
-      _export('Engine', Engine);
-
-      Engine.setDefault({
-        name: 'default',
-        ready: util.dom.windowLoad
-      });
+      _export('Http', Http);
     }
   };
 });
-System.register('ionic/platform/platform', ['../util/util'], function (_export) {
+System.register('ionic/platform/platform', ['../util/util', '../util/dom'], function (_export) {
   'use strict';
 
-  var util, PlatformCtrl, PlatformNode, Platform;
+  var util, dom, PlatformCtrl, PlatformNode, Platform;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
+  function matchPlatform(platformName, platform) {
+    var platformNode = new PlatformNode(platformName);
+    var tmpPlatform = platformNode.getRoot(platform, 0);
+    if (tmpPlatform) {
+      tmpPlatform.depth = 0;
+      var childPlatform = tmpPlatform.child();
+      while (childPlatform) {
+        tmpPlatform.depth++;
+        childPlatform = childPlatform.child();
+      }
+    }
+    return tmpPlatform;
+  }
+  function insertSuperset(platformNode) {
+    var supersetPlaformName = platformNode.superset();
+    if (supersetPlaformName) {
+      var supersetPlatform = new PlatformNode(supersetPlaformName);
+      supersetPlatform.parent(platformNode.parent());
+      supersetPlatform.child(platformNode);
+      if (supersetPlatform.parent()) {
+        supersetPlatform.parent().child(supersetPlatform);
+      }
+      platformNode.parent(supersetPlatform);
+    }
+  }
   return {
     setters: [function (_utilUtil) {
       util = _utilUtil;
+    }, function (_utilDom) {
+      dom = _utilDom;
     }],
     execute: function () {
       PlatformCtrl = (function () {
         function PlatformCtrl() {
+          var _this = this;
+
           _classCallCheck(this, PlatformCtrl);
 
           this._settings = {};
           this._platforms = [];
+          this._versions = {};
           this._registry = {};
+          this._default = null;
+          this._readyPromise = new Promise(function (res) {
+            _this._readyResolve = res;
+          });
         }
 
         _createClass(PlatformCtrl, [{
+          key: 'is',
+          value: function is(platformName) {
+            return this._platforms.indexOf(platformName) > -1;
+          }
+        }, {
+          key: 'platforms',
+          value: function platforms() {
+            return this._platforms;
+          }
+        }, {
+          key: 'versions',
+          value: function versions(platformName) {
+            if (arguments.length) {
+              return this._versions[platformName];
+            }
+            return this._versions;
+          }
+        }, {
+          key: 'ready',
+          value: function ready() {
+            return this._readyPromise;
+          }
+        }, {
+          key: 'prepareReady',
+          value: function prepareReady(config) {
+            var self = this;
+            function resolve() {
+              self._readyResolve(config);
+            }
+            if (this._engineReady) {
+              this._engineReady(resolve);
+            } else {
+              dom.ready(resolve);
+            }
+          }
+        }, {
+          key: 'domReady',
+          value: function domReady() {
+            return dom.ready.apply(this, arguments);
+          }
+        }, {
+          key: 'windowLoad',
+          value: function windowLoad() {
+            return dom.windowLoad.apply(this, arguments);
+          }
+        }, {
+          key: 'on',
+          value: function on() {}
+        }, {
+          key: 'onHardwareBackButton',
+          value: function onHardwareBackButton() {}
+        }, {
+          key: 'registerBackButtonAction',
+          value: function registerBackButtonAction() {}
+        }, {
+          key: 'exitApp',
+          value: function exitApp() {}
+        }, {
+          key: 'fullScreen',
+          value: function fullScreen() {}
+        }, {
+          key: 'showStatusBar',
+          value: function showStatusBar() {}
+        }, {
+          key: 'url',
+          value: function url(val) {
+            if (arguments.length) {
+              this._url = val;
+              this._qs = util.getQuerystring(val);
+            }
+            return this._url;
+          }
+        }, {
+          key: 'query',
+          value: function query(key) {
+            return (this._qs || {})[key];
+          }
+        }, {
+          key: 'userAgent',
+          value: function userAgent(val) {
+            if (arguments.length) {
+              this._ua = val;
+            }
+            return this._ua;
+          }
+        }, {
+          key: 'width',
+          value: function width(val) {
+            if (arguments.length) {
+              this._w = val;
+            }
+            return this._w || 0;
+          }
+        }, {
+          key: 'height',
+          value: function height(val) {
+            if (arguments.length) {
+              this._h = val;
+            }
+            return this._h || 0;
+          }
+        }, {
           key: 'register',
           value: function register(platformConfig) {
             this._registry[platformConfig.name] = platformConfig;
@@ -3117,41 +3577,59 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
             return this._registry;
           }
         }, {
-          key: 'load',
-          value: function load(app) {
-            var rootPlatformNode = null;
-            var engineNode = null;
-            this._settings = {};
-            this._platforms = [];
-            function matchPlatform(platformConfig) {
-              var platformNode = new PlatformNode();
-              platformNode.config(platformConfig);
-              platformNode.isEngine = platformConfig.isEngine;
-              var tmpPlatform = platformNode.getRoot(app, 0);
-              if (tmpPlatform) {
-                tmpPlatform.depth = 0;
-                var childPlatform = tmpPlatform.child();
-                while (childPlatform) {
-                  tmpPlatform.depth++;
-                  childPlatform = childPlatform.child();
+          key: 'setDefault',
+          value: function setDefault(platformName) {
+            this._default = platformName;
+          }
+        }, {
+          key: 'testQuery',
+          value: function testQuery(queryValue) {
+            var val = this.query('ionicplatform');
+            if (val) {
+              var valueSplit = val.toLowerCase().split(';');
+              for (var i = 0; i < valueSplit.length; i++) {
+                if (valueSplit[i] == queryValue) {
+                  return true;
                 }
               }
-              return tmpPlatform;
             }
-            function insertSuperset(platformNode) {
-              var supersetPlaformName = platformNode.superset();
-              if (supersetPlaformName) {
-                var supersetPlatform = new PlatformNode();
-                supersetPlatform.load(supersetPlaformName);
-                supersetPlatform.parent(platformNode.parent());
-                supersetPlatform.child(platformNode);
-                supersetPlatform.parent().child(supersetPlatform);
-                platformNode.parent(supersetPlatform);
-              }
+            return false;
+          }
+        }, {
+          key: 'testUserAgent',
+          value: function testUserAgent(userAgentExpression) {
+            var rx = new RegExp(userAgentExpression, 'i');
+            return rx.test(this._ua);
+          }
+        }, {
+          key: 'matchUserAgentVersion',
+          value: function matchUserAgentVersion(userAgentExpression) {
+            var val = this._ua.match(userAgentExpression);
+            if (val) {
+              return {
+                major: val[1],
+                minor: val[2]
+              };
             }
+          }
+        }, {
+          key: 'isPlatform',
+          value: function isPlatform(queryValue, userAgentExpression) {
+            if (!userAgentExpression) {
+              userAgentExpression = queryValue;
+            }
+            return this.testQuery(queryValue) || this.testUserAgent(userAgentExpression);
+          }
+        }, {
+          key: 'load',
+          value: function load(config) {
+            var rootPlatformNode = null;
+            var engineNode = null;
+            var self = this;
+            this.platformOverride = config.setting('platform');
             var tmpPlatform = null;
             for (var platformName in this._registry) {
-              tmpPlatform = matchPlatform(this._registry[platformName]);
+              tmpPlatform = matchPlatform(platformName, this);
               if (tmpPlatform) {
                 if (tmpPlatform.isEngine) {
                   engineNode = tmpPlatform;
@@ -3160,30 +3638,37 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
                 }
               }
             }
+            if (!rootPlatformNode) {
+              rootPlatformNode = new PlatformNode(this._default);
+            }
             if (rootPlatformNode) {
               if (engineNode) {
                 engineNode.child(rootPlatformNode);
                 rootPlatformNode.parent(engineNode);
                 rootPlatformNode = engineNode;
+                var engineMethods = engineNode.methods();
+                engineMethods._engineReady = engineMethods.ready;
+                delete engineMethods.ready;
+                util.extend(this, engineMethods);
               }
               var platformNode = rootPlatformNode;
               while (platformNode) {
                 insertSuperset(platformNode);
                 platformNode = platformNode.child();
               }
+              platformNode = rootPlatformNode.parent();
+              while (platformNode) {
+                rootPlatformNode = platformNode;
+                platformNode = platformNode.parent();
+              }
               platformNode = rootPlatformNode;
               while (platformNode) {
                 this._platforms.push(platformNode.name());
                 this._settings[platformNode.name()] = util.extend({}, platformNode.settings());
+                this._versions[platformNode.name()] = platformNode.version(this);
                 platformNode = platformNode.child();
               }
             }
-            return this;
-          }
-        }, {
-          key: 'is',
-          value: function is(platformName) {
-            return this._platforms.indexOf(platformName) > -1;
           }
         }, {
           key: 'settings',
@@ -3192,20 +3677,6 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
               this._settings = val;
             }
             return this._settings;
-          }
-        }, {
-          key: 'run',
-          value: function run() {
-            var config = null;
-            for (var i = 0; i < this._platforms.length; i++) {
-              config = Platform.get(this._platforms[i]);
-              config.run && config.run();
-            }
-          }
-        }, {
-          key: 'platforms',
-          value: function platforms() {
-            return this._platforms;
           }
         }, {
           key: 'get',
@@ -3220,44 +3691,32 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
       _export('PlatformCtrl', PlatformCtrl);
 
       PlatformNode = (function () {
-        function PlatformNode() {
+        function PlatformNode(platformName) {
           _classCallCheck(this, PlatformNode);
+
+          this.c = Platform.get(platformName);
+          this.isEngine = this.c.isEngine;
         }
 
         _createClass(PlatformNode, [{
-          key: 'load',
-          value: function load(platformName) {
-            this._c = Platform.get(platformName);
-          }
-        }, {
-          key: 'config',
-          value: function config(val) {
-            this._c = val;
+          key: 'name',
+          value: function name() {
+            return this.c.name;
           }
         }, {
           key: 'settings',
           value: function settings() {
-            return this._c.settings || {};
-          }
-        }, {
-          key: 'name',
-          value: function name() {
-            return this._c.name;
+            return this.c.settings || {};
           }
         }, {
           key: 'superset',
           value: function superset() {
-            return this._c.superset;
+            return this.c.superset;
           }
         }, {
-          key: 'runAll',
-          value: function runAll() {
-            var platform = this;
-            while (platform) {
-              platform.run();
-              platform = platform.child();
-            }
-            return false;
+          key: 'methods',
+          value: function methods() {
+            return this.c.methods || {};
           }
         }, {
           key: 'parent',
@@ -3277,20 +3736,38 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
           }
         }, {
           key: 'isMatch',
-          value: function isMatch(app) {
-            if (typeof this._c._isMatched !== 'boolean') {
-              if (!this._c.isMatch) {
-                this._c._isMatched = true;
+          value: function isMatch(p) {
+            if (typeof this.c.isMatched !== 'boolean') {
+              if (p.platformOverride) {
+                this.c.isMatched = p.platformOverride === this.c.name;
+              } else if (!this.c.isMatch) {
+                this.c.isMatched = false;
               } else {
-                this._c._isMatched = this._c.isMatch(app);
+                this.c.isMatched = this.c.isMatch(p);
               }
             }
-            return this._c._isMatched;
+            return this.c.isMatched;
+          }
+        }, {
+          key: 'version',
+          value: function version(p) {
+            if (this.c.versionParser) {
+              var v = this.c.versionParser(p);
+              if (v) {
+                var str = v.major + '.' + v.minor;
+                return {
+                  str: str,
+                  num: parseFloat(str),
+                  major: parseInt(v.major, 10),
+                  minor: parseInt(v.minor, 10)
+                };
+              }
+            }
           }
         }, {
           key: 'getRoot',
-          value: function getRoot(app) {
-            if (this.isMatch(app)) {
+          value: function getRoot(p) {
+            if (this.isMatch(p)) {
               var parents = this.getSubsetParents(this.name());
               if (!parents.length) {
                 return this;
@@ -3298,10 +3775,9 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
               var platform = null;
               var rootPlatform = null;
               for (var i = 0; i < parents.length; i++) {
-                platform = new PlatformNode();
-                platform.load(parents[i]);
+                platform = new PlatformNode(parents[i]);
                 platform.child(this);
-                rootPlatform = platform.getRoot(app);
+                rootPlatform = platform.getRoot(p);
                 if (rootPlatform) {
                   this.parent(platform);
                   return rootPlatform;
@@ -3335,36 +3811,34 @@ System.register('ionic/platform/platform', ['../util/util'], function (_export) 
     }
   };
 });
-System.register('ionic/platform/registry', ['./platform', '../util/tap'], function (_export) {
+System.register('ionic/platform/registry', ['./platform'], function (_export) {
   'use strict';
 
-  var Platform, Tap;
+  var Platform;
   return {
     setters: [function (_platform) {
       Platform = _platform.Platform;
-    }, function (_utilTap) {
-      Tap = _utilTap.Tap;
     }],
     execute: function () {
       Platform.register({
         name: 'core',
-        subsets: ['android', 'ios', 'windowsphone'],
         settings: { mode: 'core' }
       });
+      Platform.setDefault('core');
       Platform.register({ name: 'mobile' });
       Platform.register({
         name: 'phablet',
-        isMatch: function isMatch(app) {
-          var smallest = Math.min(app.width(), app.height());
-          var largest = Math.max(app.width(), app.height());
+        isMatch: function isMatch(p) {
+          var smallest = Math.min(p.width(), p.height());
+          var largest = Math.max(p.width(), p.height());
           return smallest > 390 && smallest < 520 && (largest > 620 && largest < 800);
         }
       });
       Platform.register({
         name: 'tablet',
-        isMatch: function isMatch(app) {
-          var smallest = Math.min(app.width(), app.height());
-          var largest = Math.max(app.width(), app.height());
+        isMatch: function isMatch(p) {
+          var smallest = Math.min(p.width(), p.height());
+          var largest = Math.max(p.width(), p.height());
           return smallest > 460 && smallest < 820 && (largest > 780 && largest < 1400);
         }
       });
@@ -3373,37 +3847,42 @@ System.register('ionic/platform/registry', ['./platform', '../util/tap'], functi
         superset: 'mobile',
         subsets: ['phablet', 'tablet'],
         settings: { mode: 'md' },
-        isMatch: function isMatch(app) {
-          return app.isPlatform('android');
+        isMatch: function isMatch(p) {
+          var re = 'android| silk';
+          return p.isPlatform('android', re);
+        },
+        versionParser: function versionParser(p) {
+          return p.matchUserAgentVersion(/Android (\d+).(\d+)?/);
         }
       });
       Platform.register({
         name: 'ios',
         superset: 'mobile',
         subsets: ['ipad', 'iphone'],
-        settings: { mode: 'ios' },
-        isMatch: function isMatch(app) {
-          return true;
-          return app.isPlatform('ios', 'iphone|ipad|ipod');
+        settings: {
+          mode: 'ios',
+          viewTransition: 'ios',
+          tapPolyfill: true
         },
-        versionParser: function versionParser(app) {
-          var val = app.matchUserAgent('OS (d+)_(d+)?');
-          console.log(val);
+        isMatch: function isMatch(p) {
+          return p.isPlatform('ios', 'iphone|ipad|ipod');
         },
-        run: function run() {}
+        versionParser: function versionParser(p) {
+          return p.matchUserAgentVersion(/OS (\d+)_(\d+)?/);
+        }
       });
       Platform.register({
         name: 'ipad',
         superset: 'tablet',
-        isMatch: function isMatch(app) {
-          return app.isPlatform('ipad');
+        isMatch: function isMatch(p) {
+          return p.isPlatform('ipad');
         }
       });
       Platform.register({
         name: 'iphone',
         subsets: ['phablet'],
-        isMatch: function isMatch(app) {
-          return app.isPlatform('iphone');
+        isMatch: function isMatch(p) {
+          return p.isPlatform('iphone');
         }
       });
       Platform.register({
@@ -3411,46 +3890,214 @@ System.register('ionic/platform/registry', ['./platform', '../util/tap'], functi
         superset: 'mobile',
         subsets: ['phablet', 'tablet'],
         settings: { mode: 'wp' },
-        isMatch: function isMatch(app) {
-          return app.isPlatform('windowsphone', 'windows phone');
+        isMatch: function isMatch(p) {
+          return p.isPlatform('windowsphone', 'windows phone');
+        },
+        versionParser: function versionParser(p) {
+          return p.matchUserAgentVersion(/Windows Phone (\d+).(\d+)?/);
         }
       });
       Platform.register({
         name: 'cordova',
         isEngine: true,
-        methods: { onReady: function onReady() {
-            return new Promise(function (resolve) {
-              setTimeout(function () {
-                resolve();
-              }, 1000);
+        methods: { ready: function ready(resolve) {
+            Platform.windowLoad(function () {
+              document.addEventListener('deviceready', resolve);
             });
           } },
-        isMatch: function isMatch(app) {
-          return true;
+        isMatch: function isMatch(p) {
           return !!(window.cordova || window.PhoneGap || window.phonegap);
         }
       });
     }
   };
 });
-System.register('ionic/routing/router', [], function (_export) {
+System.register('ionic/routing/router', ['../util/util'], function (_export) {
   'use strict';
 
-  var RouterController, Route, Routable, Router;
+  var util, IonicRouter, Routable, Route, RouterController, Route_OLD, Router_OLD;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
   return {
-    setters: [],
+    setters: [function (_utilUtil) {
+      util = _utilUtil;
+    }],
     execute: function () {
+      IonicRouter = (function () {
+        function IonicRouter(config) {
+          _classCallCheck(this, IonicRouter);
+
+          this._routes = [];
+          this._viewCtrls = [];
+          this.config(config);
+        }
+
+        _createClass(IonicRouter, [{
+          key: 'app',
+          value: function app(_app) {
+            this._app = _app;
+          }
+        }, {
+          key: 'config',
+          value: function config(_config) {
+            for (var routeName in _config) {
+              this.addRoute(routeName, _config[routeName]);
+            }
+          }
+        }, {
+          key: 'addRoute',
+          value: function addRoute(name, routeConfig) {
+            if (name && routeConfig && routeConfig.path) {
+              var route = new Route(name, routeConfig);
+              this._routes.push(route);
+            }
+          }
+        }, {
+          key: 'init',
+          value: function init() {
+            var rootViewCtrl = this.activeViewController();
+            if (rootViewCtrl) {
+              var matchedRoute = this.match() || this.otherwise();
+              this.push(rootViewCtrl, matchedRoute);
+            }
+          }
+        }, {
+          key: 'match',
+          value: function match() {
+            var path = this.getCurrentPath();
+            var route = null;
+            for (var i = 0, ii = this._routes.length; i < ii; i++) {
+              route = this._routes[i];
+              if (route.match(path)) {
+                return route;
+              }
+            }
+          }
+        }, {
+          key: 'otherwise',
+          value: function otherwise(val) {
+            if (arguments.length) {
+              this._otherwise = val;
+            } else {
+              var route = null;
+              for (var i = 0, ii = this._routes.length; i < ii; i++) {
+                route = this._routes[i];
+                if (route.name === this._otherwise) {
+                  return route;
+                }
+              }
+            }
+          }
+        }, {
+          key: 'push',
+          value: function push(viewCtrl, route) {
+            var self = this;
+            function run() {
+              self._app.zone().run(function () {
+                viewCtrl.push(route.cls).then(function () {
+                  self.updateState(route);
+                });
+              });
+            }
+            if (viewCtrl && route) {
+              if (route.cls) {
+                run();
+              } else if (route.module) {
+                System['import'](route.module).then(function (m) {
+                  if (m) {
+                    route.cls = m[route.name];
+                    run();
+                  }
+                });
+              }
+            }
+          }
+        }, {
+          key: 'stateChange',
+          value: function stateChange(activeView) {
+            console.log('stateChange', activeView);
+            var routeConfig = activeView.ComponentType.route;
+            var route = null;
+            for (var i = 0, ii = this._routes.length; i < ii; i++) {
+              route = this._routes[i];
+              if (route.path == routeConfig.path) {
+                return this.updateState(route);
+              }
+            }
+          }
+        }, {
+          key: 'updateState',
+          value: function updateState(route) {
+            console.log('updateState', route);
+            window.location.hash = route.path;
+          }
+        }, {
+          key: 'addViewController',
+          value: function addViewController(viewCtrl) {
+            this._viewCtrls.push(viewCtrl);
+          }
+        }, {
+          key: 'activeViewController',
+          value: function activeViewController() {
+            if (this._viewCtrls.length) {
+              return this._viewCtrls[this._viewCtrls.length - 1];
+            }
+            return null;
+          }
+        }, {
+          key: 'getCurrentPath',
+          value: function getCurrentPath() {
+            var hash = window.location.hash;
+            var path = hash.slice(1);
+            return path;
+          }
+        }]);
+
+        return IonicRouter;
+      })();
+
+      _export('IonicRouter', IonicRouter);
+
+      Routable = function Routable(cls, routeConfig) {
+        _classCallCheck(this, Routable);
+
+        cls.route = routeConfig;
+      };
+
+      _export('Routable', Routable);
+
+      Route = (function () {
+        function Route(name, routeConfig) {
+          _classCallCheck(this, Route);
+
+          this.name = name;
+          this.cls = null;
+          util.extend(this, routeConfig);
+        }
+
+        _createClass(Route, [{
+          key: 'match',
+          value: function match(path) {
+            if (this.path) {
+              if (this.path == path) {
+                return true;
+              }
+            }
+            return false;
+          }
+        }]);
+
+        return Route;
+      })();
+
       RouterController = (function () {
         function RouterController() {
           _classCallCheck(this, RouterController);
 
           this.routes = [];
-          console.log('Router controller built');
         }
 
         _createClass(RouterController, [{
@@ -3480,18 +4127,7 @@ System.register('ionic/routing/router', [], function (_export) {
           }
         }, {
           key: 'push',
-          value: function push(componentClass, params) {
-            var _this = this;
-
-            if (!this.rootNavController) {
-              console.error('Router: No root nav controller to push matching route.');
-              return;
-            }
-            console.log('Router pushing', componentClass, params);
-            setTimeout(function () {
-              _this.rootNavController.push(componentClass, params);
-            });
-          }
+          value: function push(componentClass, params) {}
         }, {
           key: 'run',
           value: function run() {
@@ -3599,15 +4235,15 @@ System.register('ionic/routing/router', [], function (_export) {
 
       _export('RouterController', RouterController);
 
-      Route = (function () {
-        function Route(url, handler) {
-          _classCallCheck(this, Route);
+      Route_OLD = (function () {
+        function Route_OLD(url, handler) {
+          _classCallCheck(this, Route_OLD);
 
           this.url = url;
           this.handler = handler;
         }
 
-        _createClass(Route, [{
+        _createClass(Route_OLD, [{
           key: 'match',
           value: function match(path) {
             var routeParams = {};
@@ -3647,51 +4283,14 @@ System.register('ionic/routing/router', [], function (_export) {
           }
         }]);
 
-        return Route;
+        return Route_OLD;
       })();
 
-      _export('Route', Route);
+      _export('Route_OLD', Route_OLD);
 
-      Routable = (function () {
-        function Routable(componentClass, routeInfo) {
-          var _this2 = this;
+      Router_OLD = new RouterController();
 
-          _classCallCheck(this, Routable);
-
-          this.componentClass = componentClass;
-          this.routeInfo = routeInfo;
-          Router.on(this.routeInfo.url, function (routeParams) {
-            console.log('Routable matched', routeParams, _this2.componentClass);
-            Router.push(_this2.componentClass, routeParams);
-          });
-          componentClass.router = this;
-        }
-
-        _createClass(Routable, [{
-          key: 'invoke',
-          value: function invoke(componentInstance) {
-            var _this3 = this;
-
-            this.componentInstance = componentInstance;
-            componentInstance._viewWillEnter.observer({ next: function next() {
-                Router.emit(_this3.routeInfo.url);
-              } });
-            return this;
-          }
-        }]);
-
-        return Routable;
-      })();
-
-      _export('Routable', Routable);
-
-      Router = new RouterController();
-
-      _export('Router', Router);
-
-      _export('Route', Route);
-
-      _export('Routable', Routable);
+      _export('Router_OLD', Router_OLD);
     }
   };
 });
@@ -3700,7 +4299,7 @@ System.register('ionic/transitions/ios-transition', ['./transition', '../animati
 
   var Transition, Animation, DURATION, EASING, OPACITY, TRANSLATEX, OFF_RIGHT, OFF_LEFT, CENTER, OFF_OPACITY, IOSTransition;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -3765,14 +4364,14 @@ System.register('ionic/transitions/ios-transition', ['./transition', '../animati
     }
   };
 });
-System.register('ionic/transitions/transition', ['../animations/animation'], function (_export) {
+System.register('ionic/transitions/transition', ['../animations/animation', '../config/config'], function (_export) {
   'use strict';
 
-  var Animation, SHOW_NAVBAR_CSS, SHOW_VIEW_CSS, SHOW_BACK_BUTTON, TransitionRegistry, Transition;
+  var Animation, IonicConfig, SHOW_NAVBAR_CSS, SHOW_VIEW_CSS, SHOW_BACK_BUTTON, TransitionRegistry, Transition;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x2, _x3, _x4) { var _again = true; _function: while (_again) { var object = _x2, property = _x3, receiver = _x4; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x2 = parent; _x3 = property; _x4 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -3781,6 +4380,8 @@ System.register('ionic/transitions/transition', ['../animations/animation'], fun
   return {
     setters: [function (_animationsAnimation) {
       Animation = _animationsAnimation.Animation;
+    }, function (_configConfig) {
+      IonicConfig = _configConfig.IonicConfig;
     }],
     execute: function () {
       SHOW_NAVBAR_CSS = 'show-navbar';
@@ -3845,7 +4446,7 @@ System.register('ionic/transitions/transition', ['../animations/animation'], fun
           value: function create(nav) {
             var opts = arguments[1] === undefined ? {} : arguments[1];
 
-            var name = opts.animation || 'ios';
+            var name = opts.animation || IonicConfig.global.setting('viewTransition');
             var TransitionClass = TransitionRegistry[name];
             if (!TransitionClass) {
               TransitionClass = Transition;
@@ -3912,7 +4513,7 @@ System.register('ionic/util/click-block', [], function (_export) {
 System.register('ionic/util/dom', ['angular2/src/facade/async'], function (_export) {
   'use strict';
 
-  var Promise, nativeRaf, nativeCancelRaf, raf, rafCancel, isSVG, CSS;
+  var Promise, nativeRaf, nativeCancelRaf, raf, rafCancel, CSS;
 
   _export('rafPromise', rafPromise);
 
@@ -3925,12 +4526,6 @@ System.register('ionic/util/dom', ['angular2/src/facade/async'], function (_expo
   _export('ready', ready);
 
   _export('windowLoad', windowLoad);
-
-  _export('hasAttribute', hasAttribute);
-
-  _export('addClass', addClass);
-
-  _export('getChildIndex', getChildIndex);
 
   function rafPromise() {
     return new Promise(function (resolve) {
@@ -3972,87 +4567,50 @@ System.register('ionic/util/dom', ['angular2/src/facade/async'], function (_expo
     });
   }
 
-  function ready() {
-    return new Promise(function (resolve) {
-      if (document.readyState === 'complete' || document.readyState === 'interactive') {
-        setTimeout(resolve);
-      } else {
-        (function () {
-          var completed = function completed() {
-            document.removeEventListener('DOMContentLoaded', completed, false);
-            window.removeEventListener('load', completed, false);
-            resolve();
-          };
-
-          document.addEventListener('DOMContentLoaded', completed, false);
-          window.addEventListener('load', completed, false);
-        })();
-      }
-    });
-  }
-
-  function windowLoad() {
-    return new Promise(function (resolve) {
-      if (document.readyState === 'complete') {
-        setTimeout(resolve);
-      } else {
-        (function () {
-          var completed = function completed() {
-            window.removeEventListener('load', completed, false);
-            resolve();
-          };
-
-          window.addEventListener('load', completed, false);
-        })();
-      }
-    });
-  }
-
-  function hasAttribute(el, attributeName) {
-    return el.hasAttribute(attributeName);
-  }
-
-  function addClass(el) {
-    for (var _len = arguments.length, classNames = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      classNames[_key - 1] = arguments[_key];
+  function ready(callback) {
+    var promise = null;
+    if (!callback) {
+      promise = new Promise(function (resolve) {
+        callback = resolve;
+      });
     }
+    if (document.readyState === 'complete' || document.readyState === 'interactive') {
+      callback();
+    } else {
+      (function () {
+        var completed = function () {
+          document.removeEventListener('DOMContentLoaded', completed, false);
+          window.removeEventListener('load', completed, false);
+          callback();
+        };
 
-    var _iteratorNormalCompletion = true;
-    var _didIteratorError = false;
-    var _iteratorError = undefined;
-
-    try {
-      for (var _iterator = classNames[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-        var c = _step.value;
-
-        el.classList.add(c);
-      }
-    } catch (err) {
-      _didIteratorError = true;
-      _iteratorError = err;
-    } finally {
-      try {
-        if (!_iteratorNormalCompletion && _iterator['return']) {
-          _iterator['return']();
-        }
-      } finally {
-        if (_didIteratorError) {
-          throw _iteratorError;
-        }
-      }
+        document.addEventListener('DOMContentLoaded', completed, false);
+        window.addEventListener('load', completed, false);
+      })();
     }
+    return promise;
   }
 
-  function getChildIndex(el) {
-    var child = undefined;
-    var parent = el.parentNode;
-    for (var i = 0, j = parent.children.length; i < j; i++) {
-      child = parent.children[i];
-      if (child === el) {
-        return i;
-      }
+  function windowLoad(callback) {
+    var promise = null;
+    if (!callback) {
+      promise = new Promise(function (resolve) {
+        callback = resolve;
+      });
     }
-    return -1;
+    if (document.readyState === 'complete') {
+      callback();
+    } else {
+      (function () {
+        var completed = function () {
+          window.removeEventListener('load', completed, false);
+          callback();
+        };
+
+        window.addEventListener('load', completed, false);
+      })();
+    }
+    return promise;
   }
 
   return {
@@ -4080,12 +4638,6 @@ System.register('ionic/util/dom', ['angular2/src/facade/async'], function (_expo
       };
 
       _export('rafCancel', rafCancel);
-
-      isSVG = function isSVG(val) {
-        return window.SVGElement && val instanceof window.SVGElement;
-      };
-
-      _export('isSVG', isSVG);
 
       CSS = {};
 
@@ -4135,18 +4687,6 @@ System.register('ionic/util/dom', ['angular2/src/facade/async'], function (_expo
         } });Object.defineProperty(cssPromise, 'parameters', { get: function get() {
           return [[Element], [], []];
         } });
-
-      Object.defineProperty(hasAttribute, 'parameters', { get: function get() {
-          return [[Element], []];
-        } });
-
-      Object.defineProperty(addClass, 'parameters', { get: function get() {
-          return [[Element], []];
-        } });
-
-      Object.defineProperty(getChildIndex, 'parameters', { get: function get() {
-          return [[Element]];
-        } });
     }
   };
 });
@@ -4188,7 +4728,7 @@ System.register('ionic/util/focus', ['./dom'], function (_export) {
     }
   };
 });
-System.register('ionic/util/tap', ['ionic/util', 'ionic/platform/platform'], function (_export) {
+System.register('ionic/util/tap', ['./dom', '../platform/platform'], function (_export) {
   'use strict';
 
   var dom, Platform, tapDoc, tapActiveEle, tapEnabledTouchEvents, tapMouseResetTimer, tapPointerMoved, tapPointerStart, tapTouchFocusedInput, tapLastTouchTarget, tapTouchMoveListener, TAP_RELEASE_TOLERANCE, TAP_RELEASE_BUTTON_TOLERANCE, tapEventListeners, Tap;
@@ -4266,7 +4806,7 @@ System.register('ionic/util/tap', ['ionic/util', 'ionic/platform/platform'], fun
     tapEnableTouchEvents();
     tapPointerStart = Tap.pointerCoord(e);
     tapEventListener(tapTouchMoveListener);
-    if (Platform.is('ios') && Tap.isLabelWithTextInput(e.target)) {
+    if (Tap.isLabelWithTextInput(e.target)) {
       var textInput = tapTargetElement(tapContainingElement(e.target));
       if (textInput !== tapActiveEle) {
         e.preventDefault();
@@ -4387,10 +4927,10 @@ System.register('ionic/util/tap', ['ionic/util', 'ionic/platform/platform'], fun
     return ele;
   }
   return {
-    setters: [function (_ionicUtil) {
-      dom = _ionicUtil.dom;
-    }, function (_ionicPlatformPlatform) {
-      Platform = _ionicPlatformPlatform.Platform;
+    setters: [function (_dom) {
+      dom = _dom.dom;
+    }, function (_platformPlatform) {
+      Platform = _platformPlatform.Platform;
     }],
     execute: function () {
       tapTouchMoveListener = 'touchmove';
@@ -4405,43 +4945,25 @@ System.register('ionic/util/tap', ['ionic/util', 'ionic/platform/platform'], fun
         'touchend': tapTouchEnd,
         'touchcancel': tapTouchCancel,
         'touchmove': tapTouchMove,
-        'pointerdown': tapTouchStart,
-        'pointerup': tapTouchEnd,
-        'pointercancel': tapTouchCancel,
-        'pointermove': tapTouchMove,
-        'MSPointerDown': tapTouchStart,
-        'MSPointerUp': tapTouchEnd,
-        'MSPointerCancel': tapTouchCancel,
-        'MSPointerMove': tapTouchMove,
         'focusin': tapFocusIn,
         'focusout': tapFocusOut
       };
+
+      Platform.ready().then(function (config) {
+        if (config.setting('tapPolyfill')) {
+          console.log('Tap.register, tapPolyfill');
+          Tap.register(document);
+        }
+      });
       Tap = {
-        run: function run() {
-          dom.ready().then(function () {
-            Tap.register(document);
-          });
-        },
         register: function register(ele) {
           tapDoc = ele;
           tapEventListener('click', true, true);
           tapEventListener('mouseup');
           tapEventListener('mousedown');
-          if (window.navigator.pointerEnabled) {
-            tapEventListener('pointerdown');
-            tapEventListener('pointerup');
-            tapEventListener('pointcancel');
-            tapTouchMoveListener = 'pointermove';
-          } else if (window.navigator.msPointerEnabled) {
-            tapEventListener('MSPointerDown');
-            tapEventListener('MSPointerUp');
-            tapEventListener('MSPointerCancel');
-            tapTouchMoveListener = 'MSPointerMove';
-          } else {
-            tapEventListener('touchstart');
-            tapEventListener('touchend');
-            tapEventListener('touchcancel');
-          }
+          tapEventListener('touchstart');
+          tapEventListener('touchend');
+          tapEventListener('touchcancel');
           tapEventListener('focusin');
           tapEventListener('focusout');
           return function () {
@@ -4465,7 +4987,7 @@ System.register('ionic/util/tap', ['ionic/util', 'ionic/platform/platform'], fun
           return !!ele && (ele.tagName == 'INPUT' && /^(date|time|datetime-local|month|week)$/i.test(ele.type));
         },
         isKeyboardElement: function isKeyboardElement(ele) {
-          if (!Platform.is('ios') || Platform.isDevice('ipad')) {
+          if (Platform.isDevice('ipad')) {
             return Tap.isTextInput(ele) && !Tap.isDateInput(ele);
           } else {
             return Tap.isTextInput(ele) || !!ele && ele.tagName == 'SELECT';
@@ -4795,14 +5317,14 @@ System.register('ionic/util/util', [], function (_export) {
     }
   };
 });
-System.register('ionic/components/action-menu/action-menu', ['angular2/angular2', 'angular2/src/core/annotations_impl/view', 'angular2/di', 'ionic/ionic', '../app/app', 'ionic/util', '../overlay/overlay', '../../config/component', 'ionic/animations/animation'], function (_export) {
+System.register('ionic/components/action-menu/action-menu', ['angular2/angular2', 'angular2/src/core/annotations_impl/view', 'angular2/di', 'ionic/ionic', '../app/app', 'ionic/util', '../overlay/overlay', '../../config/annotations', 'ionic/animations/animation'], function (_export) {
   'use strict';
 
   var NgIf, NgFor, View, Injectable, Icon, IonicApp, util, Overlay, IonicComponent, Animation, ActionMenu, OVERLAY_TYPE, ActionMenuAnimation, ActionMenuSlideIn, ActionMenuSlideOut;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -4824,8 +5346,8 @@ System.register('ionic/components/action-menu/action-menu', ['angular2/angular2'
       util = _ionicUtil;
     }, function (_overlayOverlay) {
       Overlay = _overlayOverlay.Overlay;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
     }, function (_ionicAnimationsAnimation) {
       Animation = _ionicAnimationsAnimation.Animation;
     }],
@@ -4880,7 +5402,7 @@ System.register('ionic/components/action-menu/action-menu', ['angular2/angular2'
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-action-menu',
               host: { '[style.z-index]': 'zIndex' }
@@ -4962,7 +5484,6 @@ System.register("ionic/components/alert/alert", [], function (_export) {
     execute: function () {}
   };
 });
-// import {NgElement, Component, View, Parent} from 'angular2/angular2'
 
 /*
 @Component({
@@ -4985,23 +5506,12 @@ System.register("ionic/components/alert/alert", [], function (_export) {
       </div>
     </div>`
 })
-export class Alert {
-  constructor(
-    @NgElement() ngElement:NgElement
-  ) {
-    this.domElement = ngElement.domElement
-    this.config = Alert.config.invoke(this)
-  }
-
-  static open(opts) {
-    let alert = new Alert();
-  }
-}
+export class Alert {}
 */
-System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/core/compiler/view_manager', 'angular2/src/core/compiler/element_ref', 'angular2/di', 'angular2/src/core/compiler/view_container_ref', '../../config/config', '../../platform/platform', '../../registry', '../../util/util'], function (_export) {
+System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/core/compiler/view_manager', 'angular2/src/core/compiler/element_ref', 'angular2/di', 'angular2/src/core/compiler/view_container_ref', 'angular2/src/core/zone/ng_zone', '../../routing/router', '../../config/config', '../../platform/platform', '../../registry', '../../util/util'], function (_export) {
   'use strict';
 
-  var bootstrap, Compiler, AppViewManager, ElementRef, bind, ViewContainerRef, IonicConfig, Platform, Registry, util, IonicApp, GlobalIonicConfig;
+  var bootstrap, Compiler, AppViewManager, ElementRef, bind, ViewContainerRef, NgZone, IonicRouter, IonicConfig, Platform, Registry, util, IonicApp;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -5011,28 +5521,35 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
-  function ionicBootstrap(ComponentType, config) {
+  function initApp(window, document, config) {
+    var app = new IonicApp();
+    app.isRTL(document.documentElement.getAttribute('dir') == 'rtl');
+    Platform.url(window.location.href);
+    Platform.userAgent(window.navigator.userAgent);
+    Platform.width(window.innerWidth);
+    Platform.height(window.innerHeight);
+    Platform.load(config);
+    return app;
+  }
+
+  function ionicBootstrap(ComponentType, config, router) {
     return new Promise(function (resolve, reject) {
       try {
         (function () {
-          var app = new IonicApp();
-          app.url(window.location.href);
-          app.userAgent(window.navigator.userAgent);
-          app.width(window.innerWidth);
-          app.height(window.innerHeight);
-          var platform = Platform.load(app);
           config = config || new IonicConfig();
-          config.setPlatform(platform);
-          _export('GlobalIonicConfig', GlobalIonicConfig = config);
-          var injectableBindings = [bind(IonicApp).toValue(app), bind(IonicConfig).toValue(config)];
+          var app = initApp(window, document, config);
+          config.setPlatform(Platform);
+          IonicConfig.global = config;
+          app.applyCss(document.body, Platform, config);
+          Platform.prepareReady(config);
+          router = router || new IonicRouter();
+          router.app(app);
+          app.router = router;
+          var injectableBindings = [bind(IonicApp).toValue(app), bind(IonicConfig).toValue(config), bind(IonicRouter).toValue(router)];
           bootstrap(ComponentType, injectableBindings).then(function (appRef) {
-            app.ref(appRef);
-            platform.run();
-            resolve({
-              app: app,
-              config: config,
-              platform: platform
-            });
+            app.load(appRef);
+            router.init();
+            resolve(app);
           })['catch'](function (err) {
             console.error('ionicBootstrap', err);
             reject(err);
@@ -5067,6 +5584,10 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
       bind = _angular2Di.bind;
     }, function (_angular2SrcCoreCompilerView_container_ref) {
       ViewContainerRef = _angular2SrcCoreCompilerView_container_ref.ViewContainerRef;
+    }, function (_angular2SrcCoreZoneNg_zone) {
+      NgZone = _angular2SrcCoreZoneNg_zone.NgZone;
+    }, function (_routingRouter) {
+      IonicRouter = _routingRouter.IonicRouter;
     }, function (_configConfig) {
       IonicConfig = _configConfig.IonicConfig;
     }, function (_platformPlatform) {
@@ -5086,6 +5607,38 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
         }
 
         _createClass(IonicApp, [{
+          key: 'load',
+          value: function load(appRef) {
+            this.ref(appRef);
+            this.zone(this.injector().get(NgZone));
+          }
+        }, {
+          key: 'ref',
+          value: function ref(val) {
+            if (arguments.length) {
+              this._ref = val;
+            }
+            return this._ref;
+          }
+        }, {
+          key: 'injector',
+          value: function injector() {
+            return this._ref.injector;
+          }
+        }, {
+          key: 'zone',
+          value: function zone(val) {
+            if (arguments.length) {
+              this._zone = val;
+            }
+            return this._zone;
+          }
+        }, {
+          key: 'stateChange',
+          value: function stateChange(activeView, viewCtrl) {
+            this.router.stateChange(activeView, viewCtrl);
+          }
+        }, {
           key: 'register',
           value: function register(key, component) {
             this.components[key] = component;
@@ -5097,88 +5650,12 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
             return this.components[key];
           }
         }, {
-          key: 'config',
-          value: function config(val) {
-            if (arguments.length) {
-              this._config = val;
-            }
-            return this._config;
-          }
-        }, {
-          key: 'url',
-          value: function url(val) {
-            if (arguments.length) {
-              this._url = val;
-              this._qs = util.getQuerystring(val);
-            }
-            return this._url;
-          }
-        }, {
-          key: 'query',
-          value: function query(key) {
-            return (this._qs || {})[key];
-          }
-        }, {
-          key: 'userAgent',
-          value: function userAgent(val) {
-            if (arguments.length) {
-              this._ua = val;
-            }
-            return this._ua;
-          }
-        }, {
-          key: 'matchQuery',
-          value: function matchQuery(queryValue) {
-            var val = this.query('ionicplatform');
-            if (val) {
-              var valueSplit = val.toLowerCase().split(';');
-              for (var i = 0; i < valueSplit.length; i++) {
-                if (valueSplit[i] == queryValue) {
-                  return true;
-                }
-              }
-            }
-            return false;
-          }
-        }, {
-          key: 'matchUserAgent',
-          value: function matchUserAgent(userAgentExpression) {
-            if (this._ua) {
-              var rx = new RegExp(userAgentExpression, 'i');
-              return rx.exec(this._ua);
-            }
-          }
-        }, {
-          key: 'isPlatform',
-          value: function isPlatform(queryValue, userAgentExpression) {
-            if (!userAgentExpression) {
-              userAgentExpression = queryValue;
-            }
-            return this.matchQuery(queryValue) || this.matchUserAgent(userAgentExpression) !== null;
-          }
-        }, {
-          key: 'width',
-          value: function width(val) {
-            if (arguments.length) {
-              this._w = val;
-            }
-            return this._w || 0;
-          }
-        }, {
-          key: 'height',
-          value: function height(val) {
-            if (arguments.length) {
-              this._h = val;
-            }
-            return this._h || 0;
-          }
-        }, {
           key: 'appendComponent',
           value: function appendComponent(ComponentType) {
             var _this = this;
 
             return new Promise(function (resolve, reject) {
-              var injector = _this._ref.injector;
+              var injector = _this.injector();
               var compiler = injector.get(Compiler);
               var viewMngr = injector.get(AppViewManager);
               var rootComponentRef = _this._ref._hostComponent;
@@ -5187,7 +5664,7 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
                 var atIndex = 0;
                 var context = null;
                 var hostViewRef = viewMngr.createViewInContainer(viewContainerLocation, atIndex, protoViewRef, context, injector);
-                hostViewRef.elementRef = new ElementRef(hostViewRef, 0);
+                hostViewRef.elementRef = new ElementRef(hostViewRef, 0, viewMngr._renderer);
                 hostViewRef.instance = viewMngr.getComponent(hostViewRef.elementRef);
                 hostViewRef.dispose = function () {
                   viewMngr.destroyViewInContainer(viewContainerLocation, 0, 0, hostViewRef.viewRef);
@@ -5200,12 +5677,29 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
             });
           }
         }, {
-          key: 'ref',
-          value: function ref(val) {
+          key: 'applyCss',
+          value: function applyCss(bodyEle, platform, config) {
+            var className = bodyEle.className;
+            var versions = platform.versions();
+            platform.platforms().forEach(function (platformName) {
+              var platformClass = ' platform-' + platformName;
+              className += platformClass;
+              var platformVersion = versions[platformName];
+              if (platformVersion) {
+                platformClass += '_' + platformVersion.major;
+                className += platformClass + platformClass + '_' + platformVersion.minor;
+              }
+            });
+            className += ' mode-' + config.setting('mode');
+            bodyEle.className = className.trim();
+          }
+        }, {
+          key: 'isRTL',
+          value: function isRTL(val) {
             if (arguments.length) {
-              this._ref = val;
+              this._rtl = val;
             }
-            return this._ref;
+            return this._rtl;
           }
         }]);
 
@@ -5217,13 +5711,10 @@ System.register('ionic/components/app/app', ['angular2/angular2', 'angular2/src/
       Object.defineProperty(IonicApp.prototype.appendComponent, 'parameters', { get: function get() {
           return [[Type]];
         } });
-      GlobalIonicConfig = null;
-
-      _export('GlobalIonicConfig', GlobalIonicConfig);
     }
   };
 });
-System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', '../../config/component', './extensions/types', './extensions/gestures', 'ionic/util'], function (_export) {
+System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', '../../config/annotations', './extensions/types', './extensions/gestures', 'ionic/util'], function (_export) {
   'use strict';
 
   var EventEmitter, ElementRef, onInit, View, IonicComponent, types, gestures, dom, Aside;
@@ -5240,8 +5731,8 @@ System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
     }, function (_angular2SrcCoreAnnotations_implView) {
       View = _angular2SrcCoreAnnotations_implView.View;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
     }, function (_extensionsTypes) {
       types = _extensionsTypes;
     }, function (_extensionsGestures) {
@@ -5256,9 +5747,9 @@ System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/
 
           _classCallCheck(this, Aside);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.opening = new EventEmitter('opening');
-          this.domElement.addEventListener('transitionend', function (ev) {
+          this.ele.addEventListener('transitionend', function (ev) {
             _this.setChanging(false);
           });
         }
@@ -5266,8 +5757,8 @@ System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/
         _createClass(Aside, [{
           key: 'onInit',
           value: function onInit() {
-            console.log('Aside content', this.content);
-            this.contentElement = this.content instanceof Node ? this.content : this.content.domElement;
+            this.contentElement = this.content instanceof Node ? this.content : this.content.getNativeElement();
+            console.log('Aside content', this.content, this.contentElement);
             Aside.applyConfig(this);
             this.gestureDelegate = Aside.getDelegate(this, 'gesture');
             this.typeDelegate = Aside.getDelegate(this, 'type');
@@ -5299,7 +5790,7 @@ System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/
           value: function setChanging(isChanging) {
             if (isChanging !== this.isChanging) {
               this.isChanging = isChanging;
-              this.domElement.classList[isChanging ? 'add' : 'remove']('changing');
+              this.ele.classList[isChanging ? 'add' : 'remove']('changing');
             }
           }
         }, {
@@ -5328,7 +5819,7 @@ System.register('ionic/components/aside/aside', ['angular2/angular2', 'angular2/
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-aside',
               properties: ['content', 'dragThreshold'],
@@ -5400,7 +5891,7 @@ System.register('ionic/components/aside/config', ['ionic/config/component', 'ion
     }
   };
 });
-System.register('ionic/components/checkbox/checkbox', ['angular2/angular2', 'angular2/src/facade/lang', 'angular2/src/forms/directives/shared', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/view', 'angular2/forms', '../../config/component', '../icon/icon'], function (_export) {
+System.register('ionic/components/checkbox/checkbox', ['angular2/angular2', 'angular2/src/facade/lang', 'angular2/src/forms/directives/shared', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/view', 'angular2/forms', '../../config/annotations', '../icon/icon'], function (_export) {
   'use strict';
 
   var ElementRef, Renderer, EventEmitter, onChange, onInit, isPresent, setProperty, Component, Directive, Ancestor, View, NgControl, IonicComponent, Icon, Checkbox;
@@ -5429,8 +5920,8 @@ System.register('ionic/components/checkbox/checkbox', ['angular2/angular2', 'ang
       View = _angular2SrcCoreAnnotations_implView.View;
     }, function (_angular2Forms) {
       NgControl = _angular2Forms.NgControl;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
     }, function (_iconIcon) {
       Icon = _iconIcon.Icon;
     }],
@@ -5472,46 +5963,46 @@ System.register('ionic/components/checkbox/checkbox', ['angular2/angular2', 'ang
           }
         }, {
           key: 'checked',
-          set: function set(checked) {
+          set: function (checked) {
             this._checked = checked;
             setProperty(this.renderer, this.elementRef, 'checked', checked);
           },
-          get: function get() {
+          get: function () {
             return this._checked;
           }
         }, {
           key: 'ngClassUntouched',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? this.ngControl.control.untouched : false;
           }
         }, {
           key: 'ngClassTouched',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? this.ngControl.control.touched : false;
           }
         }, {
           key: 'ngClassPristine',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? this.ngControl.control.pristine : false;
           }
         }, {
           key: 'ngClassDirty',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? this.ngControl.control.dirty : false;
           }
         }, {
           key: 'ngClassValid',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? this.ngControl.control.valid : false;
           }
         }, {
           key: 'ngClassInvalid',
-          get: function get() {
+          get: function () {
             return isPresent(this.ngControl.control) ? !this.ngControl.control.valid : false;
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-checkbox',
               properties: ['checked', 'disabled', 'value'],
@@ -5557,14 +6048,18 @@ System.register('ionic/components/checkbox/checkbox', ['angular2/angular2', 'ang
     }
   };
 });
-System.register('ionic/components/content/content', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view'], function (_export) {
+System.register('ionic/components/content/content', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', '../ion'], function (_export) {
   'use strict';
 
-  var ElementRef, Component, View, Content;
+  var ElementRef, Component, View, Ion, Content;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
   return {
     setters: [function (_angular2Angular2) {
@@ -5573,19 +6068,23 @@ System.register('ionic/components/content/content', ['angular2/angular2', 'angul
       Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
     }, function (_angular2SrcCoreAnnotations_implView) {
       View = _angular2SrcCoreAnnotations_implView.View;
+    }, function (_ion) {
+      Ion = _ion.Ion;
     }],
     execute: function () {
-      Content = (function () {
+      Content = (function (_Ion) {
         function Content(elementRef) {
           var _this = this;
 
           _classCallCheck(this, Content);
 
-          this.domElement = elementRef.domElement;
+          _get(Object.getPrototypeOf(Content.prototype), 'constructor', this).call(this, elementRef);
           setTimeout(function () {
-            _this.scrollElement = _this.domElement.children[0];
+            _this.scrollElement = elementRef.nativeElement.children[0];
           });
         }
+
+        _inherits(Content, _Ion);
 
         _createClass(Content, [{
           key: 'addScrollEventListener',
@@ -5603,7 +6102,7 @@ System.register('ionic/components/content/content', ['angular2/angular2', 'angul
         }]);
 
         return Content;
-      })();
+      })(Ion);
 
       _export('Content', Content);
 
@@ -5646,14 +6145,14 @@ System.register('ionic/components/icon/icon', ['angular2/src/core/annotations_im
         function Icon(elementRef) {
           _classCallCheck(this, Icon);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
         }
 
         _createClass(Icon, [{
           key: 'onInit',
           value: function onInit() {
             if (this.name) {
-              this.domElement.classList.add(this.name);
+              this.ele.classList.add(this.name);
               this.label = this.name;
             }
           }
@@ -5718,7 +6217,7 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
 
   var ElementRef, Parent, Directive, Item, SlideGesture, ItemPrimarySwipeButtons, ItemSecondarySwipeButtons, ItemSlideGesture;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -5743,7 +6242,7 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
           _classCallCheck(this, ItemPrimarySwipeButtons);
 
           item.primarySwipeButtons = this;
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.parentItem = item;
           this.gesture = new ItemSlideGesture(this);
           this.gesture.listen();
@@ -5757,7 +6256,7 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
             if (isOpen !== this.isOpen) {
               this.isOpen = isOpen;
               requestAnimationFrame(function () {
-                _this.domElement.classList[isOpen ? 'add' : 'remove'](isOpen);
+                _this.ele.classList[isOpen ? 'add' : 'remove'](isOpen);
               });
             }
           }
@@ -5789,7 +6288,7 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
         function ItemSlideGesture(buttons) {
           _classCallCheck(this, ItemSlideGesture);
 
-          _get(Object.getPrototypeOf(ItemSlideGesture.prototype), 'constructor', this).call(this, buttons.parentItem.domElement);
+          _get(Object.getPrototypeOf(ItemSlideGesture.prototype), 'constructor', this).call(this, buttons.parentItem.ele);
           this.buttons = buttons;
         }
 
@@ -5799,7 +6298,7 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
           key: 'getSlideBoundaries',
           value: function getSlideBoundaries() {
             return {
-              min: -this.buttons.domElement.offsetWidth,
+              min: -this.buttons.ele.offsetWidth,
               max: 0
             };
           }
@@ -5811,8 +6310,8 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
         }, {
           key: 'onSlideBeforeStart',
           value: function onSlideBeforeStart() {
-            this.buttons.domElement.classList.add('changing');
-            this.buttons.domElement.classList.add('no-transition');
+            this.buttons.ele.classList.add('changing');
+            this.buttons.ele.classList.add('no-transition');
             return new Promise(function (resolve) {
               requestAnimationFrame(resolve);
             });
@@ -5820,13 +6319,13 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
         }, {
           key: 'onSlide',
           value: function onSlide(slide, ev) {
-            this.buttons.domElement.style.transform = 'translate3d(' + slide.distance + 'px,0,0)';
+            this.buttons.ele.style.transform = 'translate3d(' + slide.distance + 'px,0,0)';
           }
         }, {
           key: 'onSlideEnd',
           value: function onSlideEnd(slide, ev) {
-            this.buttons.domElement.style.transform = '';
-            this.buttons.domElement.classList.remove('no-transition');
+            this.buttons.ele.style.transform = '';
+            this.buttons.ele.classList.remove('no-transition');
             if (Math.abs(ev.velocityX) > 0.2 || Math.abs(slide.delta) > Math.abs(slide.max) * 0.5) {
               this.buttons.setOpen(!this.buttons.isOpen);
             }
@@ -5838,10 +6337,10 @@ System.register('ionic/components/item/item-swipe-buttons', ['angular2/angular2'
     }
   };
 });
-System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', './item-options', './item-swipe-buttons', '../../config/component', 'ionic/util'], function (_export) {
+System.register('ionic/components/item/item', ['angular2/angular2', './item-options', './item-swipe-buttons', '../../config/annotations', 'ionic/util'], function (_export) {
   'use strict';
 
-  var Renderer, ElementRef, Component, Directive, View, ItemPrimaryOptions, ItemSecondaryOptions, ItemPrimarySwipeButtons, ItemSecondarySwipeButtons, IonicComponent, dom, Item, Slideable, ItemSlideGesture;
+  var ElementRef, ItemPrimaryOptions, ItemSecondaryOptions, ItemPrimarySwipeButtons, ItemSecondarySwipeButtons, IonicComponent, IonicView, dom, Item, Slideable, ItemSlideGesture;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -5849,21 +6348,16 @@ System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/sr
 
   return {
     setters: [function (_angular2Angular2) {
-      Renderer = _angular2Angular2.Renderer;
       ElementRef = _angular2Angular2.ElementRef;
-    }, function (_angular2SrcCoreAnnotations_implAnnotations) {
-      Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
-      Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
-    }, function (_angular2SrcCoreAnnotations_implView) {
-      View = _angular2SrcCoreAnnotations_implView.View;
     }, function (_itemOptions) {
       ItemPrimaryOptions = _itemOptions.ItemPrimaryOptions;
       ItemSecondaryOptions = _itemOptions.ItemSecondaryOptions;
     }, function (_itemSwipeButtons) {
       ItemPrimarySwipeButtons = _itemSwipeButtons.ItemPrimarySwipeButtons;
       ItemSecondarySwipeButtons = _itemSwipeButtons.ItemSecondarySwipeButtons;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicView = _configAnnotations.IonicView;
     }, function (_ionicUtil) {
       dom = _ionicUtil.dom;
     }],
@@ -5876,7 +6370,7 @@ System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/sr
           this._isSlideActive = false;
           this._isTransitioning = false;
           this._transform = '';
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.swipeButtons = {};
           this.optionButtons = {};
         }
@@ -5888,7 +6382,7 @@ System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/sr
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-item',
               properties: []
@@ -5902,7 +6396,7 @@ System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/sr
       _export('Item', Item);
 
       Object.defineProperty(Item, 'annotations', { get: function get() {
-          return [new IonicComponent(Item), new View({ template: '\n    <!--\n    <content select="ion-primary-options"></content>\n    <content select="ion-primary-swipe-buttons"></content>\n    -->\n    <div class="item-content">\n      <div class="item-media">\n      </div>\n      <div class="item-accessory">\n        <!--<content select="ion-item-accessory"></content>-->\n      </div>\n      <div class="item-label">\n        <content></content>\n      </div>\n    </div>\n    <!--\n    <content select="ion-secondary-options"></content>\n    <content select="ion-secondary-swipe-buttons"></content>\n    -->\n  ' })];
+          return [new IonicComponent(Item), new IonicView({ template: '\n    <!--\n    <content select="ion-primary-options"></content>\n    <content select="ion-primary-swipe-buttons"></content>\n    -->\n    <div class="item-content">\n      <div class="item-media">\n      </div>\n      <div class="item-accessory">\n        <!--<content select="ion-item-accessory"></content>-->\n      </div>\n      <div class="item-label">\n        <content></content>\n      </div>\n    </div>\n    <!--\n    <content select="ion-secondary-options"></content>\n    <content select="ion-secondary-swipe-buttons"></content>\n    -->\n  ' })];
         } });
       Object.defineProperty(Item, 'parameters', { get: function get() {
           return [[ElementRef]];
@@ -6009,7 +6503,7 @@ System.register('ionic/components/item/item', ['angular2/angular2', 'angular2/sr
 System.register('ionic/components/layout/layout', ['angular2/angular2'], function (_export) {
   'use strict';
 
-  var NgElement, Component, View, Parent, Layout;
+  var ElementRef, Component, View, Parent, Layout;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -6017,20 +6511,20 @@ System.register('ionic/components/layout/layout', ['angular2/angular2'], functio
 
   return {
     setters: [function (_angular2Angular2) {
-      NgElement = _angular2Angular2.NgElement;
+      ElementRef = _angular2Angular2.ElementRef;
       Component = _angular2Angular2.Component;
       View = _angular2Angular2.View;
       Parent = _angular2Angular2.Parent;
     }],
     execute: function () {
       Layout = (function () {
-        function Layout(ngElement) {
+        function Layout(elementRef) {
           var _this = this;
 
           _classCallCheck(this, Layout);
 
-          this.domElement = ngElement.domElement;
-          this.eqEle = this.domElement.lastElementChild;
+          this.ele = ngElement.nativeElement;
+          this.eqEle = this.ele.lastElementChild;
           window.requestAnimationFrame(function () {
             _this.initLayout();
           });
@@ -6044,7 +6538,7 @@ System.register('ionic/components/layout/layout', ['angular2/angular2'], functio
             this.mqs = {};
 
             var _loop = function (x) {
-              var attr = _this2.domElement.attributes[x];
+              var attr = _this2.ele.attributes[x];
               var val = attr.nodeValue;
               var mqClassname = attr.nodeName;
               if (val.indexOf('(') > -1 && val.indexOf(')') > -1) {
@@ -6053,7 +6547,7 @@ System.register('ionic/components/layout/layout', ['angular2/angular2'], functio
                   _this2.mqs[mql.media] = function (mql) {
                     console.log(mql.media, mql.matches, mqClassname);
                     window.requestAnimationFrame(function () {
-                      _this2.domElement.classList[mql.matches ? 'add' : 'remove'](mqClassname);
+                      _this2.ele.classList[mql.matches ? 'add' : 'remove'](mqClassname);
                     });
                   };
                   _this2.mqs[mql.media](mql);
@@ -6062,7 +6556,7 @@ System.register('ionic/components/layout/layout', ['angular2/angular2'], functio
               }
             };
 
-            for (var x = 0; x < this.domElement.attributes.length; x++) {
+            for (var x = 0; x < this.ele.attributes.length; x++) {
               _loop(x);
             }
           }
@@ -6077,12 +6571,12 @@ System.register('ionic/components/layout/layout', ['angular2/angular2'], functio
           return [new Component({ selector: 'layout,[layout]' }), new View({ template: '\n    <content></content>\n    <object class="ele-qry" data="about:blank"></object>\n  ' })];
         } });
       Object.defineProperty(Layout, 'parameters', { get: function get() {
-          return [[NgElement, new NgElement()]];
+          return [[ElementRef, new ElementRef()]];
         } });
     }
   };
 });
-System.register('ionic/components/list/list', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'ionic/config/component', './virtual', 'ionic/util'], function (_export) {
+System.register('ionic/components/list/list', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', '../../config/annotations', './virtual', 'ionic/util'], function (_export) {
   'use strict';
 
   var ElementRef, onInit, IonicDirective, ListVirtualScroll, util, List;
@@ -6096,8 +6590,8 @@ System.register('ionic/components/list/list', ['angular2/angular2', 'angular2/sr
       ElementRef = _angular2Angular2.ElementRef;
     }, function (_angular2SrcCoreAnnotations_implAnnotations) {
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
-    }, function (_ionicConfigComponent) {
-      IonicDirective = _ionicConfigComponent.IonicDirective;
+    }, function (_configAnnotations) {
+      IonicDirective = _configAnnotations.IonicDirective;
     }, function (_virtual) {
       ListVirtualScroll = _virtual.ListVirtualScroll;
     }, function (_ionicUtil) {
@@ -6108,7 +6602,7 @@ System.register('ionic/components/list/list', ['angular2/angular2', 'angular2/sr
         function List(elementRef) {
           _classCallCheck(this, List);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
         }
 
         _createClass(List, [{
@@ -6136,7 +6630,7 @@ System.register('ionic/components/list/list', ['angular2/angular2', 'angular2/sr
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-list',
               properties: ['items', 'virtual', 'content']
@@ -6178,7 +6672,7 @@ System.register('ionic/components/list/virtual', [], function (_export) {
 
           this.list = list;
           this.content = this.list.content;
-          this.viewportHeight = this.content.domElement.offsetHeight;
+          this.viewportHeight = this.content.ele.offsetHeight;
           this.viewContainer = this.list.itemTemplate.viewContainer;
           this.itemHeight = 60;
           this.shownItems = {};
@@ -6196,7 +6690,7 @@ System.register('ionic/components/list/virtual', [], function (_export) {
         _createClass(ListVirtualScroll, [{
           key: 'resize',
           value: function resize() {
-            this.viewportHeight = this.content.domElement.offsetHeight;
+            this.viewportHeight = this.content.ele.offsetHeight;
             this.viewportScrollHeight = this.content.scrollElement.scrollHeight;
             this.virtualHeight = this.list.items.length * this.itemHeight;
             this.itemsPerScreen = this.viewportHeight / this.itemHeight;
@@ -6238,7 +6732,7 @@ System.register('ionic/components/list/virtual', [], function (_export) {
               this.viewContainer.remove(itemRef.realIndex);
             }
             console.log('VIRTUAL SCROLL: scroll(scrollTop:', st, 'topIndex:', topIndex, 'bottomIndex:', bottomIndex, ')');
-            console.log('Container has', this.list.domElement.children.length, 'children');
+            console.log('Container has', this.list.ele.children.length, 'children');
           }
         }, {
           key: 'cellAtIndex',
@@ -6268,7 +6762,7 @@ System.register('ionic/components/modal/modal', ['angular2/di', '../overlay/over
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -6310,7 +6804,7 @@ System.register('ionic/components/modal/modal', ['angular2/di', '../overlay/over
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-modal',
               host: { '[style.z-index]': 'zIndex' }
@@ -6366,17 +6860,19 @@ System.register('ionic/components/modal/modal', ['angular2/di', '../overlay/over
     }
   };
 });
-System.register("ionic/components/nav/nav-controller", [], function (_export) {
-  "use strict";
+System.register('ionic/components/nav/nav-controller', ['../../util/util'], function (_export) {
+  'use strict';
 
-  var NavController;
+  var extend, NavController, NavParams;
 
-  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
+  var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+  function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
   return {
-    setters: [],
+    setters: [function (_utilUtil) {
+      extend = _utilUtil.extend;
+    }],
     execute: function () {
       NavController = (function () {
         function NavController(nav) {
@@ -6386,22 +6882,22 @@ System.register("ionic/components/nav/nav-controller", [], function (_export) {
         }
 
         _createClass(NavController, [{
-          key: "setItems",
+          key: 'setItems',
           value: function setItems(items) {
             return this._nav.setItems(items);
           }
         }, {
-          key: "clear",
+          key: 'clear',
           value: function clear() {
             return this._nav.clear();
           }
         }, {
-          key: "push",
+          key: 'push',
           value: function push() {
             return this._nav.push.apply(this._nav, arguments);
           }
         }, {
-          key: "pop",
+          key: 'pop',
           value: function pop() {
             return this._nav.pop.apply(this._nav, arguments);
           }
@@ -6410,7 +6906,15 @@ System.register("ionic/components/nav/nav-controller", [], function (_export) {
         return NavController;
       })();
 
-      _export("NavController", NavController);
+      _export('NavController', NavController);
+
+      NavParams = function NavParams(params) {
+        _classCallCheck(this, NavParams);
+
+        extend(this, params);
+      };
+
+      _export('NavParams', NavParams);
     }
   };
 });
@@ -6436,10 +6940,10 @@ System.register('ionic/components/nav/nav-params', ['ionic/util'], function (_ex
     }
   };
 });
-System.register('ionic/components/nav/nav-push', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/di/annotations_impl', 'angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/di', '../view/view-controller', './nav-controller'], function (_export) {
+System.register('ionic/components/nav/nav-push', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/di/annotations_impl', 'angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller', './nav-controller'], function (_export) {
   'use strict';
 
-  var Directive, onInit, Optional, Compiler, ElementRef, DynamicComponentLoader, Injector, ViewController, NavController, NavPush, NavPop;
+  var Directive, onInit, Optional, Compiler, ElementRef, Injector, ViewController, NavController, NavPush, NavPop;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -6455,8 +6959,6 @@ System.register('ionic/components/nav/nav-push', ['angular2/src/core/annotations
       Compiler = _angular2Angular2.Compiler;
     }, function (_angular2SrcCoreCompilerElement_ref) {
       ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
-    }, function (_angular2SrcCoreCompilerDynamic_component_loader) {
-      DynamicComponentLoader = _angular2SrcCoreCompilerDynamic_component_loader.DynamicComponentLoader;
     }, function (_angular2Di) {
       Injector = _angular2Di.Injector;
     }, function (_viewViewController) {
@@ -6532,14 +7034,14 @@ System.register('ionic/components/nav/nav-push', ['angular2/src/core/annotations
     }
   };
 });
-System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/di/annotations_impl', 'angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/di', '../view/view-controller'], function (_export) {
+System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/di/annotations_impl', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller'], function (_export) {
   'use strict';
 
-  var Component, Directive, onInit, View, Parent, Optional, Compiler, ElementRef, DynamicComponentLoader, Injector, ViewController, Nav, PaneAnchor;
+  var Component, Directive, onInit, View, Parent, Optional, ElementRef, Injector, ViewController, Nav, PaneAnchor;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -6556,12 +7058,8 @@ System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl
       Parent = _angular2SrcCoreAnnotations_implVisibility.Parent;
     }, function (_angular2SrcDiAnnotations_impl) {
       Optional = _angular2SrcDiAnnotations_impl.Optional;
-    }, function (_angular2Angular2) {
-      Compiler = _angular2Angular2.Compiler;
     }, function (_angular2SrcCoreCompilerElement_ref) {
       ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
-    }, function (_angular2SrcCoreCompilerDynamic_component_loader) {
-      DynamicComponentLoader = _angular2SrcCoreCompilerDynamic_component_loader.DynamicComponentLoader;
     }, function (_angular2Di) {
       Injector = _angular2Di.Injector;
     }, function (_viewViewController) {
@@ -6569,10 +7067,10 @@ System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl
     }],
     execute: function () {
       Nav = (function (_ViewController) {
-        function Nav(viewCtrl, compiler, elementRef, loader, injector) {
+        function Nav(parentViewCtrl, injector, elementRef) {
           _classCallCheck(this, Nav);
 
-          _get(Object.getPrototypeOf(Nav.prototype), 'constructor', this).call(this, viewCtrl, compiler, elementRef, loader, injector);
+          _get(Object.getPrototypeOf(Nav.prototype), 'constructor', this).call(this, parentViewCtrl, injector, elementRef);
         }
 
         _inherits(Nav, _ViewController);
@@ -6600,7 +7098,7 @@ System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl
           })];
         } });
       Object.defineProperty(Nav, 'parameters', { get: function get() {
-          return [[ViewController, new Optional()], [Compiler], [ElementRef], [DynamicComponentLoader], [Injector]];
+          return [[ViewController, new Optional()], [Injector], [ElementRef]];
         } });
 
       PaneAnchor = function PaneAnchor(nav, elementRef) {
@@ -6618,7 +7116,7 @@ System.register('ionic/components/nav/nav', ['angular2/src/core/annotations_impl
     }
   };
 });
-System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/compiler/view_container_ref', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller', './swipe-handle', '../../config/component'], function (_export) {
+System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/compiler/view_container_ref', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller', './swipe-handle', '../../config/annotations'], function (_export) {
   'use strict';
 
   var Component, Directive, View, Parent, ViewContainerRef, ElementRef, bind, ViewController, SwipeHandle, IonicComponent, PaneController, Pane, PaneAnchor, PaneContentAnchor, NavBarContainer, NavBarAnchor;
@@ -6645,8 +7143,8 @@ System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_imp
       ViewController = _viewViewController.ViewController;
     }, function (_swipeHandle) {
       SwipeHandle = _swipeHandle.SwipeHandle;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
     }],
     execute: function () {
       PaneController = (function () {
@@ -6670,7 +7168,7 @@ System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_imp
             } else {
               this.panes[key] = null;
               var injector = viewCtrl.injector.resolveAndCreateChild([bind(ViewController).toValue(viewCtrl)]);
-              viewCtrl.loader.loadNextToExistingLocation(Pane, viewCtrl.anchorElementRef(), injector).then(function () {
+              viewCtrl.loader.loadNextToLocation(Pane, viewCtrl.anchorElementRef(), injector).then(function () {
                 pane = _this.panes[key];
                 var sectionAnchorElementRef = pane && pane.sectionAnchorElementRef;
                 if (!sectionAnchorElementRef) {
@@ -6682,7 +7180,7 @@ System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_imp
                   sectionsToAdd.push(NavBarContainer);
                 }
                 sectionsToAdd.forEach(function (SectionClass) {
-                  promises.push(viewCtrl.loader.loadNextToExistingLocation(SectionClass, sectionAnchorElementRef));
+                  promises.push(viewCtrl.loader.loadNextToLocation(SectionClass, sectionAnchorElementRef));
                 });
                 Promise.all(promises).then(function () {
                   callback(pane);
@@ -6715,23 +7213,23 @@ System.register('ionic/components/nav/pane', ['angular2/src/core/annotations_imp
         function Pane(viewCtrl, elementRef) {
           _classCallCheck(this, Pane);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           viewCtrl.panes.add(this);
         }
 
         _createClass(Pane, [{
           key: 'width',
           value: function width() {
-            return this.domElement.offsetWidth;
+            return this.ele.offsetWidth;
           }
         }, {
           key: 'showPane',
           value: function showPane(val) {
-            this.domElement.classList[val ? 'add' : 'remove']('show-pane');
+            this.ele.classList[val ? 'add' : 'remove']('show-pane');
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-pane',
               classId: 'nav'
@@ -6843,7 +7341,7 @@ System.register('ionic/components/nav/swipe-handle', ['angular2/src/core/annotat
           var self = this;
           self.pane = pane;
           self.viewCtrl = viewCtrl;
-          var gesture = self.gesture = new Gesture(elementRef.domElement);
+          var gesture = self.gesture = new Gesture(elementRef.nativeElement);
           gesture.listen();
           function dragHorizontal(ev) {
             self.onDragHorizontal(ev);
@@ -6899,7 +7397,7 @@ System.register('ionic/components/nav/swipe-handle', ['angular2/src/core/annotat
           }
         }, {
           key: 'showHandle',
-          value: function showHandle() {
+          get: function () {
             return this.viewCtrl ? this.viewCtrl.swipeBackEnabled() : false;
           }
         }]);
@@ -6912,7 +7410,7 @@ System.register('ionic/components/nav/swipe-handle', ['angular2/src/core/annotat
       Object.defineProperty(SwipeHandle, 'annotations', { get: function get() {
           return [new Directive({
             selector: '.swipe-handle',
-            host: { '[class.show-handle]': 'showHandle()' }
+            host: { '[class.show-handle]': 'showHandle' }
           })];
         } });
       Object.defineProperty(SwipeHandle, 'parameters', { get: function get() {
@@ -6954,8 +7452,8 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
         function Navbar(item, elementRef) {
           _classCallCheck(this, Navbar);
 
-          this._ele = elementRef.domElement;
-          this._itmEles = [];
+          this.eleRef = elementRef;
+          this.itemEles = [];
           item.navbarView(this);
           this.bbDefault = 'Back';
           this.bbText = '';
@@ -6964,52 +7462,52 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
         _createClass(Navbar, [{
           key: 'element',
           value: function element() {
-            return this._ele;
+            return this.eleRef;
           }
         }, {
           key: 'backButtonElement',
-          value: function backButtonElement() {
+          value: function backButtonElement(eleRef) {
             if (arguments.length) {
-              this._bbEle = arguments[0];
+              this._bbEle = eleRef;
             }
             return this._bbEle;
           }
         }, {
           key: 'backButtonTextElement',
-          value: function backButtonTextElement() {
+          value: function backButtonTextElement(eleRef) {
             if (arguments.length) {
-              this._bbTxEle = arguments[0];
+              this._bbTxEle = eleRef;
             }
             return this._bbTxEle;
           }
         }, {
           key: 'titleElement',
-          value: function titleElement() {
+          value: function titleElement(eleRef) {
             if (arguments.length) {
-              this._nbTlEle = arguments[0];
+              this._nbTlEle = eleRef;
             }
             return this._nbTlEle;
           }
         }, {
           key: 'itemElements',
-          value: function itemElements() {
+          value: function itemElements(eleRef) {
             if (arguments.length) {
-              this._itmEles.push(arguments[0]);
+              this.itemEles.push(eleRef);
             }
-            return this._itmEles;
+            return this.itemEles;
           }
         }, {
           key: 'titleText',
-          value: function titleText() {
+          value: function titleText(eleRef) {
             if (arguments.length) {
-              this._ttTxt.push(arguments[0]);
+              this._ttTxt.push(eleRef);
             }
             return this._ttTxt;
           }
         }, {
           key: 'alignTitle',
           value: function alignTitle() {
-            var navbarEle = this._ele;
+            var navbarEle = this.eleRef.nativeElement;
             var titleEle = this._ttEle || (this._ttEle = navbarEle.querySelector('ion-title'));
             if (!titleEle) return;
             var titleStyle = this._ttStyle || (this._ttStyle = window.getComputedStyle(titleEle));
@@ -7035,7 +7533,7 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
             var _this = this;
 
             setTimeout(function () {
-              var titleEle = _this._ttEle || (_this._ttEle = _this._ele.querySelector('ion-title'));
+              var titleEle = _this._ttEle || (_this._ttEle = _this.eleRef.nativeElement.querySelector('ion-title'));
             }, 32);
           }
         }]);
@@ -7060,7 +7558,7 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
           _classCallCheck(this, BackButton);
 
           this.item = item;
-          navbar.backButtonElement(elementRef.domElement);
+          navbar.backButtonElement(elementRef);
         }
 
         _createClass(BackButton, [{
@@ -7088,7 +7586,7 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
       BackButtonText = function BackButtonText(navbar, elementRef) {
         _classCallCheck(this, BackButtonText);
 
-        navbar.backButtonTextElement(elementRef.domElement);
+        navbar.backButtonTextElement(elementRef);
       };
 
       Object.defineProperty(BackButtonText, 'annotations', { get: function get() {
@@ -7101,7 +7599,7 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
       Title = function Title(navbar, elementRef) {
         _classCallCheck(this, Title);
 
-        navbar.titleElement(elementRef.domElement);
+        navbar.titleElement(elementRef);
       };
 
       Object.defineProperty(Title, 'annotations', { get: function get() {
@@ -7114,7 +7612,7 @@ System.register('ionic/components/nav-bar/nav-bar', ['angular2/src/core/annotati
       NavbarItem = function NavbarItem(navbar, elementRef) {
         _classCallCheck(this, NavbarItem);
 
-        navbar.itemElements(elementRef.domElement);
+        navbar.itemElements(elementRef);
       };
 
       Object.defineProperty(NavbarItem, 'annotations', { get: function get() {
@@ -7186,7 +7684,7 @@ System.register('ionic/components/overlay/overlay', ['../app/app', '../../animat
                 overlay.setApp(app);
                 overlay._type = overlayType;
                 overlay._handle = opts && opts.handle;
-                overlay._domElement = ref.elementRef.domElement;
+                overlay._ele = ref.elementRef.nativeElement;
                 overlay.extendOptions(opts);
                 overlay.zIndex = ROOT_Z_INDEX;
                 for (var i = 0; i < app.overlays.length; i++) {
@@ -7207,7 +7705,7 @@ System.register('ionic/components/overlay/overlay', ['../app/app', '../../animat
           key: '_open',
           value: function _open(opts) {
             var animationName = opts && opts.animation || this.options.enterAnimation;
-            var enterAnimation = Animation.create(this._domElement, animationName);
+            var enterAnimation = Animation.create(this._ele, animationName);
             enterAnimation.before.addClass('ion-app');
             enterAnimation.before.addClass('show-overlay');
             ClickBlock(true, enterAnimation.duration() + 200);
@@ -7226,7 +7724,7 @@ System.register('ionic/components/overlay/overlay', ['../app/app', '../../animat
 
             return new Promise(function (resolve) {
               var animationName = opts && opts.animation || _this2.options.leaveAnimation;
-              var leavingAnimation = Animation.create(_this2._domElement, animationName);
+              var leavingAnimation = Animation.create(_this2._ele, animationName);
               leavingAnimation.after.removeClass('show-overlay');
               ClickBlock(true, leavingAnimation.duration() + 200);
               leavingAnimation.play().then(function () {
@@ -7292,10 +7790,10 @@ System.register('ionic/components/overlay/overlay', ['../app/app', '../../animat
     }
   };
 });
-System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/view', 'ionic/config/component'], function (_export) {
+System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', '../../config/annotations'], function (_export) {
   'use strict';
 
-  var ElementRef, Component, Directive, Ancestor, View, IonicDirective, IonicComponent, RadioGroup, RadioButton;
+  var ElementRef, Component, Directive, Ancestor, IonicDirective, IonicComponent, IonicView, RadioGroup, RadioButton;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -7309,19 +7807,18 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
       Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
     }, function (_angular2SrcCoreAnnotations_implVisibility) {
       Ancestor = _angular2SrcCoreAnnotations_implVisibility.Ancestor;
-    }, function (_angular2SrcCoreAnnotations_implView) {
-      View = _angular2SrcCoreAnnotations_implView.View;
-    }, function (_ionicConfigComponent) {
-      IonicDirective = _ionicConfigComponent.IonicDirective;
-      IonicComponent = _ionicConfigComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicDirective = _configAnnotations.IonicDirective;
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicView = _configAnnotations.IonicView;
     }],
     execute: function () {
       RadioGroup = (function () {
         function RadioGroup(elementRef) {
           _classCallCheck(this, RadioGroup);
 
-          this.domElement = elementRef.domElement;
-          this.domElement.classList.add('list');
+          this.ele = elementRef.nativeElement;
+          this.ele.classList.add('list');
           this.buttons = [];
         }
 
@@ -7411,7 +7908,7 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return { selector: 'ion-radio-group' };
           }
         }]);
@@ -7432,9 +7929,9 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
         function RadioButton(group, elementRef) {
           _classCallCheck(this, RadioButton);
 
-          this.domElement = elementRef.domElement;
-          this.domElement.classList.add('item');
-          this.domElement.setAttribute('aria-checked', true);
+          this.ele = elementRef.ele;
+          this.ele.classList.add('item');
+          this.ele.setAttribute('aria-checked', true);
           this.group = group;
           group.register(this);
         }
@@ -7443,11 +7940,11 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
           key: 'setActive',
           value: function setActive(isActive) {
             if (isActive) {
-              this.domElement.classList.add('active');
-              this.domElement.setAttribute('aria-checked', true);
+              this.ele.classList.add('active');
+              this.ele.setAttribute('aria-checked', true);
             } else {
-              this.domElement.classList.remove('active');
-              this.domElement.setAttribute('aria-checked', false);
+              this.ele.classList.remove('active');
+              this.ele.setAttribute('aria-checked', false);
             }
           }
         }, {
@@ -7458,7 +7955,7 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-radio',
               properties: ['value'],
@@ -7473,7 +7970,7 @@ System.register('ionic/components/radio/radio', ['angular2/angular2', 'angular2/
       _export('RadioButton', RadioButton);
 
       Object.defineProperty(RadioButton, 'annotations', { get: function get() {
-          return [new IonicComponent(RadioButton), new View({ template: '\n    <div class="item-content">\n\n      <div class="item-title">\n        <content></content>\n      </div>\n\n      <div class="item-media media-radio">\n        <icon class="radio-off"></icon>\n        <icon class="ion-ios-checkmark-empty radio-on"></icon>\n      </div>\n\n    </div>\n  ' })];
+          return [new IonicComponent(RadioButton), new IonicView({ template: '\n    <div class="item-content">\n\n      <div class="item-title">\n        <content></content>\n      </div>\n\n      <div class="item-media media-radio">\n        <icon class="radio-off"></icon>\n        <icon class="ion-ios-checkmark-empty radio-on"></icon>\n      </div>\n\n    </div>\n  ' })];
         } });
       Object.defineProperty(RadioButton, 'parameters', { get: function get() {
           return [[RadioGroup, new Ancestor()], [ElementRef]];
@@ -7510,8 +8007,8 @@ System.register('ionic/components/scroll/pull-to-refresh', ['angular2/angular2',
         function Refresher(content, element) {
           _classCallCheck(this, Refresher);
 
-          this.domElement = element.domElement;
-          this.domElement.classList.add('content');
+          this.ele = element.nativeElement;
+          this.ele.classList.add('content');
           this.refresh = new EventEmitter('refresh');
           setTimeout(function () {
             content.scrollElement.addEventListener('scroll', function (e) {
@@ -7545,10 +8042,10 @@ System.register('ionic/components/scroll/pull-to-refresh', ['angular2/angular2',
     }
   };
 });
-System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'ionic/config/component'], function (_export) {
+System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', '../../config/annotations'], function (_export) {
   'use strict';
 
-  var ElementRef, Pipe, Component, Directive, onInit, View, IonicComponent, SearchBar;
+  var ElementRef, Pipe, onInit, IonicComponent, IonicView, SearchBar;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -7559,20 +8056,17 @@ System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 
       ElementRef = _angular2Angular2.ElementRef;
       Pipe = _angular2Angular2.Pipe;
     }, function (_angular2SrcCoreAnnotations_implAnnotations) {
-      Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
-      Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
-    }, function (_angular2SrcCoreAnnotations_implView) {
-      View = _angular2SrcCoreAnnotations_implView.View;
-    }, function (_ionicConfigComponent) {
-      IonicComponent = _ionicConfigComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicView = _configAnnotations.IonicView;
     }],
     execute: function () {
       SearchBar = (function () {
         function SearchBar(elementRef) {
           _classCallCheck(this, SearchBar);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.query = '';
         }
 
@@ -7607,7 +8101,7 @@ System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-search-bar',
               properties: ['list', 'query'],
@@ -7625,7 +8119,7 @@ System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 
       _export('SearchBar', SearchBar);
 
       Object.defineProperty(SearchBar, 'annotations', { get: function get() {
-          return [new IonicComponent(SearchBar), new View({ template: '\n  <div class="search-bar-input-container" [class.left-align]="shouldLeftAlign">\n    <div class="search-bar-icon"></div>\n    <input (focus)="inputFocused()" (blur)="inputBlurred()"\n    (input)="inputChanged($event)" class="search-bar-input" type="search" [attr.placeholder]="placeholder">\n  </div>\n  <button class="search-bar-cancel">{{ cancelText }}</button>' })];
+          return [new IonicComponent(SearchBar), new IonicView({ template: '\n  <div class="search-bar-input-container" [class.left-align]="shouldLeftAlign">\n    <div class="search-bar-icon"></div>\n    <input (focus)="inputFocused()" (blur)="inputBlurred()"\n    (input)="inputChanged($event)" class="search-bar-input" type="search" [attr.placeholder]="placeholder">\n  </div>\n  <button class="search-bar-cancel">{{cancelText}}</button>' })];
         } });
       Object.defineProperty(SearchBar, 'parameters', { get: function get() {
           return [[ElementRef]];
@@ -7633,10 +8127,10 @@ System.register('ionic/components/search-bar/search-bar', ['angular2/angular2', 
     }
   };
 });
-System.register('ionic/components/segment/segment', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/view', 'angular2/forms', 'ionic/util', 'ionic/config/component'], function (_export) {
+System.register('ionic/components/segment/segment', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/view', 'angular2/forms', 'ionic/util', '../../config/annotations'], function (_export) {
   'use strict';
 
-  var Renderer, ElementRef, EventEmitter, Component, Directive, onInit, Ancestor, View, Control, NgControl, NgFormControl, ControlGroup, ControlDirective, dom, IonicComponent, SegmentControlValueAccessor, Segment, SegmentButton;
+  var Renderer, ElementRef, EventEmitter, onInit, Ancestor, View, Control, NgControl, NgFormControl, ControlGroup, ControlDirective, dom, IonicDirective, IonicComponent, IonicView, SegmentControlValueAccessor, Segment, SegmentButton;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -7648,8 +8142,6 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
       ElementRef = _angular2Angular2.ElementRef;
       EventEmitter = _angular2Angular2.EventEmitter;
     }, function (_angular2SrcCoreAnnotations_implAnnotations) {
-      Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
-      Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
     }, function (_angular2SrcCoreAnnotations_implVisibility) {
       Ancestor = _angular2SrcCoreAnnotations_implVisibility.Ancestor;
@@ -7663,8 +8155,10 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
       ControlDirective = _angular2Forms.ControlDirective;
     }, function (_ionicUtil) {
       dom = _ionicUtil.dom;
-    }, function (_ionicConfigComponent) {
-      IonicComponent = _ionicConfigComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicDirective = _configAnnotations.IonicDirective;
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicView = _configAnnotations.IonicView;
     }],
     execute: function () {
       SegmentControlValueAccessor = (function () {
@@ -7706,7 +8200,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
       _export('SegmentControlValueAccessor', SegmentControlValueAccessor);
 
       Object.defineProperty(SegmentControlValueAccessor, 'annotations', { get: function get() {
-          return [new Directive({
+          return [new IonicDirective({
             selector: 'ion-segment',
             host: {
               '(change)': 'onChange($event.target.value)',
@@ -7730,7 +8224,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
         function Segment(cd, elementRef, renderer) {
           _classCallCheck(this, Segment);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.elementRef = elementRef;
           this.renderer = renderer;
           this.change = new EventEmitter('change');
@@ -7823,7 +8317,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-segment',
               appInjector: [NgControl],
@@ -7850,7 +8344,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
       _export('Segment', Segment);
 
       Object.defineProperty(Segment, 'annotations', { get: function get() {
-          return [new IonicComponent(Segment), new View({
+          return [new IonicComponent(Segment), new IonicView({
             template: '<div class="ion-segment">\n    <content></content>\n  </div>\n  ',
             directives: [SegmentButton]
           })];
@@ -7863,7 +8357,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
         function SegmentButton(segment, elementRef) {
           _classCallCheck(this, SegmentButton);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.ele;
           this.segment = segment;
         }
 
@@ -7886,7 +8380,7 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
       _export('SegmentButton', SegmentButton);
 
       Object.defineProperty(SegmentButton, 'annotations', { get: function get() {
-          return [new Directive({
+          return [new IonicDirective({
             selector: 'ion-segment-button',
             properties: ['value'],
             host: {
@@ -7902,12 +8396,12 @@ System.register('ionic/components/segment/segment', ['angular2/angular2', 'angul
     }
   };
 });
-System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'ionic/gestures/drag-gesture', 'ionic/util', 'ionic/config/component', 'ionic/gestures/hammer'], function (_export) {
+System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/annotations', 'ionic/gestures/drag-gesture', 'ionic/util', '../../config/annotations', 'ionic/gestures/hammer'], function (_export) {
   'use strict';
 
-  var For, ElementRef, Inject, Parent, Ancestor, Component, Directive, onInit, View, DragGesture, util, dom, IonicComponent, IonicDirective, Hammer, Slides, Slide, SlidePager, SlidesGesture;
+  var ElementRef, Ancestor, onInit, DragGesture, util, dom, IonicComponent, IonicDirective, IonicView, Hammer, Slides, Slide, SlidePager, SlidesGesture;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -7917,26 +8411,20 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
 
   return {
     setters: [function (_angular2Angular2) {
-      For = _angular2Angular2.For;
       ElementRef = _angular2Angular2.ElementRef;
-      Inject = _angular2Angular2.Inject;
-      Parent = _angular2Angular2.Parent;
     }, function (_angular2SrcCoreAnnotations_implVisibility) {
       Ancestor = _angular2SrcCoreAnnotations_implVisibility.Ancestor;
     }, function (_angular2SrcCoreAnnotations_implAnnotations) {
-      Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
-      Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
-    }, function (_angular2SrcCoreAnnotations_implView) {
-      View = _angular2SrcCoreAnnotations_implView.View;
     }, function (_ionicGesturesDragGesture) {
       DragGesture = _ionicGesturesDragGesture.DragGesture;
     }, function (_ionicUtil) {
       util = _ionicUtil;
       dom = _ionicUtil.dom;
-    }, function (_ionicConfigComponent) {
-      IonicComponent = _ionicConfigComponent.IonicComponent;
-      IonicDirective = _ionicConfigComponent.IonicDirective;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicDirective = _configAnnotations.IonicDirective;
+      IonicView = _configAnnotations.IonicView;
     }, function (_ionicGesturesHammer) {
       Hammer = _ionicGesturesHammer.Hammer;
     }],
@@ -7945,7 +8433,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
         function Slides(elementRef) {
           _classCallCheck(this, Slides);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.slides = [];
           this.currentIndex = 0;
           this.animateSpeed = 300;
@@ -7959,7 +8447,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
           key: 'onInit',
           value: function onInit() {
             this.continuous = util.isDefined(this.loop) && (this.slides.length > 1 ? true : false);
-            this.wrapperElement = this.domElement.children[0];
+            this.wrapperElement = this.ele.children[0];
             this.resize();
             if (this.slideDelay) {
               this.startShow();
@@ -7983,7 +8471,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
         }, {
           key: 'resize',
           value: function resize() {
-            this.containerWidth = this.domElement.offsetWidth || this.domElement.getBoundingClientRect().width;
+            this.containerWidth = this.ele.offsetWidth || this.ele.getBoundingClientRect().width;
             this.wrapperElement.style.width = this.containerWidth * this.slides.length + 'px';
             this._bump();
           }
@@ -8205,7 +8693,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-slides',
               properties: ['loop', 'index', 'bounce']
@@ -8219,7 +8707,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
       _export('Slides', Slides);
 
       Object.defineProperty(Slides, 'annotations', { get: function get() {
-          return [new IonicComponent(Slides), new View({
+          return [new IonicComponent(Slides), new IonicView({
             template: '<div class="slides-view"><content></content></div>',
             directives: [Slide, SlidePager]
           })];
@@ -8232,7 +8720,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
         function Slide(slides, elementRef) {
           _classCallCheck(this, Slide);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           slides.add(this);
         }
 
@@ -8241,35 +8729,35 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
           value: function translate(x, duration) {
             this._translateX = x;
             duration = duration || 0;
-            this.domElement.style[dom.CSS.transition + 'Duration'] = duration + 'ms';
-            this.domElement.style[dom.CSS.transform] = 'translate3d(' + x + 'px, 0, 0)';
+            this.ele.style[dom.CSS.transition + 'Duration'] = duration + 'ms';
+            this.ele.style[dom.CSS.transform] = 'translate3d(' + x + 'px, 0, 0)';
           }
         }, {
           key: 'translateX',
-          get: function get() {
+          get: function () {
             return this._translateX;
           }
         }, {
           key: 'left',
-          set: function set(x) {
+          set: function (x) {
             this._left = x;
-            this.domElement.style.left = x + 'px';
+            this.ele.style.left = x + 'px';
           },
-          get: function get() {
+          get: function () {
             return this._left;
           }
         }, {
           key: 'width',
-          set: function set(width) {
+          set: function (width) {
             this._width = width;
-            this.domElement.style.width = width + 'px';
+            this.ele.style.width = width + 'px';
           },
-          get: function get() {
+          get: function () {
             return this._width;
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return { selector: 'ion-slide' };
           }
         }]);
@@ -8290,7 +8778,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
         function SlidePager(slides, elementRef) {
           _classCallCheck(this, SlidePager);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.slides = slides;
           this.slides.setPager(this);
         }
@@ -8302,7 +8790,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return { selector: 'ion-pager' };
           }
         }]);
@@ -8313,10 +8801,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
       _export('SlidePager', SlidePager);
 
       Object.defineProperty(SlidePager, 'annotations', { get: function get() {
-          return [new Component({ selector: 'ion-pager' }), new View({
-            template: '<span class="slide-pager-page" *for="#page of getSlides()">{{page.width}}<i class="icon ion-record"></i>X</span>',
-            direcitves: [For]
-          })];
+          return [new IonicComponent({ selector: 'ion-pager' }), new IonicView({ template: '<span class="slide-pager-page" *ng-for="#page of getSlides()">{{page.width}}<i class="icon ion-record"></i>X</span>' })];
         } });
       Object.defineProperty(SlidePager, 'parameters', { get: function get() {
           return [[Slides, new Ancestor()], [ElementRef]];
@@ -8326,7 +8811,7 @@ System.register('ionic/components/slides/slides', ['angular2/angular2', 'angular
         function SlidesGesture(slides) {
           _classCallCheck(this, SlidesGesture);
 
-          _get(Object.getPrototypeOf(SlidesGesture.prototype), 'constructor', this).call(this, slides.domElement);
+          _get(Object.getPrototypeOf(SlidesGesture.prototype), 'constructor', this).call(this, slides.ele);
           this.slides = slides;
         }
 
@@ -8370,8 +8855,6 @@ System.register("ionic/components/split-view/split-nav-view", [], function (_exp
 
   var SplitNavView;
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
   function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
@@ -8383,7 +8866,9 @@ System.register("ionic/components/split-view/split-nav-view", [], function (_exp
         function SplitNavView() {
           _classCallCheck(this, SplitNavView);
 
-          _get(Object.getPrototypeOf(SplitNavView.prototype), "constructor", this).apply(this, arguments);
+          if (_NavView != null) {
+            _NavView.apply(this, arguments);
+          }
         }
 
         _inherits(SplitNavView, _NavView);
@@ -8398,7 +8883,7 @@ System.register("ionic/components/split-view/split-nav-view", [], function (_exp
 System.register('ionic/components/split-view/split-view', ['angular2/angular2', 'ionic/components/nav/nav', 'ionic/util'], function (_export) {
   'use strict';
 
-  var Component, Parent, Decorator, View, NgElement, Nav, util, SplitViewportDecorator, SplitView;
+  var Component, Parent, Decorator, View, ElementRef, Nav, util, SplitViewportDecorator, SplitView;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -8410,7 +8895,7 @@ System.register('ionic/components/split-view/split-view', ['angular2/angular2', 
       Parent = _angular2Angular2.Parent;
       Decorator = _angular2Angular2.Decorator;
       View = _angular2Angular2.View;
-      NgElement = _angular2Angular2.NgElement;
+      ElementRef = _angular2Angular2.ElementRef;
     }, function (_ionicComponentsNavNav) {
       Nav = _ionicComponentsNavNav.Nav;
     }, function (_ionicUtil) {
@@ -8431,10 +8916,10 @@ System.register('ionic/components/split-view/split-view', ['angular2/angular2', 
         } });
 
       SplitView = (function () {
-        function SplitView(element, navPane) {
+        function SplitView(elementRef, navPane) {
           _classCallCheck(this, SplitView);
 
-          this.domElement = element.domElement;
+          this.ele = elementRef.nativeElement;
           this.navPane = navPane;
           this.setEnabled(true);
         }
@@ -8503,7 +8988,7 @@ System.register('ionic/components/split-view/split-view', ['angular2/angular2', 
           }
         }, {
           key: 'defaultView',
-          set: function set(DefaultClass) {
+          set: function (DefaultClass) {
             this.splitViewport.push(DefaultClass, { sync: true });
           }
         }]);
@@ -8523,15 +9008,15 @@ System.register('ionic/components/split-view/split-view', ['angular2/angular2', 
           })];
         } });
       Object.defineProperty(SplitView, 'parameters', { get: function get() {
-          return [[NgElement], [NavPane, new Parent()]];
+          return [[ElementRef], [NavPane, new Parent()]];
         } });
     }
   };
 });
-System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/forms', 'ionic/util', 'ionic/config/component'], function (_export) {
+System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular2/forms', '../../config/annotations'], function (_export) {
   'use strict';
 
-  var Renderer, ElementRef, Component, Directive, View, ControlGroup, ControlDirective, dom, IonicComponent, Switch;
+  var ElementRef, ControlGroup, ControlDirective, IonicComponent, IonicView, Switch;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -8539,20 +9024,13 @@ System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular
 
   return {
     setters: [function (_angular2Angular2) {
-      Renderer = _angular2Angular2.Renderer;
       ElementRef = _angular2Angular2.ElementRef;
-    }, function (_angular2SrcCoreAnnotations_implAnnotations) {
-      Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
-      Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
-    }, function (_angular2SrcCoreAnnotations_implView) {
-      View = _angular2SrcCoreAnnotations_implView.View;
     }, function (_angular2Forms) {
       ControlGroup = _angular2Forms.ControlGroup;
       ControlDirective = _angular2Forms.ControlDirective;
-    }, function (_ionicUtil) {
-      dom = _ionicUtil.dom;
-    }, function (_ionicConfigComponent) {
-      IonicComponent = _ionicConfigComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
+      IonicView = _configAnnotations.IonicView;
     }],
     execute: function () {
       Switch = (function () {
@@ -8561,23 +9039,23 @@ System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular
 
           _classCallCheck(this, Switch);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           this.config = Switch.config.invoke(this);
           this.controlDirective = cd;
           cd.valueAccessor = this;
           var setAriaRole = function setAriaRole(v) {
-            return _this.domElement.setAttribute('aria-role', v);
+            return _this.ele.setAttribute('aria-role', v);
           };
           var setAriaChecked = function setAriaChecked(v) {
-            return _this.domElement.setAttribute('aria-checked', v);
+            return _this.ele.setAttribute('aria-checked', v);
           };
           var setAriaInvalid = function setAriaInvalid(v) {
-            return _this.domElement.setAttribute('aria-invalid', v);
+            return _this.ele.setAttribute('aria-invalid', v);
           };
           var setAriaDisabled = function setAriaDisabled(v) {
-            return _this.domElement.setAttribute('aria-disabled', v);
+            return _this.ele.setAttribute('aria-disabled', v);
           };
-          this.domElement.classList.add('item');
+          this.ele.classList.add('item');
           this.setCheckedProperty = setAriaChecked;
         }
 
@@ -8593,17 +9071,17 @@ System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular
           }
         }, {
           key: 'checked',
-          set: function set(checked) {
+          set: function (checked) {
             this._checked = checked;
             this.setCheckedProperty(checked);
             this.controlDirective._control().updateValue(this._checked);
           },
-          get: function get() {
+          get: function () {
             return this._checked;
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-switch',
               properties: ['checked'],
@@ -8618,7 +9096,7 @@ System.register('ionic/components/switch/switch', ['angular2/angular2', 'angular
       _export('Switch', Switch);
 
       Object.defineProperty(Switch, 'annotations', { get: function get() {
-          return [new IonicComponent(Switch), new View({ template: '\n  <div class="item-content">\n    <div class="item-title">\n      <content></content>\n    </div>\n    <div class="item-media media-switch">\n      <div class="switch-toggle"></div>\n    </div>\n  </div>' })];
+          return [new IonicComponent(Switch), new IonicView({ template: '\n  <div class="item-content">\n    <div class="item-title">\n      <content></content>\n    </div>\n    <div class="item-media media-switch">\n      <div class="switch-toggle"></div>\n    </div>\n  </div>' })];
         } });
       Object.defineProperty(Switch, 'parameters', { get: function get() {
           return [[ElementRef], [ControlDirective]];
@@ -8734,14 +9212,14 @@ System.register('ionic/components/tabs/tab-button', ['angular2/src/core/annotati
     }
   };
 });
-System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/di/annotations_impl', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/compiler/element_ref', 'angular2/angular2', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/di', '../view/view-controller', '../view/view-item', './tabs', '../content/content'], function (_export) {
+System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_impl/visibility', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller', '../view/view-item', './tabs'], function (_export) {
   'use strict';
 
-  var Parent, Directive, Component, onInit, Optional, View, ElementRef, Compiler, DynamicComponentLoader, Injector, ViewController, ViewItem, Tabs, Content, Tab, TabPaneAnchor;
+  var Parent, Directive, Component, onInit, View, ElementRef, Injector, ViewController, ViewItem, Tabs, Tab, TabPaneAnchor;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -8754,16 +9232,10 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
       Directive = _angular2SrcCoreAnnotations_implAnnotations.Directive;
       Component = _angular2SrcCoreAnnotations_implAnnotations.Component;
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
-    }, function (_angular2SrcDiAnnotations_impl) {
-      Optional = _angular2SrcDiAnnotations_impl.Optional;
     }, function (_angular2SrcCoreAnnotations_implView) {
       View = _angular2SrcCoreAnnotations_implView.View;
     }, function (_angular2SrcCoreCompilerElement_ref) {
       ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
-    }, function (_angular2Angular2) {
-      Compiler = _angular2Angular2.Compiler;
-    }, function (_angular2SrcCoreCompilerDynamic_component_loader) {
-      DynamicComponentLoader = _angular2SrcCoreCompilerDynamic_component_loader.DynamicComponentLoader;
     }, function (_angular2Di) {
       Injector = _angular2Di.Injector;
     }, function (_viewViewController) {
@@ -8772,26 +9244,28 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
       ViewItem = _viewViewItem.ViewItem;
     }, function (_tabs) {
       Tabs = _tabs.Tabs;
-    }, function (_contentContent) {
-      Content = _contentContent.Content;
     }],
     execute: function () {
       Tab = (function (_ViewController) {
-        function Tab(tabs, compiler, elementRef, loader, injector) {
+        function Tab(tabs, elementRef, injector) {
           var _this = this;
 
           _classCallCheck(this, Tab);
 
-          _get(Object.getPrototypeOf(Tab.prototype), 'constructor', this).call(this, tabs, compiler, elementRef, loader, injector);
+          _get(Object.getPrototypeOf(Tab.prototype), 'constructor', this).call(this, tabs, injector, elementRef);
           this.tabs = tabs;
           this.childNavbar(true);
           var item = this.item = new ViewItem(tabs.parent);
           item.setInstance(this);
-          item.viewElement(elementRef.domElement);
+          item.viewElement(elementRef.nativeElement);
           tabs.addTab(this);
           this.navbarView = item.navbarView = function () {
             var activeItem = _this.getActive();
             return activeItem && activeItem.navbarView();
+          };
+          item.enableBack = function () {
+            var activeItem = _this.getActive();
+            return activeItem && activeItem.enableBack();
           };
           this.panelId = 'tab-panel-' + item.id;
           this.labeledBy = 'tab-button-' + item.id;
@@ -8838,8 +9312,13 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
           }
         }, {
           key: 'isSelected',
-          get: function get() {
+          get: function () {
             return this.tabs.isActive(this.item);
+          }
+        }, {
+          key: 'isNotSelected',
+          get: function () {
+            return !this.tabs.isActive(this.item);
           }
         }]);
 
@@ -8855,7 +9334,7 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
             host: {
               '[attr.id]': 'panelId',
               '[attr.aria-labelledby]': 'labeledBy',
-              '[attr.aria-hidden]': '!isSelected',
+              '[attr.aria-hidden]': 'isNotSelected',
               '[class.tab-selected]': 'isSelected',
               'role': 'tabpanel'
             }
@@ -8865,7 +9344,7 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
           })];
         } });
       Object.defineProperty(Tab, 'parameters', { get: function get() {
-          return [[Tabs, new Parent()], [Compiler], [ElementRef], [DynamicComponentLoader], [Injector]];
+          return [[Tabs, new Parent()], [ElementRef], [Injector]];
         } });
 
       TabPaneAnchor = function TabPaneAnchor(tab, elementRef) {
@@ -8883,14 +9362,14 @@ System.register('ionic/components/tabs/tab', ['angular2/src/core/annotations_imp
     }
   };
 });
-System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/src/core/compiler/element_ref', 'angular2/angular2', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/di', '../view/view-controller', '../view/view-item', './tab-button', '../icon/icon', '../../config/component'], function (_export) {
+System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl', 'angular2/src/core/annotations_impl/annotations', 'angular2/src/core/annotations_impl/view', 'angular2/di', 'angular2/angular2', '../view/view-controller', '../view/view-item', './tab-button', '../icon/icon', '../../config/annotations'], function (_export) {
   'use strict';
 
-  var Optional, Component, onInit, View, ElementRef, Compiler, NgFor, DynamicComponentLoader, Injector, ViewController, ViewItem, TabButton, Icon, IonicComponent, Tabs;
+  var Optional, Component, onInit, View, Injector, NgFor, ElementRef, ViewController, ViewItem, TabButton, Icon, IonicComponent, Tabs;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -8904,15 +9383,11 @@ System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl
       onInit = _angular2SrcCoreAnnotations_implAnnotations.onInit;
     }, function (_angular2SrcCoreAnnotations_implView) {
       View = _angular2SrcCoreAnnotations_implView.View;
-    }, function (_angular2SrcCoreCompilerElement_ref) {
-      ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
-    }, function (_angular2Angular2) {
-      Compiler = _angular2Angular2.Compiler;
-      NgFor = _angular2Angular2.NgFor;
-    }, function (_angular2SrcCoreCompilerDynamic_component_loader) {
-      DynamicComponentLoader = _angular2SrcCoreCompilerDynamic_component_loader.DynamicComponentLoader;
     }, function (_angular2Di) {
       Injector = _angular2Di.Injector;
+    }, function (_angular2Angular2) {
+      NgFor = _angular2Angular2.NgFor;
+      ElementRef = _angular2Angular2.ElementRef;
     }, function (_viewViewController) {
       ViewController = _viewViewController.ViewController;
     }, function (_viewViewItem) {
@@ -8921,17 +9396,17 @@ System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl
       TabButton = _tabButton.TabButton;
     }, function (_iconIcon) {
       Icon = _iconIcon.Icon;
-    }, function (_configComponent) {
-      IonicComponent = _configComponent.IonicComponent;
+    }, function (_configAnnotations) {
+      IonicComponent = _configAnnotations.IonicComponent;
     }],
     execute: function () {
       Tabs = (function (_ViewController) {
-        function Tabs(parentViewCtrl, viewItem, compiler, elementRef, loader, injector) {
+        function Tabs(parentViewCtrl, viewItem, injector, elementRef) {
           var _this = this;
 
           _classCallCheck(this, Tabs);
 
-          _get(Object.getPrototypeOf(Tabs.prototype), 'constructor', this).call(this, parentViewCtrl, compiler, elementRef, loader, injector);
+          _get(Object.getPrototypeOf(Tabs.prototype), 'constructor', this).call(this, parentViewCtrl, injector, elementRef);
           if (viewItem) {
             this.item = viewItem;
             viewItem.navbarView = function () {
@@ -8982,7 +9457,6 @@ System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl
                 var leavingItem = _this2.getActive() || new ViewItem();
                 leavingItem.shouldDestroy = false;
                 leavingItem.shouldCache = true;
-                leavingItem.willCache();
                 _this2.transition(enteringItem, leavingItem, opts, function () {
                   resolve();
                 });
@@ -8991,12 +9465,12 @@ System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl
           }
         }, {
           key: 'tabs',
-          get: function get() {
+          get: function () {
             return this.instances();
           }
         }], [{
           key: 'config',
-          get: function get() {
+          get: function () {
             return {
               selector: 'ion-tabs',
               defaultProperties: {
@@ -9019,7 +9493,7 @@ System.register('ionic/components/tabs/tabs', ['angular2/src/di/annotations_impl
           })];
         } });
       Object.defineProperty(Tabs, 'parameters', { get: function get() {
-          return [[ViewController, new Optional()], [ViewItem, new Optional()], [Compiler], [ElementRef], [DynamicComponentLoader], [Injector]];
+          return [[ViewController, new Optional()], [ViewItem, new Optional()], [Injector], [ElementRef]];
         } });
     }
   };
@@ -9055,7 +9529,7 @@ System.register('ionic/components/toolbar/toolbar', ['angular2/src/core/annotati
         function Toolbar(elementRef, ngZone) {
           _classCallCheck(this, Toolbar);
 
-          this.domElement = elementRef.domElement;
+          this.ele = elementRef.nativeElement;
           Toolbar.config.invoke(this);
         }
 
@@ -9064,7 +9538,7 @@ System.register('ionic/components/toolbar/toolbar', ['angular2/src/core/annotati
           value: function alignTitle() {
             var _this = this;
 
-            var toolbarEle = this.domElement;
+            var toolbarEle = this.ele;
             var innerTitleEle = this._innerTitleEle || (this._innerTitleEle = toolbarEle.querySelector('.toolbar-inner-title'));
             var titleEle = this._titleEle || (this._titleEle = innerTitleEle.querySelector('ion-title'));
             var style = this._style || (this._style = window.getComputedStyle(titleEle));
@@ -9133,14 +9607,18 @@ System.register('ionic/components/toolbar/toolbar', ['angular2/src/core/annotati
     }
   };
 });
-System.register('ionic/components/view/view-controller', ['angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/di', './view-item', '../nav/nav-controller', '../nav/pane', '../../transitions/transition', '../../util/click-block', 'ionic/util'], function (_export) {
+System.register('ionic/components/view/view-controller', ['angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/src/core/compiler/dynamic_component_loader', 'angular2/src/core/compiler/view_manager', 'angular2/di', '../ion', '../app/app', '../../routing/router', './view-item', '../nav/nav-controller', '../nav/pane', '../../transitions/transition', '../../util/click-block', 'ionic/util'], function (_export) {
   'use strict';
 
-  var Compiler, ElementRef, DynamicComponentLoader, Injector, ViewItem, NavController, PaneController, Transition, ClickBlock, util, ViewController, ACTIVE_STATE, CACHED_STATE, STAGED_ENTERING_STATE, STAGED_LEAVING_STATE, ctrlIds;
+  var Compiler, ElementRef, DynamicComponentLoader, AppViewManager, Injector, bind, Ion, IonicApp, IonicRouter, ViewItem, NavController, PaneController, Transition, ClickBlock, util, ViewController, ACTIVE_STATE, CACHED_STATE, STAGED_ENTERING_STATE, STAGED_LEAVING_STATE, ctrlIds;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
+  var _get = function get(_x4, _x5, _x6) { var _again = true; _function: while (_again) { var object = _x4, property = _x5, receiver = _x6; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x4 = parent; _x5 = property; _x6 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
   return {
     setters: [function (_angular2Angular2) {
@@ -9149,8 +9627,17 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
       ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
     }, function (_angular2SrcCoreCompilerDynamic_component_loader) {
       DynamicComponentLoader = _angular2SrcCoreCompilerDynamic_component_loader.DynamicComponentLoader;
+    }, function (_angular2SrcCoreCompilerView_manager) {
+      AppViewManager = _angular2SrcCoreCompilerView_manager.AppViewManager;
     }, function (_angular2Di) {
       Injector = _angular2Di.Injector;
+      bind = _angular2Di.bind;
+    }, function (_ion) {
+      Ion = _ion.Ion;
+    }, function (_appApp) {
+      IonicApp = _appApp.IonicApp;
+    }, function (_routingRouter) {
+      IonicRouter = _routingRouter.IonicRouter;
     }, function (_viewItem) {
       ViewItem = _viewItem.ViewItem;
     }, function (_navNavController) {
@@ -9165,24 +9652,28 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
       util = _ionicUtil;
     }],
     execute: function () {
-      ViewController = (function () {
-        function ViewController(parentViewCtrl, compiler, elementRef, loader, injector) {
+      ViewController = (function (_Ion) {
+        function ViewController(parentViewCtrl, injector, elementRef) {
           _classCallCheck(this, ViewController);
 
+          _get(Object.getPrototypeOf(ViewController.prototype), 'constructor', this).call(this, elementRef);
           this.parent = parentViewCtrl;
-          this.compiler = compiler;
-          this.elementRef = elementRef;
-          this.loader = loader;
-          this.injector = injector;
-          this.domElement = elementRef.domElement;
+          this.compiler = injector.get(Compiler);
+          this.loader = injector.get(DynamicComponentLoader);
+          this.viewMngr = injector.get(AppViewManager);
+          this.router = injector.get(IonicRouter);
+          this.app = injector.get(IonicApp);
+          this.router.addViewController(this);
           this.items = [];
-          this.navCtrl = new NavController(this);
           this.panes = new PaneController(this);
           this.sbTransition = null;
           this.sbActive = false;
           this.id = ++ctrlIds;
           this._ids = -1;
+          this.injector = injector.resolveAndCreateChild([bind(ViewController).toValue(this), bind(NavController).toValue(new NavController(this))]);
         }
+
+        _inherits(ViewController, _Ion);
 
         _createClass(ViewController, [{
           key: 'push',
@@ -9204,9 +9695,9 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
             var leavingItem = this.getActive() || new ViewItem();
             leavingItem.shouldDestroy = false;
             leavingItem.shouldCache = true;
-            leavingItem.willCache();
             var enteringItem = new ViewItem(this, ComponentType, params);
             this.add(enteringItem);
+            this.app.stateChange(enteringItem, this);
             this.transition(enteringItem, leavingItem, opts, function () {
               resolve();
             });
@@ -9231,6 +9722,7 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
             leavingItem.willUnload();
             var enteringItem = this.getPrevious(leavingItem);
             if (enteringItem) {
+              this.app.stateChange(enteringItem, this);
               this.transition(enteringItem, leavingItem, opts, function () {
                 resolve();
               });
@@ -9313,6 +9805,7 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
                   leavingItem.state = CACHED_STATE;
                   enteringItem.didEnter();
                   leavingItem.didLeave();
+                  _this2.app.stateChange(enteringItem, _this2);
                 } else {
                   leavingItem.state = ACTIVE_STATE;
                   enteringItem.state = CACHED_STATE;
@@ -9377,7 +9870,6 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
                   _this4.remove(item);
                   item.destroy();
                 } else if (item.state === CACHED_STATE && item.shouldCache) {
-                  item.cache();
                   item.shouldCache = false;
                 }
               }
@@ -9618,12 +10110,12 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
         }]);
 
         return ViewController;
-      })();
+      })(Ion);
 
       _export('ViewController', ViewController);
 
       Object.defineProperty(ViewController, 'parameters', { get: function get() {
-          return [[ViewController], [Compiler], [ElementRef], [DynamicComponentLoader], [Injector]];
+          return [[ViewController], [Injector], [ElementRef]];
         } });
       ACTIVE_STATE = 1;
       CACHED_STATE = 2;
@@ -9633,10 +10125,10 @@ System.register('ionic/components/view/view-controller', ['angular2/angular2', '
     }
   };
 });
-System.register('ionic/components/view/view-item', ['angular2/angular2', 'angular2/src/core/compiler/view_container_ref', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../view/view-controller', '../nav/nav-controller', '../nav/nav-params'], function (_export) {
+System.register('ionic/components/view/view-item', ['angular2/angular2', 'angular2/src/core/compiler/element_ref', 'angular2/di', '../nav/nav-controller'], function (_export) {
   'use strict';
 
-  var EventEmitter, ViewContainerRef, ElementRef, bind, ViewController, NavController, NavParams, ViewItem;
+  var EventEmitter, ElementRef, bind, NavParams, ViewItem;
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
@@ -9648,18 +10140,12 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
   return {
     setters: [function (_angular2Angular2) {
       EventEmitter = _angular2Angular2.EventEmitter;
-    }, function (_angular2SrcCoreCompilerView_container_ref) {
-      ViewContainerRef = _angular2SrcCoreCompilerView_container_ref.ViewContainerRef;
     }, function (_angular2SrcCoreCompilerElement_ref) {
       ElementRef = _angular2SrcCoreCompilerElement_ref.ElementRef;
     }, function (_angular2Di) {
       bind = _angular2Di.bind;
-    }, function (_viewViewController) {
-      ViewController = _viewViewController.ViewController;
     }, function (_navNavController) {
-      NavController = _navNavController.NavController;
-    }, function (_navNavParams) {
-      NavParams = _navNavParams.NavParams;
+      NavParams = _navNavController.NavParams;
     }],
     execute: function () {
       ViewItem = (function () {
@@ -9697,10 +10183,10 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
               var itemStructure = _this.sturcture = _this.inspectStructure(componentProtoViewRef);
               viewCtrl.panes.get(itemStructure, function (pane) {
                 _this.pane = pane;
-                var injector = viewCtrl.injector.resolveAndCreateChild([bind(ViewController).toValue(viewCtrl), bind(NavController).toValue(viewCtrl.navCtrl), bind(NavParams).toValue(_this.params), bind(ViewItem).toValue(_this)]);
+                var injector = viewCtrl.injector.resolveAndCreateChild([bind(NavParams).toValue(_this.params), bind(ViewItem).toValue(_this)]);
                 var contentContainer = pane.contentContainerRef;
                 var hostViewRef = contentContainer.create(componentProtoViewRef, -1, null, injector);
-                _this.setInstance(viewCtrl.loader._viewManager.getComponent(new ElementRef(hostViewRef, 0)));
+                _this.setInstance(viewCtrl.viewMngr.getComponent(new ElementRef(hostViewRef, 0)));
                 _this.viewElement(hostViewRef._view.render._view.rootNodes[0]);
                 _this.disposals.push(function () {
                   contentContainer.remove(contentContainer.indexOf(hostViewRef));
@@ -9719,7 +10205,11 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
                     });
                   })();
                 }
-                _this.loaded();
+                try {
+                  _this.loaded();
+                } catch (e) {
+                  console.error(e);
+                }
                 Promise.all(_this._promises).then(function () {
                   callback();
                   _this._promises = [];
@@ -9776,11 +10266,6 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
             this.instance._viewItem = this;
             this.instance._viewDidEnter = new EventEmitter('viewDidEnter');
             this.instance._viewWillEnter = new EventEmitter('viewWillEnter');
-          }
-        }, {
-          key: 'cache',
-          value: function cache() {
-            this.didCache();
           }
         }, {
           key: 'destroy',
@@ -9869,7 +10354,6 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
           key: 'willEnter',
           value: function willEnter() {
             this.instance && this.instance.viewWillEnter && this.instance.viewWillEnter();
-            this.instance && this.instance._viewWillEnter.next();
           }
         }, {
           key: 'didEnter',
@@ -9880,7 +10364,6 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
               navbarView.didEnter();
             }
             this.instance && this.instance.viewDidEnter && this.instance.viewDidEnter();
-            this.instance && this.instance._viewDidEnter.next();
           }
         }, {
           key: 'willLeave',
@@ -9891,16 +10374,6 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
           key: 'didLeave',
           value: function didLeave() {
             this.instance && this.instance.viewDidLeave && this.instance.viewDidLeave();
-          }
-        }, {
-          key: 'willCache',
-          value: function willCache() {
-            this.instance && this.instance.viewWillCache && this.instance.viewWillCache();
-          }
-        }, {
-          key: 'didCache',
-          value: function didCache() {
-            this.instance && this.instance.viewDidCache && this.instance.viewDidCache();
           }
         }, {
           key: 'willUnload',
@@ -9921,12 +10394,16 @@ System.register('ionic/components/view/view-item', ['angular2/angular2', 'angula
     }
   };
 });
-System.register('ionic/components/view/view', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/compiler/element_ref', 'angular2/src/di/annotations_impl', './view-item'], function (_export) {
+System.register('ionic/components/view/view', ['angular2/src/core/annotations_impl/annotations', 'angular2/src/core/compiler/element_ref', 'angular2/src/di/annotations_impl', './view-item', '../ion'], function (_export) {
   'use strict';
 
-  var Directive, ElementRef, Optional, ViewItem, IonView;
+  var Directive, ElementRef, Optional, ViewItem, Ion, IonView;
+
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
+
+  function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
   return {
     setters: [function (_angular2SrcCoreAnnotations_implAnnotations) {
@@ -9937,14 +10414,22 @@ System.register('ionic/components/view/view', ['angular2/src/core/annotations_im
       Optional = _angular2SrcDiAnnotations_impl.Optional;
     }, function (_viewItem) {
       ViewItem = _viewItem.ViewItem;
+    }, function (_ion) {
+      Ion = _ion.Ion;
     }],
     execute: function () {
-      IonView = function IonView(item, elementRef) {
-        _classCallCheck(this, IonView);
+      IonView = (function (_Ion) {
+        function IonView(item, elementRef) {
+          _classCallCheck(this, IonView);
 
-        console.log('View constructor', item);
-        this.domElement = elementRef.domElement;
-      };
+          _get(Object.getPrototypeOf(IonView.prototype), 'constructor', this).call(this, elementRef);
+          this.ele = elementRef.nativeElement;
+        }
+
+        _inherits(IonView, _Ion);
+
+        return IonView;
+      })(Ion);
 
       _export('IonView', IonView);
 
@@ -10191,7 +10676,7 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
+  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
 
@@ -10260,7 +10745,7 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
           value: function getSlideBoundaries() {
             return {
               min: 0,
-              max: this.aside.domElement.offsetWidth
+              max: this.aside.ele.offsetWidth
             };
           }
         }]);
@@ -10276,7 +10761,9 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
         function LeftAsideGesture() {
           _classCallCheck(this, LeftAsideGesture);
 
-          _get(Object.getPrototypeOf(LeftAsideGesture.prototype), 'constructor', this).apply(this, arguments);
+          if (_AsideGesture != null) {
+            _AsideGesture.apply(this, arguments);
+          }
         }
 
         _inherits(LeftAsideGesture, _AsideGesture);
@@ -10290,7 +10777,9 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
         function RightAsideGesture() {
           _classCallCheck(this, RightAsideGesture);
 
-          _get(Object.getPrototypeOf(RightAsideGesture.prototype), 'constructor', this).apply(this, arguments);
+          if (_LeftAsideGesture != null) {
+            _LeftAsideGesture.apply(this, arguments);
+          }
         }
 
         _inherits(RightAsideGesture, _LeftAsideGesture);
@@ -10304,7 +10793,7 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
           key: 'getSlideBoundaries',
           value: function getSlideBoundaries() {
             return {
-              min: -this.aside.domElement.offsetWidth,
+              min: -this.aside.ele.offsetWidth,
               max: 0
             };
           }
@@ -10319,7 +10808,9 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
         function TopAsideGesture() {
           _classCallCheck(this, TopAsideGesture);
 
-          _get(Object.getPrototypeOf(TopAsideGesture.prototype), 'constructor', this).apply(this, arguments);
+          if (_AsideGesture2 != null) {
+            _AsideGesture2.apply(this, arguments);
+          }
         }
 
         _inherits(TopAsideGesture, _AsideGesture2);
@@ -10334,7 +10825,7 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
           value: function getSlideBoundaries() {
             return {
               min: 0,
-              max: this.aside.domElement.offsetHeight
+              max: this.aside.ele.offsetHeight
             };
           }
         }]);
@@ -10348,7 +10839,9 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
         function BottomAsideGesture() {
           _classCallCheck(this, BottomAsideGesture);
 
-          _get(Object.getPrototypeOf(BottomAsideGesture.prototype), 'constructor', this).apply(this, arguments);
+          if (_TopAsideGesture != null) {
+            _TopAsideGesture.apply(this, arguments);
+          }
         }
 
         _inherits(BottomAsideGesture, _TopAsideGesture);
@@ -10362,7 +10855,7 @@ System.register('ionic/components/aside/extensions/gestures', ['ionic/components
           key: 'getSlideBoundaries',
           value: function getSlideBoundaries() {
             return {
-              min: -this.aside.domElement.offsetHeight,
+              min: -this.aside.ele.offsetHeight,
               max: 0
             };
           }
@@ -10382,8 +10875,6 @@ System.register('ionic/components/aside/extensions/types', ['ionic/components/as
 
   var _createClass = (function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ('value' in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; })();
 
-  var _get = function get(_x, _x2, _x3) { var _again = true; _function: while (_again) { var object = _x, property = _x2, receiver = _x3; desc = parent = getter = undefined; _again = false; if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { _x = parent; _x2 = property; _x3 = receiver; _again = true; continue _function; } } else if ('value' in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } } };
-
   function _inherits(subClass, superClass) { if (typeof superClass !== 'function' && superClass !== null) { throw new TypeError('Super expression must either be null or a function, not ' + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) subClass.__proto__ = superClass; }
 
   function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError('Cannot call a class as a function'); } }
@@ -10397,13 +10888,13 @@ System.register('ionic/components/aside/extensions/types', ['ionic/components/as
     execute: function () {
       asideManipulator = {
         setSliding: function setSliding(sliding) {
-          this.aside.domElement.classList[sliding ? 'add' : 'remove']('no-transition');
+          this.aside.ele.classList[sliding ? 'add' : 'remove']('no-transition');
         },
         setOpen: function setOpen(open) {
-          this.aside.domElement.classList[open ? 'add' : 'remove']('open');
+          this.aside.ele.classList[open ? 'add' : 'remove']('open');
         },
         setTransform: function setTransform(t) {
-          this.aside.domElement.style[CSS.transform] = t;
+          this.aside.ele.style[CSS.transform] = t;
         }
       };
       contentManipulator = {
@@ -10437,7 +10928,9 @@ System.register('ionic/components/aside/extensions/types', ['ionic/components/as
         function AsideTypeOverlay() {
           _classCallCheck(this, AsideTypeOverlay);
 
-          _get(Object.getPrototypeOf(AsideTypeOverlay.prototype), 'constructor', this).apply(this, arguments);
+          if (_AsideType != null) {
+            _AsideType.apply(this, arguments);
+          }
         }
 
         _inherits(AsideTypeOverlay, _AsideType);
@@ -10468,7 +10961,9 @@ System.register('ionic/components/aside/extensions/types', ['ionic/components/as
         function AsideTypePush() {
           _classCallCheck(this, AsideTypePush);
 
-          _get(Object.getPrototypeOf(AsideTypePush.prototype), 'constructor', this).apply(this, arguments);
+          if (_AsideType2 != null) {
+            _AsideType2.apply(this, arguments);
+          }
         }
 
         _inherits(AsideTypePush, _AsideType2);
@@ -10502,7 +10997,9 @@ System.register('ionic/components/aside/extensions/types', ['ionic/components/as
         function AsideTypeReveal() {
           _classCallCheck(this, AsideTypeReveal);
 
-          _get(Object.getPrototypeOf(AsideTypeReveal.prototype), 'constructor', this).apply(this, arguments);
+          if (_AsideType3 != null) {
+            _AsideType3.apply(this, arguments);
+          }
         }
 
         _inherits(AsideTypeReveal, _AsideType3);
