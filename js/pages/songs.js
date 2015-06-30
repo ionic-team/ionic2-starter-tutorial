@@ -15,20 +15,16 @@ export class SongsPage {
 
     this.app = app;
 
-    let songTitles = [
-      'Linoleum',
-      'Rise Above',
-      'Ruby Soho',
-      'Blitzkrieg Bop',
-      'God Save the Queen',
-      'Give Me The Cure'
-    ];
 
-    this.songs = songTitles.map((item) => {
-      return {
-        title: item
-      }
-    });
+    this.songs = [
+      { title: 'Linoleum', artist: 'NOFX' },
+      { title: 'Rise Above', artist: 'Black Flag' },
+      { title: 'Ruby Soho', artist: 'Rancid' },
+      { title: 'Blitzkrieg Bop', artist: 'Ramones' },
+      { title: 'Where Eagles Dare', artist: 'Misfits' },
+      { title: 'Superman', artist: 'Goldfinger' },
+      { title: 'Give Me The Cure', artist: 'Fugazi' }
+    ];
   }
 
   openSong(song) {
