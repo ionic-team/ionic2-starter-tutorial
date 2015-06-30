@@ -1297,7 +1297,7 @@ div {
   margin: 35px 0;
   padding: 0;
   list-style-type: none; }
-  .list.list-inset .list[inset] {
+  .list[inset], .list.list-inset {
     margin-top: 0;
     margin-left: -10px;
     margin-right: -10px; }
