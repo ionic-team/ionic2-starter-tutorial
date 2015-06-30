@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     traceur = require('gulp-traceur'),
     cache = require('gulp-cached'),
     concat = require('gulp-concat'),
+    minimist = require('minimist'),
     connect = require('gulp-connect');
 
 var traceurOptions = {
@@ -20,9 +21,16 @@ var babelOptions = {
   }
 };
 
+var flagConfig = {
+  string: 'port',
+  default: { port: 8100 }
+};
+
+var flags = minimist(process.argv.slice(2), flagConfig);
+
 gulp.task('serve', ['bundle'], function() {
   connect.server({
-    port: 8000,
+    port: flags.port,
     livereload: false
   });
 });
