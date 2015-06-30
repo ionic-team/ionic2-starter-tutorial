@@ -3,7 +3,7 @@
     <ion-title>Menu</ion-title>
   </ion-toolbar>
   <ion-content>
-    <ion-list inset>
+    <ion-list>
       <ion-item *ng-for="#p of pages" (^click)="openPage(aside, p)">
         {{p.title}}
       </ion-item>
