@@ -1,6 +1,6 @@
 import {bootstrap, NgFor, ComponentAnnotation as Component,
   DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
-import {NavController, Navbar, NavbarTemplate, List, Item, Content} from 'ionic/ionic';
+import {IonicApp, NavController, Navbar, NavbarTemplate, List, Item, Content} from 'ionic/ionic';
 
 import {SongDetailPage} from './song-detail';
 
@@ -10,8 +10,10 @@ import {SongDetailPage} from './song-detail';
   templateUrl: 'templates/pages/songs.html'
 })
 export class SongsPage {
-  constructor(nav: NavController) {
+  constructor(app: IonicApp, nav: NavController) {
     this.name = 'Max';
+
+    this.app = app;
 
     let songTitles = [
       'Linoleum',
@@ -35,6 +37,8 @@ export class SongsPage {
     });
   }
 
-  openMenu() {
+  toggleMenu() {
+    let aside = this.app.getComponent('mainMenu');
+    aside.toggle();
   }
 }

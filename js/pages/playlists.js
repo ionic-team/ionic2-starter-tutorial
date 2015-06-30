@@ -1,6 +1,6 @@
 import {bootstrap, NgFor, ComponentAnnotation as Component,
   DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
-import {NavController, Navbar, NavbarTemplate, List, Item, Content} from 'ionic/ionic';
+import {IonicApp, NavController, Navbar, NavbarTemplate, List, Item, Content} from 'ionic/ionic';
 
 @Component({ selector: 'ion-view' })
 @View({
@@ -8,6 +8,18 @@ import {NavController, Navbar, NavbarTemplate, List, Item, Content} from 'ionic/
   templateUrl: 'templates/pages/playlists.html'
 })
 export class PlaylistsPage {
-  constructor(nav: NavController) {
+  constructor(app: IonicApp, nav: NavController) {
+    this.app = app;
+
+    this.playlists = [
+      { title: '90\'s Punk' },
+      { title: '80\'s Revival' }
+    ];
+
+  }
+
+  toggleMenu() {
+    let aside = this.app.getComponent('mainMenu');
+    aside.toggle();
   }
 }
