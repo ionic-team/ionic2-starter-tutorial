@@ -13,4 +13,4 @@ Then `gulp watch` to transpile the app's es6 code down to es5, spin up a local d
 $ gulp watch
 ```
 
-Then navigate to `http://localhost:8000` to check it out!
+Then navigate to `http://localhost:8100` to check it out!
