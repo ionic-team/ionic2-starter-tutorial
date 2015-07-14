@@ -12,9 +12,8 @@ import {SongDetailPage} from './song-detail';
 export class SongsPage {
   constructor(app: IonicApp, nav: NavController) {
     this.name = 'Max';
-
+    this.nav = nav;
     this.app = app;
-
 
     this.songs = [
       { title: 'Linoleum', artist: 'NOFX' },
