@@ -1,14 +1,11 @@
 import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 
-import {IonicApp, Register, Aside, NavParams, Nav, NavController,
-  Navbar, NavbarTemplate, List, Item, Content, Button} from 'ionic/ionic';
+import {App, IonicApp} from 'ionic/ionic';
 
 import {SongsPage} from './pages/songs';
 import {PlaylistsPage} from './pages/playlists';
 
-@Component({ selector: 'ion-app' })
-@View({
-  directives: [NgFor, Aside, Nav, Content, List, Item, Register],
+@App({
   templateUrl: 'templates/main.html'
 })
 class MyApp {
@@ -37,6 +34,3 @@ class MyApp {
   }
 }
 
-export function main(ionicBootstrap){
-  ionicBootstrap(MyApp);
-}
