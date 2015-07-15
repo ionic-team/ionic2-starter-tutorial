@@ -1,5 +1,4 @@
-import {bootstrap, NgFor, ComponentAnnotation as Component,
-  DirectiveAnnotation as Directive, ViewAnnotation as View} from 'angular2/angular2';
+import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {NavParams, NavController, Navbar, NavbarTemplate, Content} from 'ionic/ionic';
 
 @Component({ selector: 'ion-view' })
