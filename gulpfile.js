@@ -73,7 +73,7 @@ gulp.task('transpile', function() {
     .pipe(remember('es5-source-files'))
     // create the bundle 
     .pipe(concat('app.bundle.js'))
-    .pipe(gulp.dest('www/'));
+    .pipe(gulp.dest('www/js'));
 
   return stream;
 });
@@ -88,8 +88,9 @@ gulp.task('copy-lib', function() {
       'lib/**/*.js',
       'lib/**/*.css',
       'src/systemjs-config.js'
+      'lib/**/fonts/**/*'
      ])
-     .pipe(gulp.dest('www')); 
+     .pipe(gulp.dest('www/lib')); 
 });
 
 gulp.task('build', ['copy-lib', 'copy-html', 'transpile']);

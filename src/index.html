@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link rel="stylesheet" href="css/ionicons.min.css">
-  <link href="css/ionic.css" rel="stylesheet">
+  <link rel="stylesheet" href="lib/ionic/css/ionicons.min.css">
+  <link href="lib/ionic/css/ionic.css" rel="stylesheet">
   <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 </head>
 <body>
@@ -13,28 +13,21 @@
     <ion-loading-icon></ion-loading-icon>
   </ion-app>
 
-
-  <!-- web animations polyfill for non-chrome browsers -->
-  <script src="js/web-animations.min.js"></script>
-
   <!-- Traceur Runtime for transpiled es5 code -->
-  <script src="js/traceur-runtime.js"></script>
+  <script src="lib/traceur-runtime/traceur-runtime.js"></script>
 
   <!-- SystemJS Loader -->
-  <script src="js/system.js"></script>
   <script src="systemjs-config.js"></script>
+  <script src="lib/systemjs/system.js"></script>
 
-  <!-- Angular bundle -->
-  <script src="js/angular2.dev.js"></script>
-
-  <!-- Ionic bundle -->
-  <script src="js/ionic.bundle.js"></script>
+  <!-- Ionic bundle (Angular, Ionic, Web Animations Polyfill) -->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
 
   <!-- Your app bundle -->
-  <script src="app.bundle.js"></script>
+  <script src="js/app.bundle.js"></script>
 
   <!-- Load your app -->
-  <script> System.import('app/app') </script>
+  <script> System.import('app/app')</script>
 
 </body>
 </html>
