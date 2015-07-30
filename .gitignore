@@ -1,4 +1,4 @@
 node_modules
-jspm_packages
-dist
+www
 *.swp
+.DS_Store

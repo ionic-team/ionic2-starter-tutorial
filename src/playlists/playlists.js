@@ -4,7 +4,7 @@ import {IonicApp, NavController, Navbar, NavbarTemplate, List, Item, Content} fr
 @Component({ selector: 'ion-view' })
 @View({
   directives: [NgFor, Content, List, Item, Navbar, NavbarTemplate],
-  templateUrl: 'templates/pages/playlists.html'
+  templateUrl: 'playlists/playlists.html'
 })
 export class PlaylistsPage {
   constructor(app: IonicApp, nav: NavController) {

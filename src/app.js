@@ -2,11 +2,11 @@ import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 
 import {App, IonicApp} from 'ionic/ionic';
 
-import {SongsPage} from './pages/songs';
-import {PlaylistsPage} from './pages/playlists';
+import {SongsPage} from './songs/songs';
+import {PlaylistsPage} from './playlists/playlists';
 
 @App({
-  templateUrl: 'templates/main.html'
+  templateUrl: 'layout/main.html'
 })
 class MyApp {
   constructor(app: IonicApp) {
@@ -33,4 +33,3 @@ class MyApp {
     nav.setItems([page.component]);
   }
 }
-
