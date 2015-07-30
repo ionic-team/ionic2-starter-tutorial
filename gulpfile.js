@@ -87,7 +87,6 @@ gulp.task('copy-lib', function() {
   return gulp.src([
       'lib/**/*.js',
       'lib/**/*.css',
-      'src/systemjs-config.js'
       'lib/**/fonts/**/*'
      ])
      .pipe(gulp.dest('www/lib')); 
