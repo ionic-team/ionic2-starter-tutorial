@@ -85,7 +85,6 @@ Then navigate to `http://localhost:8100` to check it out!
 
 ```
 
-In a production ionic build for Cordova, the root `src` and `node_modules` directories should be safe to be deleted.
-
 - Is Webpack actually better that writing good gulp tasks???
-- How do developers add in random es5 scripts that shouldn't be transpiled and added to system???
+- How would developers add in random es5 scripts (modules not in npm) that shouldn't be transpiled and added to system???
+- How should they be adding scripts like firebase.js???
