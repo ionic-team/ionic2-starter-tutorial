@@ -13,20 +13,13 @@
     <ion-loading-icon></ion-loading-icon>
   </ion-app>
 
-  <!-- Traceur Runtime for transpiled es5 code -->
-  <script src="lib/traceur-runtime/traceur-runtime.js"></script>
-
-  <!-- SystemJS Loader -->
-  <script src="lib/systemjs/system.js"></script>
-
-  <!-- Ionic bundle (Angular, Ionic, Web Animations Polyfill) -->
+  <!-- Ionic bundle (Angular, Ionic, Traceur runtime, SystemJS, Web Animations Polyfill) -->
   <script src="lib/ionic/js/ionic.bundle.js"></script>
 
   <!-- Your app bundle -->
   <script src="js/app.bundle.js"></script>
 
   <!-- Load your app -->
-  <script> System.import('app/app')</script>
-
+  <script> System.import('app/app') </script>
 </body>
 </html>
