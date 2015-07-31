@@ -36,9 +36,11 @@ Then navigate to `http://localhost:8100` to check it out!
       - music.js
       - music.html
       - music.scss
-    - index.html
-    - app.scss
-    - app.js
+
+    - app.scss (largely ionic sass variable overrides)
+    - app.js (their root component init scripts)
+    - app.html (the root component's html)
+    - index.html (the initial load html w/ script tags)
 
   - www (basically dist, all compiled/copied code)
     - lib
@@ -80,7 +82,6 @@ Then navigate to `http://localhost:8100` to check it out!
         typescript,
         concat,
         minify,
-        firebase,
       }
 
 ```
