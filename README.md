@@ -28,6 +28,7 @@ Then navigate to `http://localhost:8100` to check it out!
   - src (from ionic starter repos)
     - assets
       - mylogo.png
+      - my.crazy-es5.code.js
     - users
       - user.js
       - user.html
@@ -38,7 +39,7 @@ Then navigate to `http://localhost:8100` to check it out!
       - music.scss
 
     - app.scss (largely ionic sass variable overrides)
-    - app.js (their root component init scripts)
+    - app.js (their root component and init scripts)
     - app.html (the root component's html)
     - index.html (the initial load html w/ script tags)
 
@@ -69,6 +70,10 @@ Then navigate to `http://localhost:8100` to check it out!
 
       - firebase (how would this get here?)
         - firebase.min.js
+
+    - assets (1-for-1 copy from src)
+      - mylogo.png
+      - my.crazy-es5.code.js
 
     - app.js (their transpiled js)
     - app.css (their compiled css)
