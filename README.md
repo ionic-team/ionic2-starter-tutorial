@@ -7,90 +7,10 @@ To get started run `npm install` to install the project's dependencies.
 $ npm install
 ```
 
-Then `gulp watch` to transpile the app's es6 code down to es5, spin up a local development server and watch for  changes.
+Then use either `gulp watch.systemjs` or `gulp watch.webpack` to transpile the app's es6 code down to es5, spin up a local development server and watch for changes.  Both SystemJS and Webpack builds have their pros and cons, but both work outside of the box with incremental compilation for this starter.  For more information on both, check out their docs: https://github.com/systemjs/systemjs and http://webpack.github.io/.
 
 ```bash
 $ gulp watch
 ```
 
 Then navigate to `http://localhost:8100` to check it out!
-
-
-### Recommended Structure
-
-```
-- mydir (from ionic-cordova-base repo)
-
-  - hooks
-
-  - node_modules
-
-  - src (from ionic starter repos)
-    - assets
-      - mylogo.png
-      - my.crazy-es5.code.js
-    - users
-      - user.js
-      - user.html
-      - user.scss
-    - music
-      - music.js
-      - music.html
-      - music.scss
-
-    - app.scss (largely ionic sass variable overrides)
-    - app.js (their root component and init scripts)
-    - app.html (the root component's html)
-    - index.html (the initial load html w/ script tags)
-
-  - www (basically dist, all compiled/copied code)
-    - lib
-      - ionic (copied from node_modules, from npm ionic-lib)
-        - css
-          - ionic.css
-          - ionic.min.css
-        - js
-           - ionic.js
-           - ionic.min.js
-           - web-animations.min.js
-           - ionic.bundle.js (angular.dev.js and ionic.js, web-animations.min)
-           - ionic.bundle.min.js (angular.min.js and ionic.min.js, web-animations.min)
-        - fonts
-          - ionicons.eot
-          - ionicons.svg
-          - ionicons.ttf
-          - ionicons.woff
-
-      - system
-        - system.js
-        - es6moduleloader.js
-
-      - traceur
-        - traceur-runtime.js
-
-      - firebase (how would this get here?)
-        - firebase.min.js
-
-    - assets (1-for-1 copy from src)
-      - mylogo.png
-      - my.crazy-es5.code.js
-
-    - app.js (their transpiled js)
-    - app.css (their compiled css)
-
-  - config.xml (ready to go w/ good recommendations)
-  - gulpfile.xml (minimal as possible, but everything that's useful)
-  - package.json
-      devDependencies: {
-        ionic-lib,
-        sass,
-        typescript,
-        concat,
-        minify,
-      }
-
-```
-
-- Is Webpack actually better that writing good gulp tasks???
-- How would developers add in random es5 scripts (modules not in npm) that shouldn't be transpiled and added to system???
-- How should they be adding scripts like firebase.js???
