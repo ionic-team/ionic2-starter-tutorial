@@ -20,7 +20,7 @@ class MyApp {
     ];
 
     this.firstPage = SongsPage;
-  } //hello
+  }
 
   openPage(aside, page) {
     console.log('Opening page', page);
