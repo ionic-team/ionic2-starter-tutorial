@@ -4,7 +4,7 @@ import {NavParams, NavController, Navbar, NavbarTemplate, Content} from 'ionic/i
 @Component({ selector: 'ion-view' })
 @View({
   directives: [Content, Navbar, NavbarTemplate],
-  templateUrl: '_app/songs/song_detail.html'
+  templateUrl: 'app/songs/song_detail.html'
 })
 export class SongDetailPage {
   constructor(nav: NavController, navParams: NavParams) {

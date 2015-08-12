@@ -1,4 +1,4 @@
 node_modules
-www/_app
+www/app
 *.swp
 .DS_Store

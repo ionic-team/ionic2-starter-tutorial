@@ -2,29 +2,37 @@ var webpack = require('webpack');
 
 module.exports = {
   entry: {
-    'app': "./www/_app/app.js",
-    'angular2': [
-      // Angular 2 Deps
-      'traceur-runtime',
-      'zone.js',
-      'reflect-metadata',
-      'rtts_assert/rtts_assert',
-      'angular2/angular2'
-    ]
+    'app': "./www/app/app.js"
+    // 'angular2': [ // <--- if you want angular as a separate bundle
+    //   // Angular 2 Deps
+    //   'traceur-runtime',
+    //   'zone.js',
+    //   'reflect-metadata',
+    //   'rtts_assert/rtts_assert',
+    //   'angular2/angular2'
+    // ]
   },
   output: {
     path: __dirname,
-    filename: "www/_app/app.bundle.js"
+    filename: "www/app/app.bundle.js",
+    pathinfo: true // show module paths in the bundle, handy for debugging
+  },
+  module: {
+    loaders: [
+      { test: /\.css$/, loader: "style!css" },
+      { test: /(\.woff|\.ttf|\.svg)/, loader: "url?limit=1000000" }
+    ]
   },
   resolve: {
     modulesDirectories: [
-      'lib/ionic',
-      'node_modules'
+      "node_modules",
+      "node_modules/ionic-framework/src/es5/common" // ionic-framework npm package (stable)
+      // "node_modules/ionic2/dist/src/es5/common" // driftyco/ionic2 github repo (master)
     ],
     extensions: ['', '.js']
   },
-  plugins: [
-    new webpack.optimize.CommonsChunkPlugin("angular2", "www/lib/bundle.js")
-  ],
+  // plugins: [ // <--- if you want angular as a separate bundle
+  //   new webpack.optimize.CommonsChunkPlugin("angular2", "www/app/angular.js")
+  // ],
   watch: true // watch for changes after building
 };

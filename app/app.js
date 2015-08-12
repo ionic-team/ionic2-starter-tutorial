@@ -1,12 +1,20 @@
-import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
+// Angular dependencies
+import 'reflect-metadata';
+import 'traceur-runtime';
+import 'rtts_assert/rtts_assert';
+import 'zone.js';
 
+// For Webpack's css loader
+import 'ionic-framework/css/ionic.css';
+
+import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {App, IonicApp} from 'ionic/ionic';
 
 import {SongsPage} from './songs/songs';
 import {PlaylistsPage} from './playlists/playlists';
 
 @App({
-  templateUrl: '_app/app.html'
+  templateUrl: 'app/app.html'
 })
 class MyApp {
   constructor(app: IonicApp) {
