@@ -17,9 +17,11 @@ $ gulp watch
 Then navigate to `http://localhost:8100` to check it out!
 
 #### Notes:
-- To develop against the ionic2 master branch, you'll need to
+- To develop against the ionic2 master branch, you'll need to do the following:
 ```bash
 $ npm install driftyco/ionic2
+$ cd node_modules/ionic2 && npm install
+$ gulp publish
 ```
 And then update your `webpack.config.js` file:
 ```js
