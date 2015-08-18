@@ -1,34 +1,8 @@
 var gulp = require('gulp'),
-    tsc = require('gulp-typescript');
-    babel = require('gulp-babel'),
-    webpack = require('webpack-stream'),
+    webpack = require('webpack'),
     del = require('del'),
-    cache = require('gulp-cached'),
-    concat = require('gulp-concat'),
     minimist = require('minimist'),
-    connect = require('gulp-connect'),
-    runSequence = require('run-sequence');
-
-
-// Config
-/******************************************************************************/
-var tscOptions = {
-  target: 'ES5',
-  allowNonTsExtensions: true,
-  module: "commonjs",
-  isolatedModules: true,
-  emitDecoratorMetadata: true,
-  experimentalDecorators: true,
-  noEmitOnError: false,
-  rootDir: '.'
-}
-
-// only report syntax errors, no type checking for now
-var tscReporter = {
-  error: function (error) {
-    console.error(error.message);
-  }
-};
+    connect = require('gulp-connect');
 
 // Serve config
 var flagConfig = {
@@ -40,20 +14,9 @@ var flags = minimist(process.argv.slice(2), flagConfig);
 
 // Tasks
 /******************************************************************************/
-gulp.task('watch', function(done) {
-  runSequence(
-    'clean',
-    ['serve', 'build'],
-    function(){
-      gulp.watch('app/**/*.js', ['transpile']);
-      gulp.watch('app/**/*.html', ['copy.html']);
-      done();
-    }
-  );
-});
 
 gulp.task('clean', function(done) {
-  del(['www/app'], done);
+  del(['www/build'], done);
 });
 
 gulp.task('serve', function() {
@@ -64,31 +27,46 @@ gulp.task('serve', function() {
   });
 });
 
-gulp.task('build', ['bundle', 'copy.html']);
+gulp.task('build', function(done) {
+  compile(false, done);
+});
 
-gulp.task('bundle', ['transpile'], function() {
+gulp.task('watch', ['serve'], function(done) {
+  compile(true, done);
+});
+
+/******************************************************************************/
+
+function compile(watch, cb) {
+  // prevent gulp calling done callback more than once when watching
+  var firstTime = true;
+
+  // load webpack config
   var config = require('./webpack.config.js');
-  return gulp.src("www/app/app.js")
-    .pipe(webpack(config))
-    .pipe(gulp.dest('./'));
-});
 
-// transpile to es5 with typescript compiler for decorators
-// you could have type checking by changing the reporter
-// but we don't use it (yet)
-gulp.task('transpile', function() {
-  var stream = gulp.src(['app/**/*.js'])
-    .pipe(cache('transpile', { optimizeMemory: true }))
-    .pipe(tsc(tscOptions, null, tscReporter))
-    .on('error', function (err) {
-      stream.emit('end');
-    })
-    .pipe(gulp.dest('www/app'));
+  // https://github.com/webpack/docs/wiki/node.js-api#statstojsonoptions
+  var statsOptions = {
+    "colors": true,
+    "modules":true,
+    "chunks":false,
+    "exclude":["node_modules"]
+  }
 
-  return stream;
-});
+  // Can either run (one time compile) or watch
+  // https://github.com/webpack/docs/wiki/node.js-api
+  var compilerFunc = watch ? "watch" : "run";
+  var compilerFuncArgs = [compileHandler];
+  watch && compilerFuncArgs.unshift(null); // watch takes config obj as first arg
 
-gulp.task('copy.html', function() {
-  return gulp.src('app/**/*.html')
-    .pipe(gulp.dest('www/app'));
-});
+  // Do it
+  var compiler = webpack(config);
+  compiler[compilerFunc].apply(compiler, compilerFuncArgs);
+
+  function compileHandler(err, stats){
+    console.log(stats.toString(statsOptions));
+    if (firstTime) {
+      firstTime = false;
+      cb();
+    }
+  };
+}
