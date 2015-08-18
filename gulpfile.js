@@ -4,6 +4,7 @@ var gulp = require('gulp'),
     minimist = require('minimist'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
+    watch = require('gulp-watch'),
     connect = require('gulp-connect');
 
 var flagConfig = {
@@ -32,7 +33,9 @@ gulp.task('build', function(done) {
 });
 
 gulp.task('watch', ['serve', 'sass', 'fonts'], function(done) {
-  gulp.watch('www/app/**/*.scss', ['sass']);
+  watch('www/app/**/*.scss', function(){
+    gulp.start('sass');
+  });
   compile(true, done);
 });
 
@@ -101,5 +104,5 @@ function compile(watch, cb) {
       firstTime = false;
       cb();
     }
-  };
+  }
 }
