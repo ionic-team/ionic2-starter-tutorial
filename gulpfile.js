@@ -1,8 +1,9 @@
-/**********************
+/******************************************************************************
  * Gulpfile
- * Be sure to run `npm install` for `gulp` and its
- * following tasks to be available from the command line.
- **********************/
+ * Be sure to run `npm install` for `gulp` and the following tasks to be
+ * available from the command line.
+ * All tasks are run using `gulp taskName`.
+ ******************************************************************************/
 
 // node module imports
 var gulp = require('gulp'),
@@ -15,12 +16,11 @@ var gulp = require('gulp'),
 
 
 
-/******************************
- * gulp watch
- * Builds the app, and will rebuild the app when any
- * of its files change. Additionally, a local web server
- * will be started so you can view the built app.
- ******************************/
+/******************************************************************************
+ * watch
+ * Build the app, rebuilding on source file changes.
+ * Also starts a local web server.
+ ******************************************************************************/
 gulp.task('watch', ['serve', 'sass', 'fonts'], function(done) {
   watch('www/app/**/*.scss', function(){
     gulp.start('sass');
@@ -29,20 +29,21 @@ gulp.task('watch', ['serve', 'sass', 'fonts'], function(done) {
 });
 
 
-/******************************
- * gulp build
- * Builds the app from its source files.
- ******************************/
+/******************************************************************************
+ * build
+ * Build the app once, without watching for source file changes.
+ ******************************************************************************/
 gulp.task('build', function(done) {
   compile(false, done);
 });
 
 
-/******************************
- * gulp serve
- * Starts a local web server so the app can be
- * viewed from http://localhost:8100/
- ******************************/
+/******************************************************************************
+ * serve (--port 8100)
+ * Start a local web server serving the 'www' directory.
+ * The default is http://localhost:8100. Use the optional '--port' flag to
+ * specify a different port.
+ ******************************************************************************/
 gulp.task('serve', function() {
   connect.server({
     root: 'www',
@@ -52,13 +53,11 @@ gulp.task('serve', function() {
 });
 
 
-/******************************
- * gulp sass
- * Used to convert Sass files into one bundled CSS file
- * which browsers can use. Additionally, this task uses
- * auto-prefixer, which will automatically add required
- * CSS prefixes when needed.
- ******************************/
+/******************************************************************************
+ * sass
+ * Convert Sass files to a single bundled CSS file.
+ * Uses auto-prefixer to automatically add required vendor prefixes when needed.
+ ******************************************************************************/
 gulp.task('sass', function(){
   var autoprefixerOpts = {
     browsers: [
@@ -84,10 +83,10 @@ gulp.task('sass', function(){
 });
 
 
-/******************************
- * gulp fonts
- * Used to copy ionic font files to your build directory.
- ******************************/
+/******************************************************************************
+ * fonts
+ * Copy Ionic font files to build directory.
+ ******************************************************************************/
 gulp.task('fonts', function() {
   return gulp.src([
       'node_modules/ionic-framework/fonts/**/*.ttf',
@@ -97,11 +96,10 @@ gulp.task('fonts', function() {
 });
 
 
-/******************************
- * gulp clean
- * Used to delete previous build files to ensure
- * the next build has the most recent files.
- ******************************/
+/******************************************************************************
+ * clean
+ * Delete previous build files.
+ ******************************************************************************/
 gulp.task('clean', function(done) {
   var del = require('del');
   del(['www/build'], done);
@@ -109,10 +107,9 @@ gulp.task('clean', function(done) {
 
 
 
-/**********************
+/******************************************************************************
  * Compile
- **********************/
-
+ ******************************************************************************/
 function compile(watch, cb) {
   // prevent gulp calling done callback more than once when watching
   var firstTime = true;
@@ -128,17 +125,18 @@ function compile(watch, cb) {
     'exclude': ['node_modules']
   }
 
-  // Can either run (one time compile) or watch
+  // run (one time compile) or watch
   // https://github.com/webpack/docs/wiki/node.js-api
   var compilerFunc = (watch ? 'watch' : 'run');
   var compilerFuncArgs = [compileHandler];
   watch && compilerFuncArgs.unshift(null); // watch takes config obj as first arg
 
-  // Do it
+  // Call compiler.run(compileHandler) or compiler.watch(null, compileHandler)
   var compiler = webpack(config);
   compiler[compilerFunc].apply(compiler, compilerFuncArgs);
 
   function compileHandler(err, stats){
+    // print build stats and errors
     console.log(stats.toString(statsOptions));
     if (firstTime) {
       firstTime = false;
