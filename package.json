@@ -13,10 +13,10 @@
     "webpack": "^1.10.5"
   },
   "dependencies": {
-    "angular2": "2.0.0-alpha.34",
-    "ionic-framework": "^2.0.0-alpha.1",
+    "angular2": "2.0.0-alpha.35",
+    "ionic-framework": "^2.0.0-alpha.2",
     "reflect-metadata": "^0.1.0",
-    "rtts_assert": "^2.0.0-alpha.34",
+    "rtts_assert": "^2.0.0-alpha.35",
     "traceur-runtime": "0.0.59",
     "zone.js": "^0.5.2"
   }
