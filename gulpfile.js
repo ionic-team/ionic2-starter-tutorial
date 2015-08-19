@@ -14,6 +14,9 @@ var gulp = require('gulp'),
     connect = require('gulp-connect');
 
 
+var IONIC_DIR = "node_modules/ionic-framework/"
+//var IONIC_DIR = "node_modules/ionic2/dist/"
+
 
 /******************************************************************************
  * watch
@@ -71,7 +74,7 @@ gulp.task('sass', function(){
 
   return gulp.src('www/app/app.scss')
     .pipe(sass({
-      includePaths: ['node_modules/ionic-framework/src/scss'],
+      includePaths: [IONIC_DIR + 'src/scss'],
     }))
     .on('error', function(err){
       console.error(err.message);
@@ -88,8 +91,8 @@ gulp.task('sass', function(){
  ******************************************************************************/
 gulp.task('fonts', function() {
   return gulp.src([
-      'node_modules/ionic-framework/fonts/**/*.ttf',
-      'node_modules/ionic-framework/fonts/**/*.woff'
+      IONIC_DIR + 'fonts/**/*.ttf',
+      IONIC_DIR + 'fonts/**/*.woff'
     ])
     .pipe(gulp.dest('www/build/fonts'));
 });

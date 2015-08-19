@@ -16,9 +16,7 @@ module.exports = {
         loader: 'awesome-typescript-loader?doTypeCheck=false&useBabel=true&useWebpackText=true',
         include: /app\//
       },
-      { test: /\.ts$/, loader: 'awesome-typescript-loader', include: /app\// },
-      { test: /\.css$/, loader: "style!css" },
-      { test: /(\.woff|\.ttf|\.svg)/, loader: "url?limit=1000000" }
+      { test: /\.ts$/, loader: 'awesome-typescript-loader', include: /app\// }
     ]
   },
   resolve: {
