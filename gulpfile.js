@@ -1,8 +1,7 @@
 /******************************************************************************
  * Gulpfile
  * Be sure to run `npm install` for `gulp` and the following tasks to be
- * available from the command line.
- * All tasks are run using `gulp taskName`.
+ * available from the command line. All tasks are run using `gulp taskName`.
  ******************************************************************************/
 
 // node module imports
@@ -18,7 +17,7 @@ var gulp = require('gulp'),
 
 /******************************************************************************
  * watch
- * Build the app, rebuilding on source file changes.
+ * Build the app, and rebuild when source files change.
  * Also starts a local web server.
  ******************************************************************************/
 gulp.task('watch', ['serve', 'sass', 'fonts'], function(done) {
@@ -39,10 +38,10 @@ gulp.task('build', function(done) {
 
 
 /******************************************************************************
- * serve (--port 8100)
+ * serve
  * Start a local web server serving the 'www' directory.
- * The default is http://localhost:8100. Use the optional '--port' flag to
- * specify a different port.
+ * The default is http://localhost:8100. Use the optional '--port'
+ * flag to specify a different port.
  ******************************************************************************/
 gulp.task('serve', function() {
   connect.server({
@@ -55,8 +54,8 @@ gulp.task('serve', function() {
 
 /******************************************************************************
  * sass
- * Convert Sass files to a single bundled CSS file.
- * Uses auto-prefixer to automatically add required vendor prefixes when needed.
+ * Convert Sass files to a single bundled CSS file. Uses auto-prefixer
+ * to automatically add required vendor prefixes when needed.
  ******************************************************************************/
 gulp.task('sass', function(){
   var autoprefixerOpts = {
