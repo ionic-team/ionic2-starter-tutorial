@@ -21,7 +21,7 @@ Then navigate to `http://localhost:8100` to check it out!
 ```bash
 $ npm install driftyco/ionic2
 $ cd node_modules/ionic2 && npm install
-$ gulp publish
+$ gulp src
 ```
 And then update your `webpack.config.js` file:
 ```js
