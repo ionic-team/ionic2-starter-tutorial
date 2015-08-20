@@ -1,9 +1,3 @@
-// Angular dependencies
-import 'reflect-metadata';
-import 'traceur-runtime';
-import 'rtts_assert/rtts_assert';
-import 'zone.js';
-
 import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {App, IonicApp} from 'ionic/ionic';
 
@@ -12,7 +6,7 @@ import {PlaylistsPage} from './playlists/playlists';
 
 
 @App({
-  templateUrl: 'app/app.html'
+  templateUrl: '/app/app.html'
 })
 class MyApp {
   constructor(app: IonicApp) {

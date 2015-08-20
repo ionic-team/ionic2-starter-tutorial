@@ -6,7 +6,7 @@ import {SongDetailPage} from './song-detail';
 @Component({ selector: 'ion-view' })
 @View({
   directives: [NgFor, Content, List, Item, Navbar, NavbarTemplate],
-  templateUrl: 'app/songs/songs.html'
+  templateUrl: '/app/songs/songs.html'
 })
 export class SongsPage {
   constructor(app: IonicApp, nav: NavController) {
