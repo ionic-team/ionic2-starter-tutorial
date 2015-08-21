@@ -4,6 +4,7 @@ import {App, IonicApp} from 'ionic/ionic';
 import {IntroPage} from './intro/intro';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
+import {TabsPage} from './tabs/tabs';
 
 @App({
   templateUrl: '/app/app.html'
@@ -16,6 +17,7 @@ class MyApp {
       { title: 'Intro', component: IntroPage },
       { title: 'Login', component: LoginPage },
       { title: 'Signup', component: SignupPage },
+      { title: 'Tabs', component: TabsPage },
     ];
 
     this.firstPage = LoginPage;
