@@ -1,26 +1,30 @@
 import {bootstrap, Component, View, NgFor} from 'angular2/angular2';
-import {FormBuilder, Validators, formDirectives, ControlGroup} from 'angular2/forms';
+import {Validators, Control, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController} from 'ionic/ionic';
 
 import {Page} from '../page';
 
-@Component({
-  selector: 'ion-view',
-  bindings: [ FormBuilder ]
-})
-@View({
-  templateUrl: 'app/signup/signup.html',
-  directives: [formDirectives]
+@IonicView({
+  templateUrl: 'app/signup/signup.html'
 })
 export class SignupPage extends Page {
-  constructor(app: IonicApp, nav: NavController, fb: FormBuilder) {
+  constructor(app: IonicApp, nav: NavController) {
     super(app);
 
-    this.form = fb.group({
-      name: ['', Validators.required],
-      email: ['', Validators.required],
-      password: ['', Validators.required],
+    this.form = new ControlGroup({
+      name: new Control("", Validators.required),
+      email: new Control("", Validators.required),
+      password: new Control("", Validators.required),
     });
 
+  }
+
+  doSignup(event) {
+    // Handle the signup here:
+
+
+    // Don't allow the form to submit normally, since we
+    // will handle it ourselves
+    event.preventDefault();
   }
 }
