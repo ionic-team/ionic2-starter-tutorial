@@ -14,6 +14,6 @@ export class IntroPage extends Page {
     });
   }
   viewDidEnter() {
-    this.slides.first && this.slides.first.resize();
+    //this.slides.first && this.slides.first.resize();
   }
 }
