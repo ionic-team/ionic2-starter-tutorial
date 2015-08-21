@@ -1,25 +1,22 @@
 import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {App, IonicApp} from 'ionic/ionic';
 
-import {SongsPage} from './songs/songs';
-import {PlaylistsPage} from './playlists/playlists';
-
+import {IntroPage} from './intro/intro';
+//import {LoginPage} from './login/login';
 
 @App({
   templateUrl: '/app/app.html'
 })
 class MyApp {
   constructor(app: IonicApp) {
-    console.log('IonicApp Start', SongsPage);
-
     this.app = app;
 
     this.pages = [
-      { title: 'Songs', component: SongsPage },
-      { title: 'Playlists', component: PlaylistsPage },
+      { title: 'Intro', component: IntroPage },
+      //{ title: 'Login', component: LoginPage },
     ];
 
-    this.firstPage = SongsPage;
+    this.firstPage = IntroPage;
   }
 
   openPage(aside, page) {

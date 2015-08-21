@@ -1,0 +1,20 @@
+<ion-navbar *navbar>
+  <ion-nav-items primary>
+    <button icon (^click)="toggleMenu()">
+      <i class="icon ion-navicon"></i>
+    </button>
+  </ion-nav-items>
+  <ion-title>Login</ion-title>
+</ion-navbar>
+
+<ion-content>
+  <form (^submit)="doLogin($event)" [ng-form-model]="form">
+    <ion-input>
+      <input ng-control="email" type="email" placeholder="Your email">
+    </ion-input>
+    <ion-input>
+      <input ng-control="password" type="password" placeholder="Your password">
+    </ion-input>
+    <button block type="submit">Log in</button>
+  </form>
+</ion-content>
