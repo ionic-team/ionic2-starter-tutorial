@@ -1,6 +1,6 @@
 # Ionic 2 Starter
 
-This is a simple Ionic 2 starter project.
+This is a simple Ionic 2 starter project.  It currently does not use TypeScript or typings, but will compile `.ts` files and do type checking if you choose to add them.
 
 To get started run `npm install` to install the project's dependencies.
 ```bash
