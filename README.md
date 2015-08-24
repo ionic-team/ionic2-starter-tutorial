@@ -34,4 +34,4 @@ resolve: {
 }
 ```
 
-##### This requires read access to the repo, which has not been officially opened yet.
+##### This requires read access to the `ionic2` repo, which is temporarily private.
