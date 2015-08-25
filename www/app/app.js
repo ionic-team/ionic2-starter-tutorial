@@ -5,6 +5,7 @@ import {IntroPage} from './intro/intro';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
 import {TabsPage} from './tabs/tabs';
+import {GridPage} from './grid/grid';
 
 @App({
   templateUrl: '/app/app.html'
@@ -18,6 +19,7 @@ class MyApp {
       { title: 'Login', component: LoginPage },
       { title: 'Signup', component: SignupPage },
       { title: 'Tabs', component: TabsPage },
+      { title: 'Grid Icons', component: GridPage },
     ];
 
     this.firstPage = LoginPage;

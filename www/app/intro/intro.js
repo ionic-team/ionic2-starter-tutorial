@@ -13,7 +13,4 @@ export class IntroPage extends Page {
     slides.onChange((c) => {
     });
   }
-  viewDidEnter() {
-    //this.slides.first && this.slides.first.resize();
-  }
 }
