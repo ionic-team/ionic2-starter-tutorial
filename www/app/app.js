@@ -1,6 +1,7 @@
 import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {App, IonicApp} from 'ionic/ionic';
 
+import {GettingStartedPage} from './getting-started/getting-started';
 import {IntroPage} from './intro/intro';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
@@ -9,13 +10,44 @@ import {ListPage} from './list/list';
 import {GridPage} from './grid/grid';
 
 @App({
-  templateUrl: '/app/app.html'
+  templateUrl: '/app/app.html',
+  /*
+  routes: [
+    {
+      path: '/intro',
+      component: IntroPage,
+      root: true
+    },
+    {
+      path: '/intro',
+      component: LoginPage
+    },
+    {
+      path: '/signup',
+      component: SignupPage
+    },
+    {
+      path: '/tabs',
+      component: TabsPage
+    },
+    {
+      path: '/list',
+      component: ListPage
+    },
+    {
+      path: '/grid',
+      component: GridPage
+    }
+  ]
+  */
 })
+
 class MyApp {
   constructor(app: IonicApp) {
     this.app = app;
 
     this.pages = [
+      { title: 'Getting Started', component: GettingStartedPage },
       { title: 'Intro', component: IntroPage },
       { title: 'Login', component: LoginPage },
       { title: 'Signup', component: SignupPage },
@@ -24,7 +56,7 @@ class MyApp {
       { title: 'Grid Icons', component: GridPage },
     ];
 
-    this.firstPage = LoginPage;
+    this.firstPage = GettingStartedPage;
   }
 
   openPage(aside, page) {
