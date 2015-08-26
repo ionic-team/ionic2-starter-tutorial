@@ -2,15 +2,11 @@ import {bootstrap, Component, View, NgFor} from 'angular2/angular2';
 import {Validators, Control, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController} from 'ionic/ionic';
 
-import {Page} from '../page';
-
 @IonicView({
   templateUrl: 'app/signup/signup.html'
 })
-export class SignupPage extends Page {
+export class SignupPage {
   constructor(app: IonicApp, nav: NavController) {
-    super(app);
-
     this.form = new ControlGroup({
       name: new Control("", Validators.required),
       email: new Control("", Validators.required),

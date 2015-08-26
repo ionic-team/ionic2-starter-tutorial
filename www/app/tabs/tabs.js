@@ -2,8 +2,6 @@ import {Component} from 'angular2/angular2';
 
 import {App, IonicView, NavController} from 'ionic/ionic';
 
-import {Page} from '../page';
-
 //
 // Tab 1
 //
@@ -64,7 +62,7 @@ class Tab3 {
 @IonicView({
   templateUrl: 'app/tabs/tabs.html'
 })
-export class TabsPage extends Page {
+export class TabsPage {
   constructor(nav: NavController) {
     this.root1 = Tab1;
     this.root2 = Tab2;

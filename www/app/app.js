@@ -5,6 +5,7 @@ import {IntroPage} from './intro/intro';
 import {LoginPage} from './login/login';
 import {SignupPage} from './signup/signup';
 import {TabsPage} from './tabs/tabs';
+import {ListPage} from './list/list';
 import {GridPage} from './grid/grid';
 
 @App({
@@ -19,6 +20,7 @@ class MyApp {
       { title: 'Login', component: LoginPage },
       { title: 'Signup', component: SignupPage },
       { title: 'Tabs', component: TabsPage },
+      { title: 'List', component: ListPage },
       { title: 'Grid Icons', component: GridPage },
     ];
 
