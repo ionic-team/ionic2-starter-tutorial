@@ -11,7 +11,8 @@ var gulp = require('gulp'),
     sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     watch = require('gulp-watch'),
-    connect = require('gulp-connect');
+    browserSync = require('browser-sync'),
+    reload = browserSync.reload;
 
 
 var IONIC_DIR = "node_modules/ionic-framework/"
@@ -23,11 +24,14 @@ var IONIC_DIR = "node_modules/ionic-framework/"
  * Build the app, and rebuild when source files change.
  * Also starts a local web server.
  ******************************************************************************/
-gulp.task('watch', ['serve', 'sass', 'fonts'], function(done) {
+gulp.task('watch', ['sass', 'fonts'], function(done) {
   watch('www/app/**/*.scss', function(){
     gulp.start('sass');
   });
-  compile(true, done);
+  compile(true, function(){
+    gulp.start('serve');
+    done();
+  });
 });
 
 
@@ -47,10 +51,15 @@ gulp.task('build', function(done) {
  * flag to specify a different port.
  ******************************************************************************/
 gulp.task('serve', function() {
-  connect.server({
-    root: 'www',
+  browserSync({
+    server: {
+      baseDir: 'www',
+    },
     port: flags.port,
-    livereload: false
+    files: [
+      'www/**/*.html'
+    ],
+    notify: false
   });
 });
 
@@ -81,7 +90,8 @@ gulp.task('sass', function(){
       this.emit('end');
     })
     .pipe(autoprefixer(autoprefixerOpts))
-    .pipe(gulp.dest('www/build/css'));
+    .pipe(gulp.dest('www/build/css'))
+    .pipe(reload({ stream: true }));
 });
 
 
@@ -138,12 +148,15 @@ function compile(watch, cb) {
   compiler[compilerFunc].apply(compiler, compilerFuncArgs);
 
   function compileHandler(err, stats){
-    // print build stats and errors
-    console.log(stats.toString(statsOptions));
     if (firstTime) {
       firstTime = false;
       cb();
+    } else {
+      reload();
     }
+
+    // print build stats and errors
+    console.log(stats.toString(statsOptions));
   }
 }
 

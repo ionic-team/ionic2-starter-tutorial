@@ -9,8 +9,8 @@ module.exports = {
     "./www/app/app.js" // your app entry
   ],
   output: {
-    path: __dirname,
-    filename: "www/build/app.bundle.js",
+    path: __dirname + "/www",
+    filename: "build/js/app.bundle.js",
     //pathinfo: true // show module paths in the bundle, handy for debugging
   },
   module: {
