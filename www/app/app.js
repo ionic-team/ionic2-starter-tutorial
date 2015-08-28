@@ -1,4 +1,3 @@
-import {bootstrap, NgFor, Component, Directive, View} from 'angular2/angular2';
 import {App, IonicApp} from 'ionic/ionic';
 
 import {GettingStartedPage} from './getting-started/getting-started';
@@ -8,6 +7,7 @@ import {SignupPage} from './signup/signup';
 import {TabsPage} from './tabs/tabs';
 import {ListPage} from './list/list';
 import {GridPage} from './grid/grid';
+
 
 @App({
   templateUrl: '/app/app.html',
