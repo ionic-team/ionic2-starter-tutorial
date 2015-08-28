@@ -13,6 +13,17 @@ Ionic 2 is based on the new [2.x version of AngularJS](https://angular.io/), and
 
 __* Ionic 2 will be integrated within the [Ionic CLI](https://www.npmjs.com/package/ionic), [Ionic Lab](http://lab.ionic.io/), [Ionic Creator](http://creator.ionic.io/) (basically every Ionic tool), to make building an Ionic app even easier.__
 
+## Things to keep in mind
+
+Ionic 2 is alpha, and so is Angular 2. There are number of things being actively worked on that aren't quite ready yet. Here are some things to keep in mind as you try out Ionic 2 and Angular 2:
+
+### Missing Ionic 1 features
+
+We are currently working on completing a few core Ionic 1 features:
+
+- Collection repeat (known as Virtual Scrolling in v2) is not quite ready
+- Popup is half-baked
+
 
 ### Current Angular 2 known issues:
 
