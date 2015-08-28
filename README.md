@@ -11,6 +11,8 @@ Ionic 2 is based on the new [2.x version of AngularJS](https://angular.io/), and
 2. `gulp watch`
 3. Browse to [http://localhost:8100/](http://localhost:8100/)
 
+__* Ionic 2 will be integrated within the [Ionic CLI](https://www.npmjs.com/package/ionic), [Ionic Lab](http://lab.ionic.io/), [Ionic Creator](http://creator.ionic.io/) (basically every Ionic tool), to make building an Ionic app even easier.__
+
 
 ### Current Angular 2 known issues:
 
