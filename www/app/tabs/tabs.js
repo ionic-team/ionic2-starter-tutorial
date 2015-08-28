@@ -60,7 +60,7 @@ class Tab3 {
 }
 
 @IonicView({
-  templateUrl: 'app/tabs/tabs.html'
+  templateUrl: '/app/tabs/tabs.html'
 })
 export class TabsPage {
   constructor(nav: NavController) {

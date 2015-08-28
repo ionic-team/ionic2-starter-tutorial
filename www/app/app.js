@@ -10,42 +10,14 @@ import {GridPage} from './grid/grid';
 
 
 @App({
-  templateUrl: '/app/app.html',
-  /*
-  routes: [
-    {
-      path: '/intro',
-      component: IntroPage,
-      root: true
-    },
-    {
-      path: '/intro',
-      component: LoginPage
-    },
-    {
-      path: '/signup',
-      component: SignupPage
-    },
-    {
-      path: '/tabs',
-      component: TabsPage
-    },
-    {
-      path: '/list',
-      component: ListPage
-    },
-    {
-      path: '/grid',
-      component: GridPage
-    }
-  ]
-  */
+  templateUrl: '/app/app.html'
 })
 
 class MyApp {
   constructor(app: IonicApp) {
     this.app = app;
 
+    // used for an example of ng-repeat and navigation
     this.pages = [
       { title: 'Getting Started', component: GettingStartedPage },
       { title: 'Intro', component: IntroPage },
@@ -56,16 +28,15 @@ class MyApp {
       { title: 'Grid Icons', component: GridPage },
     ];
 
-    this.firstPage = GettingStartedPage;
+    this.rootPage = GettingStartedPage;
   }
 
   openPage(aside, page) {
-    console.log('Opening page', page);
-
-    // Close the side menu
+    // close the menu when clicking a link from the aside
     aside.close();
 
     // Reset the content nav to have just this page
+    // we wouldn't want the back button to show in this scenario
     let nav = this.app.getComponent('nav');
     nav.setItems([page.component]);
   }

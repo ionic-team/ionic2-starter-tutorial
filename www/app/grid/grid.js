@@ -3,7 +3,7 @@ import {FormBuilder, Validators, formDirectives, ControlGroup} from 'angular2/fo
 import {IonicApp, IonicView, NavController, Slides} from 'ionic/ionic';
 
 @IonicView({
-  templateUrl: 'app/grid/grid.html'
+  templateUrl: '/app/grid/grid.html'
 })
 export class GridPage {
   constructor(app: IonicApp, nav: NavController) {

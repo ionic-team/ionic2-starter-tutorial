@@ -3,7 +3,7 @@ import {FormBuilder, Validators, formDirectives, ControlGroup} from 'angular2/fo
 import {IonicApp, IonicView, NavController, Slides} from 'ionic/ionic';
 
 @IonicView({
-  templateUrl: 'app/intro/intro.html'
+  templateUrl: '/app/intro/intro.html'
 })
 export class IntroPage {
   constructor(app: IonicApp, nav: NavController, @ViewQuery(Slides) public slides: QueryList<Slides>) {
