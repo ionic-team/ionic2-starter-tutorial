@@ -7,9 +7,9 @@ Ionic 2 is based on the new 2.x version of AngularJS, and comes with many signif
 
 ## Getting Started
 
-1) `npm install`
-2) `gulp watch`
-3) Browse [http://localhost:8100/](http://localhost:8100/)
+1. `npm install`
+2. `gulp watch`
+3. Browse to [http://localhost:8100/](http://localhost:8100/)
 
 
 ### Current Angular 2 known issues:
