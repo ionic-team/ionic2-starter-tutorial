@@ -37,9 +37,9 @@ We are currently working on completing a few core Ionic 1 features:
 ### ES6/Typescript
 
 - Ionic's source is written using [Typescript](http://www.typescriptlang.org/)
-- Ionic apps can be written in ES6
+- Ionic apps can be written in ES6 or TypeScript
 - Typescript is an optional feature to be used at the developers discretion
-- Ionic 2 starters come with the necessary build tools to transpile ES6/Typescript
+- Ionic 2 starters come with the necessary build tools to transpile both ES6 and Typescript
 
 
 ### CSS Attribute Selectors:
