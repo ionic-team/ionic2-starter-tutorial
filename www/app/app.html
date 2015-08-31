@@ -1,4 +1,4 @@
-<ion-aside #aside [content]="content" [register]="aside" register-id="mainMenu">
+<ion-aside #aside [content]="content" id="menu" type="overlay">
 
   <ion-toolbar>
     <ion-title>Pages</ion-title>
@@ -14,5 +14,4 @@
 
 </ion-aside>
 
-
-<ion-nav #content [root]="rootPage" [register]="content" register-id="nav"></ion-nav>
+<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
