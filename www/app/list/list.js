@@ -12,8 +12,8 @@ export class ListPage {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
 
-    this.icons = ['ion-home', 'ion-wifi', 'ion-beer', 'ion-ios-football', 'ion-ios-basketball', 'ion-paper-airplane',
-    'ion-ios-americanfootball', 'ion-fireball', 'ion-email', 'ion-heart'];
+    this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
+    'american-football', 'boat', 'bluetooth', 'build'];
 
     this.items = [];
     for(let i = 1; i < 11; i++) {
