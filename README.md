@@ -13,6 +13,30 @@ Ionic 2 is based on the new [2.x version of AngularJS](https://angular.io/), and
 
 The `gulp watch` task will build Ionic2, which may take a few moments for the initial build. After the files have finished building, a browser will open with the Ionic2 starter app. Any source file changes will rebuild the app and live reload the page. Also be sure to emulate the app in iOS and Android devices ([Chrome Screen Emulation](https://developer.chrome.com/devtools/docs/device-mode#screen-emulator)).
 
+#### Notes:
+- To develop against the ionic2 master branch (or any commit/release/tag), you'll need to do the following:
+```bash
+$ npm install driftyco/ionic2 # or driftyco/ionic2#commit for a specific commit
+$ cd node_modules/ionic2 && npm install
+$ gulp src
+```
+And then update your [`webpack.config.js`](https://github.com/driftyco/ionic2-starter/blob/master/webpack.config.js#L32) file:
+```js
+resolve: {
+  modulesDirectories: [
+    "node_modules",
+  //"node_modules/ionic-framework/src/es5/common"
+    "node_modules/ionic2/dist/src/es5/common"
+  ]
+}
+```
+As well as your [`gulpfile.js`](https://github.com/driftyco/ionic2-starter/blob/master/gulpfile.js#L19):
+```js
+//var IONIC_DIR = "node_modules/ionic-framework/"
+var IONIC_DIR = "node_modules/ionic2/dist/"
+```
+
+
 __* Ionic 2 will be integrated within the [Ionic CLI](https://www.npmjs.com/package/ionic), [Ionic Lab](http://lab.ionic.io/), [Ionic Creator](http://creator.ionic.io/) (basically every Ionic tool), to make building an Ionic app even easier.__
 
 ## Things to keep in mind
