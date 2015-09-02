@@ -1,6 +1,5 @@
 <style>
 .slide {
-  padding-top: 80px;
   color: #000;
   text-align: center;
 
@@ -30,7 +29,21 @@
   display:none;
 }
 </style>
-<ion-slides>
+<ion-navbar *navbar>
+  <ion-nav-items primary>
+    <button (click)="prev()">
+      {{prevButton}}
+    </button>
+  </ion-nav-items>
+  <ion-nav-items secondary>
+    <button (click)="next()">
+      {{nextButton}}
+    </button>
+  </ion-nav-items>
+  <ion-title>Intro</ion-title>
+</ion-navbar>
+
+<ion-slides pager>
   <ion-slide>
     <h3>Thank you for choosing the Awesome App!</h3>
     <div id="logo">
