@@ -7,9 +7,11 @@ Ionic 2 is based on the new [2.x version of AngularJS](https://angular.io/), and
 
 ## Getting Started
 
-1. `npm install`
-2. `gulp watch`
-3. Browse to [http://localhost:8100/](http://localhost:8100/)
+1. Clone repo
+2. `npm install`
+3. `gulp watch`
+
+The `gulp watch` task will build Ionic2, which may take a few moments for the initial build. Once the files have been built a browser will open with the Ionic2 starter app. Any source file changes will rebuild the app and live reload the page.
 
 __* Ionic 2 will be integrated within the [Ionic CLI](https://www.npmjs.com/package/ionic), [Ionic Lab](http://lab.ionic.io/), [Ionic Creator](http://creator.ionic.io/) (basically every Ionic tool), to make building an Ionic app even easier.__
 
