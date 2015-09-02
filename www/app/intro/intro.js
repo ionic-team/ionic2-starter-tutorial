@@ -12,11 +12,16 @@ export class IntroPage {
 
     this.nav = nav;
 
+    this.sliderOptions = {
+      onSlideChangeEnd: (slider, e) => {
+        this.updateButtons()
+      }
+    }
+
     // Get the child slider.
     // Note: this will be getting cleaner in a future Angular 2 release
     slides.onChange((c) => {
       this.mySlider = slides.first;
-      console.log('Found slider', this.mySlider);
     });
   }
 
