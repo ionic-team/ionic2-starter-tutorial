@@ -39,7 +39,7 @@ gulp.task('watch', ['sass', 'fonts'], function(done) {
  * build
  * Build the app once, without watching for source file changes.
  ******************************************************************************/
-gulp.task('build', function(done) {
+gulp.task('build', ['sass', 'fonts'], function(done) {
   compile(false, done);
 });
 
