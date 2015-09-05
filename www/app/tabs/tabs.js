@@ -1,5 +1,3 @@
-import {Component} from 'angular2/angular2';
-
 import {App, IonicView, NavController} from 'ionic/ionic';
 
 //

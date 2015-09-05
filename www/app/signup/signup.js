@@ -1,4 +1,3 @@
-import {bootstrap, Component, View, NgFor} from 'angular2/angular2';
 import {Validators, Control, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController} from 'ionic/ionic';
 
