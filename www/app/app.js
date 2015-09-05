@@ -10,7 +10,7 @@ import {GridPage} from './grid/grid';
 
 
 @App({
-  templateUrl: '/app/app.html'
+  templateUrl: 'app/app.html'
 })
 
 class MyApp {

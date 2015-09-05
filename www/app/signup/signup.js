@@ -3,7 +3,7 @@ import {Validators, Control, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController} from 'ionic/ionic';
 
 @IonicView({
-  templateUrl: '/app/signup/signup.html'
+  templateUrl: 'app/signup/signup.html'
 })
 export class SignupPage {
   constructor(app: IonicApp, nav: NavController) {
