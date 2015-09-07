@@ -1,6 +1,6 @@
 import {ViewQuery, QueryList} from 'angular2/angular2';
-import {FormBuilder, Validators, formDirectives, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController, Slides} from 'ionic/ionic';
+
 
 @IonicView({
   templateUrl: 'app/intro/intro.html'

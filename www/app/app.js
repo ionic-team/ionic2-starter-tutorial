@@ -17,7 +17,7 @@ class MyApp {
   constructor(app: IonicApp) {
     this.app = app;
 
-    // used for an example of ng-repeat and navigation
+    // used for an example of ng-for and navigation
     this.pages = [
       { title: 'Getting Started', component: GettingStartedPage },
       { title: 'Intro', component: IntroPage },

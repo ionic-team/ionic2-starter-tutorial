@@ -1,5 +1,5 @@
-import {Validators, Control, ControlGroup} from 'angular2/forms';
 import {IonicApp, IonicView, NavController, NavParams} from 'ionic/ionic';
+
 
 @IonicView({
   templateUrl: 'app/list/list.html'
