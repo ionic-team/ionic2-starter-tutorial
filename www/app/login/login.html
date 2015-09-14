@@ -1,12 +1,12 @@
 <ion-navbar *navbar>
-  <button aside-toggle>
+  <a menu-toggle>
     <icon menu></icon>
-  </button>
+  </a>
   <ion-title>Login</ion-title>
 </ion-navbar>
 
 <ion-content padding>
-  <form (^submit)="doLogin($event)" [ng-form-model]="form">
+  <form (submit)="doLogin($event)" [ng-form-model]="form">
     <ion-input>
       <input ng-control="email" type="email" placeholder="Your email">
     </ion-input>

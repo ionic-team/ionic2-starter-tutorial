@@ -1,13 +1,13 @@
 <ion-navbar *navbar>
-  <button aside-toggle *ng-if="!selectedItem">
+  <a menu-toggle *ng-if="!selectedItem">
     <icon menu></icon>
-  </button>
+  </a>
   <ion-title>Lists</ion-title>
 </ion-navbar>
 
 <ion-content>
   <ion-list>
-    <ion-item *ng-for="#item of items" (^click)="itemTapped($event, item)">
+    <ion-item *ng-for="#item of items" (click)="itemTapped($event, item)">
       <icon name="{{item.icon}}" item-left></icon>
       {{item.title}}
       <div class="item-note" item-right>

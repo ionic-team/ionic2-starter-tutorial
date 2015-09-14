@@ -1,4 +1,4 @@
-<ion-aside #aside [content]="content" id="menu">
+<ion-menu #menu [content]="content">
 
   <ion-toolbar>
     <ion-title>Pages</ion-title>
@@ -6,12 +6,12 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item *ng-for="#p of pages" (click)="openPage(aside, p)">
+      <button ion-item *ng-for="#p of pages" (click)="openPage(menu, p)">
         {{p.title}}
       </button>
     </ion-list>
   </ion-content>
 
-</ion-aside>
+</ion-menu>
 
 <ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
