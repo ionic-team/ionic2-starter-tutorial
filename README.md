@@ -16,7 +16,7 @@ The `gulp watch` task will build Ionic2, which may take a few moments for the in
 #### Notes:
 - To develop against the ionic2 master branch (or any commit/release/tag), you'll need to do the following:
 ```bash
-$ npm install driftyco/ionic2 # or driftyco/ionic2#commit for a specific commit
+$ npm install ~/git/ionic2 # or driftyco/ionic2#commit for a specific commit
 $ cd node_modules/ionic2 && npm install
 $ gulp src
 ```
