@@ -28,7 +28,8 @@ $colors: (
 
 // App Sass
 // ---------------------------------
-@import "login/login",
+@import "getting-started/getting-started",
+        "login/login",
         "signup/signup",
         "intro/intro",
         "tabs/tabs",
