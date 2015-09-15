@@ -6,6 +6,7 @@ module.exports = {
     "rtts_assert/rtts_assert",
     "angular2/angular2",
     "ionic/ionic",
+    "web-animations.min",
     "./www/app/app.js" // your app entry
   ],
   output: {
@@ -27,10 +28,12 @@ module.exports = {
     modulesDirectories: [
       "node_modules",
       "node_modules/ionic-framework/src/es5/common", // ionic-framework npm package (stable)
-      "node_modules/ionic-framework/node_modules" // angular is a dependency of ionic
+      "node_modules/ionic-framework/node_modules", // angular is a dependency of ionic
+      "node_modules/ionic-framework/js" // for web-animations polyfill
 
-      //"node_modules/ionic2/dist/src/es5/common", // driftyco/ionic2 github repo (master)
-      //"node_modules/ionic2/node_modules"
+     // "node_modules/ionic2/dist/src/es5/common", // driftyco/ionic2 repo (master)
+     // "node_modules/ionic2/node_modules",
+     // "node_modules/ionic2/dist/js"
     ],
     extensions: ["", ".js", ".ts"]
   }
