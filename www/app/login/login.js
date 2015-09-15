@@ -9,8 +9,8 @@ import {SignupPage} from '../signup/signup';
 export class LoginPage {
   constructor(app: IonicApp, nav: NavController) {
     this.form = new ControlGroup({
-      email: new Control(),
-      password: new Control(),
+      email: new Control('', Validators.required),
+      password: new Control('', Validators.required),
     });
 
     this.signupPage = SignupPage;
