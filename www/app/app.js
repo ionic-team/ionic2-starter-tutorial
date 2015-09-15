@@ -1,4 +1,4 @@
-import {App, IonicApp} from 'ionic/ionic';
+import {App, IonicApp, IonicPlatform} from 'ionic/ionic';
 
 import {GettingStartedPage} from './getting-started/getting-started';
 import {IntroPage} from './intro/intro';
@@ -14,8 +14,11 @@ import {GridPage} from './grid/grid';
 })
 
 class MyApp {
-  constructor(app: IonicApp) {
+  constructor(app: IonicApp, platform: IonicPlatform) {
     this.app = app;
+    this.platform = platform;
+
+    this.initializeApp();
 
     // used for an example of ng-for and navigation
     this.pages = [
@@ -29,6 +32,28 @@ class MyApp {
     ];
 
     this.rootPage = GettingStartedPage;
+  }
+
+  initializeApp() {
+    this.platform.ready().then(() => {
+      console.log('Platform ready');
+
+      // The platform is now ready. Note: if this callback fails to fire, follow
+      // the Troubleshooting guide for a number of possible solutions:
+      //
+      // Okay, so the platform is ready and our plugins are available.
+      // Here you can do any higher level native things you might need.
+      //
+      // First, let's hide the keyboard accessory bar (only works natively) since
+      // that's a better default:
+      //
+      // Keyboard.setAccessoryBarVisible(false);
+      //
+      // For example, we might change the StatusBar color. This one below is
+      // good for dark backgrounds and light text:
+      // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
+
+    });
   }
 
   openPage(menu, page) {

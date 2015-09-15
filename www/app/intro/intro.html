@@ -31,9 +31,9 @@
 </style>
 <ion-navbar *navbar>
   <ion-nav-items primary>
-    <button (click)="prev()">
-      {{prevButton}}
-    </button>
+    <a menu-toggle>
+      <icon menu></icon>
+    </a>
   </ion-nav-items>
   <ion-nav-items secondary>
     <button (click)="next()">
