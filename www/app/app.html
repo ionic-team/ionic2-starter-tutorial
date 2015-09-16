@@ -1,4 +1,4 @@
-<ion-menu #menu [content]="content">
+<ion-menu [content]="content">
 
   <ion-toolbar>
     <ion-title>Pages</ion-title>
@@ -6,7 +6,7 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item *ng-for="#p of pages" (click)="openPage(menu, p)">
+      <button ion-item *ng-for="#p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
     </ion-list>
