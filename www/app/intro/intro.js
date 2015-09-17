@@ -6,7 +6,8 @@ import {IonicApp, IonicView, NavController, Slides} from 'ionic/ionic';
   templateUrl: 'app/intro/intro.html'
 })
 export class IntroPage {
-  constructor(app: IonicApp, nav: NavController, @ViewQuery(Slides) public slides: QueryList<Slides>) {
+  constructor(app: IonicApp, nav: NavController, @ViewQuery(Slides) slides: QueryList<Slides>) {
+
     this.nextButton = 'Next';
     this.prevButton = 'Skip';
 

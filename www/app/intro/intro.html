@@ -1,34 +1,4 @@
-<style>
-.slide {
-  color: #000;
-  text-align: center;
 
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-weight: 300;
-}
-
-#logo {
-  margin: 30px 0px;
-}
-
-#list {
-  width: 170px;
-  margin: 30px auto;
-  font-size: 20px;
-}
-#list ol {
-  margin-top: 30px;
-}
-#list ol li {
-  text-align: left;
-  list-style: decimal;
-  margin: 10px 0px;
-}
-
-.button.ng-hide{
-  display:none;
-}
-</style>
 <ion-navbar *navbar>
   <ion-nav-items primary>
     <a menu-toggle>
@@ -46,7 +16,7 @@
 <ion-slides pager [options]="sliderOptions">
   <ion-slide>
     <h3>Thank you for choosing the Awesome App!</h3>
-    <div id="logo">
+    <div class="slide-logo">
       <img src="img/appicon.png" style="max-width: 128px">
     </div>
     <p>
@@ -56,7 +26,7 @@
   <ion-slide>
     <h3>Using Awesome</h3>
 
-     <div id="list">
+     <div class="slide-list">
        <h5>Just three steps:</h5>
        <ol>
          <li>Be awesome</li>
