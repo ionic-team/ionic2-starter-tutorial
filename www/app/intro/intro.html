@@ -1,10 +1,8 @@
 
 <ion-navbar *navbar>
-  <ion-nav-items primary>
-    <a menu-toggle>
-      <icon menu></icon>
-    </a>
-  </ion-nav-items>
+  <a menu-toggle>
+    <icon menu></icon>
+  </a>
   <ion-nav-items secondary>
     <button (click)="next()">
       {{nextButton}}
@@ -13,7 +11,9 @@
   <ion-title>Intro</ion-title>
 </ion-navbar>
 
+
 <ion-slides pager [options]="sliderOptions">
+
   <ion-slide>
     <h3>Thank you for choosing the Awesome App!</h3>
     <div class="slide-logo">
@@ -23,6 +23,7 @@
       The number one app for everything awesome.
     </p>
   </ion-slide>
+
   <ion-slide>
     <h3>Using Awesome</h3>
 
@@ -35,7 +36,9 @@
        </ol>
      </div>
   </ion-slide>
+
   <ion-slide>
     <h3>Any questions?</h3>
   </ion-slide>
+
 </ion-slides>
