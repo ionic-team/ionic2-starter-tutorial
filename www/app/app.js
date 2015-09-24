@@ -1,12 +1,7 @@
 import {App, IonicApp, IonicPlatform} from 'ionic/ionic';
 
-import {GettingStartedPage} from './getting-started/getting-started';
-import {IntroPage} from './intro/intro';
-import {LoginPage} from './login/login';
-import {SignupPage} from './signup/signup';
-import {TabsPage} from './tabs/tabs';
+import {HelloIonicPage} from './hello-ionic/hello-ionic';
 import {ListPage} from './list/list';
-import {GridPage} from './grid/grid';
 
 
 @App({
@@ -15,23 +10,20 @@ import {GridPage} from './grid/grid';
 
 class MyApp {
   constructor(app: IonicApp, platform: IonicPlatform) {
+
+    // set up our app
     this.app = app;
     this.platform = platform;
-
     this.initializeApp();
 
-    // used for an example of ng-for and navigation
+    // set our app's pages
     this.pages = [
-      { title: 'Getting Started', component: GettingStartedPage },
-      { title: 'Intro', component: IntroPage },
-      { title: 'Login', component: LoginPage },
-      { title: 'Signup', component: SignupPage },
-      { title: 'Tabs', component: TabsPage },
-      { title: 'List', component: ListPage },
-      { title: 'Grid Icons', component: GridPage },
+      { title: 'Hello Ionic', component: HelloIonicPage },
+      { title: 'My First List', component: ListPage }
     ];
 
-    this.rootPage = GettingStartedPage;
+    // make HelloIonicPage the root (or first) page
+    this.rootPage = HelloIonicPage;
   }
 
   initializeApp() {
@@ -47,7 +39,6 @@ class MyApp {
       // First, let's hide the keyboard accessory bar (only works natively) since
       // that's a better default:
       //
-      // Keyboard.setAccessoryBarVisible(false);
       //
       // For example, we might change the StatusBar color. This one below is
       // good for dark backgrounds and light text:
@@ -59,9 +50,7 @@ class MyApp {
   openPage(page) {
     // close the menu when clicking a link from the menu
     this.app.getComponent('menu').close();
-
-    // Reset the content nav to have just this page
-    // we wouldn't want the back button to show in this scenario
+    // navigate to the new page if it is not the current page
     let nav = this.app.getComponent('nav');
     nav.setRoot(page.component);
   }

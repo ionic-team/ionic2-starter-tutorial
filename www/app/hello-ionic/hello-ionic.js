@@ -2,11 +2,11 @@ import {IonicView, NavController} from 'ionic/ionic';
 
 
 @IonicView({
-  templateUrl: 'app/getting-started/getting-started.html'
+  templateUrl: 'app/hello-ionic/hello-ionic.html'
 })
-export class GettingStartedPage {
+export class HelloIonicPage {
   constructor(nav: NavController) {
-
+    this.nav = nav;
   }
 
 }
