@@ -1,8 +1,8 @@
-import {IonicApp, IonicView, NavController, NavParams} from 'ionic/ionic';
+import {IonicApp, Page, NavController, NavParams} from 'ionic/ionic';
 
 // import {ItemDetailsPage} from '../item-details/item-details';
 
-@IonicView({
+@Page({
   templateUrl: 'app/list/list.html'
 })
 export class ListPage {

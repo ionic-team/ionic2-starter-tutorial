@@ -1,9 +1,7 @@
 module.exports = {
   entry: [
     "zone.js",
-    "traceur-runtime",
     "reflect-metadata",
-    "rtts_assert/rtts_assert",
     "angular2/angular2",
     "ionic/ionic",
     "web-animations.min",
@@ -19,9 +17,15 @@ module.exports = {
       {
         test: /\.js$/,
         loader: "awesome-typescript-loader?doTypeCheck=false&useBabel=true&useWebpackText=true",
-        include: /app\//
+        include: /www\/app\//,
+        exclude: /node_modules/
       },
-      { test: /\.ts$/, loader: "awesome-typescript-loader", include: /app\// }
+      {
+        test: /\.ts$/,
+        loader: "awesome-typescript-loader",
+        include: /www\/app\//,
+        exclude: /node_modules/
+       }
     ]
   },
   resolve: {

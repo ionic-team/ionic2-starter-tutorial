@@ -1,7 +1,7 @@
-import {IonicView, NavController} from 'ionic/ionic';
+import {Page, NavController} from 'ionic/ionic';
 
 
-@IonicView({
+@Page({
   templateUrl: 'app/hello-ionic/hello-ionic.html'
 })
 export class HelloIonicPage {
