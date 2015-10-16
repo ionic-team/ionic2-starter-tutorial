@@ -1,4 +1,4 @@
-import {App, IonicApp, IonicPlatform} from 'ionic/ionic';
+import {App, IonicApp, Platform} from 'ionic/ionic';
 
 import {HelloIonicPage} from './hello-ionic/hello-ionic';
 import {ListPage} from './list/list';
@@ -9,7 +9,7 @@ import {ListPage} from './list/list';
 })
 
 class MyApp {
-  constructor(app: IonicApp, platform: IonicPlatform) {
+  constructor(app: IonicApp, platform: Platform) {
 
     // set up our app
     this.app = app;
@@ -41,8 +41,8 @@ class MyApp {
       //
       //
       // For example, we might change the StatusBar color. This one below is
-      // good for dark backgrounds and light text:
-      // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
+      // good for light backgrounds and dark text;
+      StatusBar.styleDefault();
 
     });
   }
