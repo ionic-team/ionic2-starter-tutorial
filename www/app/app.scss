@@ -29,5 +29,7 @@ $colors: (
 
 // Import your Sass files here
 // ---------------------------------
-@import "item-details/item-details";
+@import "item-details/item-details",
+        //"list/list",
+        "hello-ionic/hello-ionic";
 
