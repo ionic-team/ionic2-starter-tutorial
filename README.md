@@ -9,7 +9,9 @@ Ionic 2 is based on the new [2.x version of AngularJS](https://angular.io/), and
 
 1. Clone repo
 2. `npm install`
-3. `gulp watch`
+3. `npm install webpack `
+4. `npm install gulp`
+5. `gulp watch`
 
 The `gulp watch` task will build Ionic2, which may take a few moments for the initial build. After the files have finished building, a browser will open with the Ionic2 starter app. Any source file changes will rebuild the app and live reload the page. Also be sure to emulate the app in iOS and Android devices ([Chrome Screen Emulation](https://developer.chrome.com/devtools/docs/device-mode#screen-emulator)).
 
