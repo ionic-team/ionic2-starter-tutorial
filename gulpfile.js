@@ -83,7 +83,7 @@ gulp.task('sass', function(){
 
   return gulp.src('www/app/app.scss')
     .pipe(sass({
-      includePaths: [IONIC_DIR + 'src/scss'],
+      includePaths: [IONIC_DIR + 'dist/src/scss'],
     }))
     .on('error', function(err){
       console.error(err.message);
@@ -101,8 +101,8 @@ gulp.task('sass', function(){
  ******************************************************************************/
 gulp.task('fonts', function() {
   return gulp.src([
-      IONIC_DIR + 'fonts/**/*.ttf',
-      IONIC_DIR + 'fonts/**/*.woff'
+      IONIC_DIR + 'dist/fonts/**/*.ttf',
+      IONIC_DIR + 'dist/fonts/**/*.woff'
     ])
     .pipe(gulp.dest('www/build/fonts'));
 });
