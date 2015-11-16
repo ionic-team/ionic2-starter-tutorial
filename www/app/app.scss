@@ -26,10 +26,8 @@ $colors: (
 @import "ionic";
 
 
-
-// Import your Sass files here
+// App Sass
 // ---------------------------------
-@import "item-details/item-details",
-        //"list/list",
-        "hello-ionic/hello-ionic";
-
+@import 'item-details/item-details',
+        'list/list',
+        'hello-ionic/hello-ionic';
