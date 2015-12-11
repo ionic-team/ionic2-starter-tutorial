@@ -1,5 +1,5 @@
 <ion-navbar *navbar>
-  <a menu-toggle>
+  <a menuToggle>
     <icon menu></icon>
   </a>
   <ion-title>My First List</ion-title>
@@ -7,7 +7,7 @@
 
 <ion-content>
   <ion-list>
-    <button ion-item *ng-for="#item of items" (click)="itemTapped($event, item)">
+    <button ion-item *ngFor="#item of items" (click)="itemTapped($event, item)">
       <icon name="{{item.icon}}" item-left></icon>
       {{item.title}}
       <div class="item-note" item-right>
@@ -15,7 +15,7 @@
       </div>
     </button>
   </ion-list>
-  <div *ng-if="selectedItem" padding>
+  <div *ngIf="selectedItem" padding>
     You navigated here from <b>{{selectedItem.title}}</b>
   </div>
 </ion-content>
