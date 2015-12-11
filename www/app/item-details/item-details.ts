@@ -1,4 +1,4 @@
-import {IonicApp, Page, NavController, NavParams} from 'ionic/ionic';
+import {IonicApp, Page, NavController, NavParams} from 'ionic-framework/ionic';
 
 import "./item-details.scss";
 
