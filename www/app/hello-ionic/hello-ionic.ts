@@ -1,7 +1,5 @@
 import {Page, NavController} from 'ionic-framework/ionic';
 
-import "./hello-ionic.scss";
-
 @Page({
   templateUrl: 'app/hello-ionic/hello-ionic.html'
 })

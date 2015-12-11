@@ -1,7 +1,5 @@
 import {IonicApp, Page, NavController, NavParams} from 'ionic-framework/ionic';
 
-// import {ItemDetailsPage} from '../item-details/item-details';
-
 @Page({
   templateUrl: 'app/list/list.html'
 })
