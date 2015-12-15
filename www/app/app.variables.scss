@@ -28,3 +28,21 @@ $colors: (
   dark:       #222,
   favorite:   #69BB7B
 );
+
+$colors-md: (
+  primary:    map-get($colors, primary),
+  secondary:  map-get($colors, secondary),
+  danger:     map-get($colors, danger),
+  light:      map-get($colors, light),
+  dark:       map-get($colors, dark),
+  favorite:   map-get($colors, favorite)
+);
+
+$colors-ios: (
+  primary:    map-get($colors, primary),
+  secondary:  map-get($colors, secondary),
+  danger:     map-get($colors, danger),
+  light:      map-get($colors, light),
+  dark:       map-get($colors, dark),
+  favorite:   map-get($colors, favorite)
+);
