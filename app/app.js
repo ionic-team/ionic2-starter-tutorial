@@ -1,12 +1,11 @@
 import {App, IonicApp, Platform} from 'ionic/ionic';
 
-import {HelloIonicPage} from './hello-ionic/hello-ionic';
-import {ListPage} from './list/list';
+import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
+import {ListPage} from './pages/list/list';
 
 @App({
-  templateUrl: 'app/app.html'
+  templateUrl: 'build/app.html'
 })
-
 class MyApp {
   constructor(app: IonicApp, platform: Platform) {
 

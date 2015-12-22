@@ -1,7 +1,7 @@
 import {IonicApp, Page, NavController, NavParams} from 'ionic/ionic';
 
 @Page({
-  templateUrl: 'app/list/list.html'
+  templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
   constructor(app: IonicApp, nav: NavController, navParams: NavParams) {
