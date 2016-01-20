@@ -1,12 +1,15 @@
-import {IonicApp, Page, NavController, NavParams} from 'ionic-framework/ionic';
+import {Page, NavController, NavParams} from 'ionic-framework/ionic';
+
 
 @Page({
   templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
-  constructor(app: IonicApp, nav: NavController, navParams: NavParams) {
-    this.nav = nav;
+  selectedItem: any;
+  icons: string[];
+  items: Array<{title: string, note: string, icon: string}>;
 
+  constructor(private nav: NavController, navParams: NavParams) {
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');
 
@@ -24,11 +27,8 @@ export class ListPage {
   }
 
   itemTapped(event, item) {
-
-    console.log('You selected:', item.title);
-
-     // this.nav.push(ItemDetailsPage, {
-     //   item: item
-     // });
+    this.nav.push(ListPage, {
+      item: item
+    });
   }
 }

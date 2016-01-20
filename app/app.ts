@@ -3,16 +3,20 @@ import {App, IonicApp, Platform} from 'ionic-framework/ionic';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 
+// https://angular.io/docs/ts/latest/api/core/Type-interface.html
+import {Type} from 'angular2/core';
+
+
 @App({
   templateUrl: 'build/app.html'
 })
-
 class MyApp {
-  constructor(app: IonicApp, platform: Platform) {
+  // make HelloIonicPage the root (or first) page
+  rootPage: Type = HelloIonicPage;
+  pages: Array<{title: string, component: Type}>;
 
-    // set up our app
-    this.app = app;
-    this.platform = platform;
+  constructor(private app: IonicApp, private platform: Platform) {
+
     this.initializeApp();
 
     // set our app's pages
@@ -20,15 +24,10 @@ class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
-
-    // make HelloIonicPage the root (or first) page
-    this.rootPage = HelloIonicPage;
   }
 
   initializeApp() {
     this.platform.ready().then(() => {
-      console.log('Platform ready');
-
       // The platform is now ready. Note: if this callback fails to fire, follow
       // the Troubleshooting guide for a number of possible solutions:
       //
@@ -38,12 +37,11 @@ class MyApp {
       // First, let's hide the keyboard accessory bar (only works natively) since
       // that's a better default:
       //
+      // Keyboard.setAccessoryBarVisible(false);
       //
       // For example, we might change the StatusBar color. This one below is
-      // good for light backgrounds and dark text;
-      if (window.StatusBar) {
-        window.StatusBar.styleDefault();
-      }
+      // good for dark backgrounds and light text:
+      // StatusBar.setStyle(StatusBar.LIGHT_CONTENT)
     });
   }
 
