@@ -1,7 +1,7 @@
 import {App, IonicApp, Platform} from 'ionic/ionic';
-
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
+
 
 @App({
   templateUrl: 'build/app.html'
