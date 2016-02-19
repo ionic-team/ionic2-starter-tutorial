@@ -1,4 +1,4 @@
-import {Page, NavController, NavParams} from 'ionic/ionic';
+import {Page, NavController, NavParams} from 'ionic-framework/ionic';
 import {Inject} from 'angular2/core';
 
 
