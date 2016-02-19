@@ -1,4 +1,5 @@
 import {Page, NavController, NavParams} from 'ionic/ionic';
+import {Inject} from 'angular2/core';
 import {ItemDetailsPage} from '../item-details/item-details';
 
 
@@ -6,7 +7,7 @@ import {ItemDetailsPage} from '../item-details/item-details';
   templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
-  constructor(nav: NavController, navParams: NavParams) {
+  constructor(@Inject(NavController) nav, @Inject(NavParams) navParams) {
     this.nav = nav;
 
     // If we navigated to this page, we will have an item available as a nav param
