@@ -1,12 +1,15 @@
 import {Page, NavController, NavParams} from 'ionic-framework/ionic';
-import {Inject} from 'angular2/core';
 
 
 @Page({
   templateUrl: 'build/pages/item-details/item-details.html'
 })
 export class ItemDetailsPage {
-  constructor(@Inject(NavController) nav, @Inject(NavParams) navParams) {
+  static get parameters() {
+    return [[NavController], [NavParams]];
+  }
+
+  constructor(nav, navParams) {
     this.nav = nav;
     // If we navigated to this page, we will have an item available as a nav param
     this.selectedItem = navParams.get('item');

@@ -7,7 +7,11 @@ import {ItemDetailsPage} from '../item-details/item-details';
   templateUrl: 'build/pages/list/list.html'
 })
 export class ListPage {
-  constructor(@Inject(NavController) nav, @Inject(NavParams) navParams) {
+  static get parameters() {
+    return [[NavController], [NavParams]];
+  }
+
+  constructor(nav, navParams) {
     this.nav = nav;
 
     // If we navigated to this page, we will have an item available as a nav param
