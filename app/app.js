@@ -1,4 +1,4 @@
-import {App, IonicApp, Platform} from 'ionic-angular';
+import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
 
@@ -9,13 +9,14 @@ import {ListPage} from './pages/list/list';
 })
 class MyApp {
   static get parameters() {
-    return [[IonicApp], [Platform]];
+    return [[IonicApp], [Platform], [MenuController]];
   }
 
-  constructor(app, platform) {
+  constructor(app, platform, menu) {
     // set up our app
     this.app = app;
     this.platform = platform;
+    this.menu = menu;
     this.initializeApp();
 
     // set our app's pages
@@ -50,7 +51,7 @@ class MyApp {
 
   openPage(page) {
     // close the menu when clicking a link from the menu
-    this.app.getComponent('leftMenu').close();
+    this.menu.close();
     // navigate to the new page if it is not the current page
     let nav = this.app.getComponent('nav');
     nav.setRoot(page.component);
