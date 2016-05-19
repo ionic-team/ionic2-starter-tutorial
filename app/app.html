@@ -6,7 +6,7 @@
 
   <ion-content>
     <ion-list>
-      <button ion-item *ngFor="#p of pages" (click)="openPage(p)">
+      <button ion-item *ngFor="let p of pages" (click)="openPage(p)">
         {{p.title}}
       </button>
     </ion-list>
@@ -14,4 +14,4 @@
 
 </ion-menu>
 
-<ion-nav id="nav" [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
+<ion-nav [root]="rootPage" #content swipe-back-enabled="false"></ion-nav>
