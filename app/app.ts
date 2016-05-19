@@ -1,4 +1,5 @@
-import {App, IonicApp, Platform, MenuController} from 'ionic-angular';
+import {ViewChild} from '@angular/core';
+import {App, Platform, MenuController, Nav} from 'ionic-angular';
 import {StatusBar} from 'ionic-native';
 import {HelloIonicPage} from './pages/hello-ionic/hello-ionic';
 import {ListPage} from './pages/list/list';
@@ -9,12 +10,13 @@ import {ListPage} from './pages/list/list';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 class MyApp {
+  @ViewChild(Nav) nav: Nav;
+
   // make HelloIonicPage the root (or first) page
   rootPage: any = HelloIonicPage;
   pages: Array<{title: string, component: any}>;
 
   constructor(
-    private app: IonicApp,
     private platform: Platform,
     private menu: MenuController
   ) {
@@ -39,7 +41,6 @@ class MyApp {
     // close the menu when clicking a link from the menu
     this.menu.close();
     // navigate to the new page if it is not the current page
-    let nav = this.app.getComponent('nav');
-    nav.setRoot(page.component);
+    this.nav.setRoot(page.component);
   }
 }
