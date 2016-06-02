@@ -1,8 +1,7 @@
-import {Component} from "@angular/core";
-import {NavController, NavParams} from 'ionic-angular';
+import {Page, NavController, NavParams} from 'ionic-angular';
 
 
-@Component({
+@Page({
   templateUrl: 'build/pages/item-details/item-details.html'
 })
 export class ItemDetailsPage {
