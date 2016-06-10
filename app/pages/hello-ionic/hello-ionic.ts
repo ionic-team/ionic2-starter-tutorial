@@ -1,4 +1,4 @@
-import {Page} from 'ionic-angular';
+import { Page } from 'ionic-angular';
 
 
 @Page({
