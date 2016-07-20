@@ -29,7 +29,7 @@ export class ListPage {
   }
 
   itemTapped(event, item) {
-    this.nav.push(ItemDetailsPage, {
+    this.navCtrl.push(ItemDetailsPage, {
       item: item
     });
   }
