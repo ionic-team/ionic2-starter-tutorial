@@ -16,8 +16,8 @@ class MyApp {
   pages: Array<{title: string, component: any}>;
 
   constructor(
-    private platform: Platform,
-    private menu: MenuController
+    public platform: Platform,
+    public menu: MenuController
   ) {
     this.initializeApp();
 
