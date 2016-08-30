@@ -1,24 +1,26 @@
-This is a starter template for [Ionic 2](http://ionic.io/2).
+This is a starter template for [Ionic 2](http://ionicframework.com/docs/v2/) projects.
 
 ## How to use this template
 
-*This template does not work on its own*. It is missing the Ionic library, and AngularJS.
+*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/driftyco/ionic2-app-base).
 
-To use this, either create a new ionic project using the ionic node.js utility, or copy and paste this into an existing Cordova project and download a release of Ionic separately.
+To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/driftyco/ionic2-app-base).
 
-### With the Ionic tool:
+### With the Ionic CLI:
 
 Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
 
 ```bash
-$ sudo npm install -g ionic@beta cordova
+$ sudo npm install -g ionic cordova
 $ ionic start myTutorial tutorial --v2
 ```
 
 Then, to run it, cd into `myTutorial` and run:
 
 ```bash
+$ ionic platform add ios
 $ ionic run ios
 ```
 
-Substitute ios for android if not on a Mac, but if you can, the ios development toolchain is a lot easier to work with until you need to do anything custom to Android.
+Substitute ios for android if not on a Mac.
+
