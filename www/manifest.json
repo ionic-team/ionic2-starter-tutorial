@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "My Ionic App",
+  "short_name": "My Ionic App",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
