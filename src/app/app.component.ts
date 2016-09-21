@@ -1,17 +1,17 @@
 import { Component, ViewChild } from '@angular/core';
 
-import { ionicBootstrap, Platform, MenuController, Nav } from 'ionic-angular';
+import { Platform, MenuController, Nav } from 'ionic-angular';
 
 import { StatusBar } from 'ionic-native';
 
-import { HelloIonicPage } from './pages/hello-ionic/hello-ionic';
-import { ListPage } from './pages/list/list';
+import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
+import { ListPage } from '../pages/list/list';
 
 
 @Component({
   templateUrl: 'app.html'
 })
-class MyApp {
+export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
