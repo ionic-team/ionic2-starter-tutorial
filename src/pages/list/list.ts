@@ -6,6 +6,7 @@ import { ItemDetailsPage } from '../item-details/item-details';
 
 
 @Component({
+  selector: 'list-page',
   templateUrl: 'list.html'
 })
 export class ListPage {
