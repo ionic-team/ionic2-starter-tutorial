@@ -7,6 +7,9 @@ import { HelloIonicPageModule } from '../pages/hello-ionic/hello-ionic.module';
 import { ItemDetailsPageModule } from '../pages/item-details/item-details.module';
 import { ListPageModule } from '../pages/list/list.module';
 
+import { StatusBar } from '@ionic-native/status-bar';
+import { SplashScreen } from '@ionic-native/splash-screen';
+
 @NgModule({
   declarations: [
     MyApp
@@ -22,6 +25,10 @@ import { ListPageModule } from '../pages/list/list.module';
   entryComponents: [
     MyApp
   ],
-  providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
+  providers: [
+    StatusBar,
+    SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
+  ]
 })
 export class AppModule {}
