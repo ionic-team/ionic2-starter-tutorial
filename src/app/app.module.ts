@@ -2,27 +2,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
-import { ItemDetailsPage } from '../pages/item-details/item-details';
-import { ListPage } from '../pages/list/list';
+
+import { HelloIonicPageModule } from '../pages/hello-ionic/hello-ionic.module';
+import { ItemDetailsPageModule } from '../pages/item-details/item-details.module';
+import { ListPageModule } from '../pages/list/list.module';
 
 @NgModule({
   declarations: [
-    MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    MyApp
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    HelloIonicPageModule,
+    ItemDetailsPageModule,
+    ListPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
-    MyApp,
-    HelloIonicPage,
-    ItemDetailsPage,
-    ListPage
+    MyApp
   ],
   providers: [{provide: ErrorHandler, useClass: IonicErrorHandler}]
 })
