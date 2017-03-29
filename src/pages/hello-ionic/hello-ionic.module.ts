@@ -9,9 +9,6 @@ import { HelloIonicPage } from './hello-ionic';
   ],
   imports: [
     IonicPageModule.forChild(HelloIonicPage),
-  ],
-  entryComponents: [
-    HelloIonicPage,
   ]
 })
 export class HelloIonicPageModule {}

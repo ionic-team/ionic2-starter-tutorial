@@ -8,10 +8,7 @@ import { ItemDetailsPage } from './item-details';
     ItemDetailsPage,
   ],
   imports: [
-    IonicPageModule.forChild(ItemDetailsPage),
-  ],
-  entryComponents: [
-    ItemDetailsPage,
+    IonicPageModule.forChild(ItemDetailsPage)
   ]
 })
 export class ItemDetailsPageModule {}
