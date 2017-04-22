@@ -16,22 +16,17 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   // make HelloIonicPage the root (or first) page
-  rootPage = HelloIonicPage;
-  pages: Array<{title: string, component: any}>;
+  rootPage: any = HelloIonicPage;
+  pages: Array<{ title: string, component: any }>;
 
-  constructor(
-    public platform: Platform,
-    public menu: MenuController,
-    public statusBar: StatusBar,
-    public splashScreen: SplashScreen
-  ) {
-    this.initializeApp();
-
+  constructor(private platform: Platform, private menu: MenuController, private statusBar: StatusBar, private splashScreen: SplashScreen) {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
+
+    this.initializeApp();
   }
 
   initializeApp() {
