@@ -18,8 +18,8 @@ $ ionic start myTutorial tutorial
 Then, to run it, cd into `myTutorial` and run:
 
 ```bash
-$ ionic platform add ios
-$ ionic run ios
+$ ionic cordova platform add ios
+$ ionic cordova run ios
 ```
 
 Substitute ios for android if not on a Mac.
