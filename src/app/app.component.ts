@@ -19,7 +19,7 @@ export class MyApp {
   rootPage: any = HelloIonicPage;
   pages: Array<{ title: string, component: any }>;
 
-  constructor(private platform: Platform, private menu: MenuController, private statusBar: StatusBar, private splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public menu: MenuController, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     // set our app's pages
     this.pages = [
       { title: 'Hello Ionic', component: HelloIonicPage },
