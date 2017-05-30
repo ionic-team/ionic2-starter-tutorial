@@ -1,4 +1,4 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+This is a starter template for [Ionic](https://ionicframework.com/docs/) projects.
 
 ## How to use this template
 
@@ -11,9 +11,13 @@ To use this template, either create a new ionic project using the ionic node.js 
 Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
 
 ```bash
-$ sudo npm install -g ionic cordova
+$ npm install -g ionic cordova
 $ ionic start myTutorial tutorial
 ```
+:memo: *Note: For a global install of `-g ionic`, OSX/Linux users may need to prefix
+the command with `sudo` or can setup [proper file permissions on OSX for
+npm](https://www.johnpapa.net/how-to-use-npm-global-without-sudo-on-osx/) to
+install without `sudo`.*
 
 Then, to run it, cd into `myTutorial` and run:
 
