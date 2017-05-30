@@ -25,11 +25,9 @@ export class MyApp {
       { title: 'Hello Ionic', component: HelloIonicPage },
       { title: 'My First List', component: ListPage }
     ];
-
-    this.initializeApp();
   }
 
-  initializeApp() {
+  ionViewDidLoad() {
     this.platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
